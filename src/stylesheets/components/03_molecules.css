@@ -176,16 +176,16 @@
 .M_LearnMoreCard:hover {
   background-color: rgba(19, 53, 36, 0.7);
 }
-/* ___________________main_ForestExam.html___________________ */
+/* ___________________main_Exams.html___________________ */
 .M_HeroContentTitle {
   display: flex;
   flex-direction: column;
   gap: 15rem;
 }
 
-/* ___________________test_ForestExam.html___________________ */
+/* ___________________test_Exams.html___________________ */
 
-.M_Progress {
+.M_TestProgress {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,6 +196,7 @@
   display: flex;
   flex-direction: column;
   padding: 20rem;
+  padding-right: 45rem;
   gap: 20rem;
   width: 670rem;
   min-height: 133rem;
@@ -207,7 +208,8 @@
   transition: background-color 0.2s ease;
 }
 
-.M_AnswerCard.is-selected {
+.M_AnswerCard.is-selected,
+.M_AnswerCard.is-selected:hover {
   background-color: var(--color-card-accent);
 }
 
@@ -215,13 +217,13 @@
   background-color: rgba(19, 53, 36, 0.7);
 }
 
-.M_AnswerHeader {
+.M_AnswerCardHeader {
   display: flex;
   align-items: center;
   gap: 15rem;
 }
 
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .M_ResultCard {
   display: flex;
   flex-direction: column;

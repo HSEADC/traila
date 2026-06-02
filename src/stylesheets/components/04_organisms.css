@@ -81,14 +81,26 @@
   gap: 60rem;
 }
 
-/* ___________________main_ForestExam.html___________________ */
+/* ___________________main_Exams.html___________________ */
 .O_HeaderForestExam {
   gap: 250rem;
   background-image: url("../../images/Q_ForestExamBG.webp");
   min-height: 100vh;
 }
 
-/* ___________________test_ForestExam.html___________________ */
+.O_HeaderHelp {
+  gap: 250rem;
+  background-image: url("../../images/Q_HelpBG.webp");
+  min-height: 100vh;
+}
+
+.O_CalmMovement {
+  gap: 250rem;
+  background-image: url("../../images/Q_CalmMovementBG.webp");
+  min-height: 100vh;
+}
+
+/* ___________________test_Exams.html___________________ */
 
 .O_TestPage {
   display: flex;
@@ -106,13 +118,7 @@
   gap: 40rem;
 }
 
-.O_QuestionList {
-  display: flex;
-  gap: 20rem;
-  flex-wrap: wrap;
-}
-
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .O_ResultSection {
   display: flex;
   flex-direction: column;
@@ -124,6 +130,7 @@
 .O_CorrectAnswers {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30rem;
 }
 
@@ -331,52 +338,6 @@
   width: 434rem;
   border-radius: 15rem;
   background-color: var(--color-card);
-}
-
-/* ___________________main_test_mushroom.html___________________ */
-.O_Header-main-test {
-  gap: 250rem;
-  background-image: url("/src/images/test_mushroom-bg.webp");
-  min-height: 100vh;
-}
-
-/* ___________________main_test2_questions.html___________________ */
-.O_Header-test2 {
-  gap: 250rem;
-  background-image: url("/src/images/test2-bg.webp");
-  min-height: 100vh;
-}
-
-/* ___________________test1_questions.html___________________ */
-.O_Test-Exam {
-  display: flex;
-  flex-direction: column;
-  padding: 160rem 40rem 100rem;
-  gap: 170rem;
-}
-
-.O_Test-ExamContent {
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-}
-
-.O_Test-ExamQuestions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30rem;
-}
-
-/* ___________________result_test_exam.html___________________ */
-.O_CorrectAnswerCardVar {
-  display: flex;
-  align-items: center;
-  padding: 20rem;
-  gap: 30rem;
-  width: 100%;
-  min-height: 180rem;
-  background-color: var(--color-card);
-  border-radius: 15rem;
 }
 
 /* ___________________main_test_mushroom.html___________________ */

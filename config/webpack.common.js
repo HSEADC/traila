@@ -12,6 +12,11 @@ module.exports = {
     index: "./src/javascripts/index.js",
     allStyles: "./src/javascripts/allStyles.js",
     searchVanilla: "./src/javascripts/search-vanilla.js",
+    tests: "./src/javascripts/tests.js",
+    result_tests: "./src/javascripts/result_tests.js",
+    test_ForestExam: "./src/javascripts/test_ForestExam.js",
+    test_Help: "./src/javascripts/test_Help.js",
+    test_CalmMovement: "./src/javascripts/test_CalmMovement.js",
     // после не правила
     sectionArticles: "./src/javascripts/sectionArticles.js",
     // tests: "./src/javascripts/tests.js",

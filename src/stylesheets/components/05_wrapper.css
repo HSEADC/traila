@@ -35,3 +35,11 @@
   background-repeat: no-repeat;
   background-image: url("/src/images/stub.png");
 }
+
+/* ___________________test_Exams.html___________________ */
+
+.W_AnswerCards {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+}

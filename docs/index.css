@@ -351,14 +351,14 @@ input[type="email"]::placeholder {
   height: auto;
 }
 
-/* ___________________test_ForestExam.html___________________ */
+/* ___________________test_Exams.html___________________ */
 .Q_AnswerIcon {
   display: block;
   width: 27rem;
   height: auto;
 }
 
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .Q_ResultChartImg {
   display: block;
   width: 215rem;
@@ -438,15 +438,15 @@ input[type="email"]::placeholder {
   line-height: 1.5;
 }
 
-.A_Paragraph,
-.A_AnswerDescription {
+.A_Paragraph {
   font-size: 20rem;
   line-height: 1.5;
   text-decoration: none;
 }
 
 .A_ParagraphVar,
-.A_QuestionText {
+.A_QuestionText,
+.A_AnswerDescription {
   font-size: 16rem;
   line-height: 1.5;
 }
@@ -593,7 +593,7 @@ input[type="email"]::placeholder {
   border: none;
 }
 
-/* ___________________main_ForestExam.html___________________ */
+/* ___________________main_Exams.html___________________ */
 
 .A_ButtonTest {
   display: flex;
@@ -605,7 +605,7 @@ input[type="email"]::placeholder {
   min-height: 50rem;
 }
 
-/* ___________________test_ForestExam.html___________________ */
+/* ___________________test_Exams.html___________________ */
 
 .A_ProgressStep {
   position: relative;
@@ -648,10 +648,11 @@ input[type="email"]::placeholder {
   color: var(--color-card);
 }
 
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .A_ResultPercent {
   grid-area: diagram;
   align-self: center;
+  padding-top: 10rem;
 }
 
 .A_ButtonTryAgain {
@@ -1084,16 +1085,16 @@ input[type="email"]::placeholder {
 .M_LearnMoreCard:hover {
   background-color: rgba(19, 53, 36, 0.7);
 }
-/* ___________________main_ForestExam.html___________________ */
+/* ___________________main_Exams.html___________________ */
 .M_HeroContentTitle {
   display: flex;
   flex-direction: column;
   gap: 15rem;
 }
 
-/* ___________________test_ForestExam.html___________________ */
+/* ___________________test_Exams.html___________________ */
 
-.M_Progress {
+.M_TestProgress {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1104,6 +1105,7 @@ input[type="email"]::placeholder {
   display: flex;
   flex-direction: column;
   padding: 20rem;
+  padding-right: 45rem;
   gap: 20rem;
   width: 670rem;
   min-height: 133rem;
@@ -1115,7 +1117,8 @@ input[type="email"]::placeholder {
   transition: background-color 0.2s ease;
 }
 
-.M_AnswerCard.is-selected {
+.M_AnswerCard.is-selected,
+.M_AnswerCard.is-selected:hover {
   background-color: var(--color-card-accent);
 }
 
@@ -1123,13 +1126,13 @@ input[type="email"]::placeholder {
   background-color: rgba(19, 53, 36, 0.7);
 }
 
-.M_AnswerHeader {
+.M_AnswerCardHeader {
   display: flex;
   align-items: center;
   gap: 15rem;
 }
 
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .M_ResultCard {
   display: flex;
   flex-direction: column;
@@ -1969,14 +1972,26 @@ input[type="email"]::placeholder {
   gap: 60rem;
 }
 
-/* ___________________main_ForestExam.html___________________ */
+/* ___________________main_Exams.html___________________ */
 .O_HeaderForestExam {
   gap: 250rem;
   background-image: url(119542105ff29f2f8cc0.webp);
   min-height: 100vh;
 }
 
-/* ___________________test_ForestExam.html___________________ */
+.O_HeaderHelp {
+  gap: 250rem;
+  background-image: url(a55e184907d7c7384919.webp);
+  min-height: 100vh;
+}
+
+.O_CalmMovement {
+  gap: 250rem;
+  background-image: url(810cd106400d6392b3c8.webp);
+  min-height: 100vh;
+}
+
+/* ___________________test_Exams.html___________________ */
 
 .O_TestPage {
   display: flex;
@@ -1994,13 +2009,7 @@ input[type="email"]::placeholder {
   gap: 40rem;
 }
 
-.O_QuestionList {
-  display: flex;
-  gap: 20rem;
-  flex-wrap: wrap;
-}
-
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .O_ResultSection {
   display: flex;
   flex-direction: column;
@@ -2012,6 +2021,7 @@ input[type="email"]::placeholder {
 .O_CorrectAnswers {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30rem;
 }
 
@@ -2219,52 +2229,6 @@ input[type="email"]::placeholder {
   width: 434rem;
   border-radius: 15rem;
   background-color: var(--color-card);
-}
-
-/* ___________________main_test_mushroom.html___________________ */
-.O_Header-main-test {
-  gap: 250rem;
-  background-image: url(5e06a1b006424dcc5ff5.webp);
-  min-height: 100vh;
-}
-
-/* ___________________main_test2_questions.html___________________ */
-.O_Header-test2 {
-  gap: 250rem;
-  background-image: url(6224009b594bcc859ce5.webp);
-  min-height: 100vh;
-}
-
-/* ___________________test1_questions.html___________________ */
-.O_Test-Exam {
-  display: flex;
-  flex-direction: column;
-  padding: 160rem 40rem 100rem;
-  gap: 170rem;
-}
-
-.O_Test-ExamContent {
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-}
-
-.O_Test-ExamQuestions {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30rem;
-}
-
-/* ___________________result_test_exam.html___________________ */
-.O_CorrectAnswerCardVar {
-  display: flex;
-  align-items: center;
-  padding: 20rem;
-  gap: 30rem;
-  width: 100%;
-  min-height: 180rem;
-  background-color: var(--color-card);
-  border-radius: 15rem;
 }
 
 /* ___________________main_test_mushroom.html___________________ */
@@ -2496,6 +2460,14 @@ input[type="email"]::placeholder {
   background-image: url(images/stub.png);
 }
 
+/* ___________________test_Exams.html___________________ */
+
+.W_AnswerCards {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+}
+
 /* ___________________interactive.html___________________ */
 .T_MainInteractive {
   display: flex;
@@ -2504,7 +2476,7 @@ input[type="email"]::placeholder {
   padding: 120rem 0;
 }
 
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .T_ResultPage {
   display: flex;
   flex-direction: column;

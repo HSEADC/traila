@@ -69,15 +69,15 @@
   line-height: 1.5;
 }
 
-.A_Paragraph,
-.A_AnswerDescription {
+.A_Paragraph {
   font-size: 20rem;
   line-height: 1.5;
   text-decoration: none;
 }
 
 .A_ParagraphVar,
-.A_QuestionText {
+.A_QuestionText,
+.A_AnswerDescription {
   font-size: 16rem;
   line-height: 1.5;
 }
@@ -224,7 +224,7 @@
   border: none;
 }
 
-/* ___________________main_ForestExam.html___________________ */
+/* ___________________main_Exams.html___________________ */
 
 .A_ButtonTest {
   display: flex;
@@ -236,7 +236,7 @@
   min-height: 50rem;
 }
 
-/* ___________________test_ForestExam.html___________________ */
+/* ___________________test_Exams.html___________________ */
 
 .A_ProgressStep {
   position: relative;
@@ -279,10 +279,11 @@
   color: var(--color-card);
 }
 
-/* ___________________result_ForestExam.html___________________ */
+/* ___________________result_Exams.html___________________ */
 .A_ResultPercent {
   grid-area: diagram;
   align-self: center;
+  padding-top: 10rem;
 }
 
 .A_ButtonTryAgain {

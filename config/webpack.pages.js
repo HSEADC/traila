@@ -27,13 +27,44 @@ const htmlPages = [
   createPages(
     "./src/pages/interactive/test_ForestExam.html",
     "pages/interactive/test_ForestExam.html",
-    ["index", "allStyles", "searchVanilla"],
+    ["index", "allStyles", "searchVanilla", "test_ForestExam", "tests"],
   ),
   createPages(
     "./src/pages/interactive/result_ForestExam.html",
     "pages/interactive/result_ForestExam.html",
+    ["index", "allStyles", "searchVanilla", "result_tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/main_Help.html",
+    "pages/interactive/main_Help.html",
     ["index", "allStyles", "searchVanilla"],
   ),
+  createPages(
+    "./src/pages/interactive/test_Help.html",
+    "pages/interactive/test_Help.html",
+    ["index", "allStyles", "searchVanilla", "test_Help", "tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/result_Help.html",
+    "pages/interactive/result_Help.html",
+    ["index", "allStyles", "searchVanilla", "result_tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/main_CalmMovement.html",
+    "pages/interactive/main_CalmMovement.html",
+    ["index", "allStyles", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/interactive/test_CalmMovement.html",
+    "pages/interactive/test_CalmMovement.html",
+    ["index", "allStyles", "searchVanilla", "test_CalmMovement", "tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/result_CalmMovement.html",
+    "pages/interactive/result_CalmMovement.html",
+    ["index", "allStyles", "searchVanilla", "result_tests"],
+  ),
+  // после не правила
   // после не правила
   createPages("./src/404.html", "./404.html", ["index"]),
   createPages("./src/pages/articles.html", "pages/articles.html", [
@@ -46,39 +77,7 @@ const htmlPages = [
     "index",
     "allStyles",
   ]),
-  createPages(
-    "./src/pages/interactive/main_test_mushroom.html",
-    "pages/interactive/main_test_mushroom.html",
-    ["index"],
-  ),
 
-  createPages(
-    "./src/pages/interactive/main_test2_questions.html",
-    "pages/interactive/main_test2_questions.html",
-    ["index"],
-  ),
-  createPages(
-    "./src/pages/interactive/test_mushroom.html",
-    "pages/interactive/test_mushroom.html",
-    ["index", "testMushrooms"],
-  ),
-
-  createPages(
-    "./src/pages/interactive/test2_questions.html",
-    "pages/interactive/test2_questions.html",
-    ["index", "allStyles", "testsExam", "testForestAttention"],
-  ),
-  createPages(
-    "./src/pages/interactive/results_test_mushrooms.html",
-    "pages/interactive/results_test_mushrooms.html",
-    ["index", "testMushroomResult", "allStyles"],
-  ),
-
-  createPages(
-    "./src/pages/interactive/results_test_exam_attention.html",
-    "pages/interactive/results_test_exam_attention.html",
-    ["index", "testForestAttentionResult", "allStyles"],
-  ),
   createPages(
     "./src/pages/articles/article_ticks.html",
     "pages/articles/article_ticks.html",
