@@ -1,0 +1,15 @@
+/* ___________________interactive.html___________________ */
+.T_MainInteractive {
+  display: flex;
+  flex-direction: column;
+  gap: 120rem;
+  padding: 120rem 0;
+}
+
+/* ___________________result_ForestExam.html___________________ */
+.T_ResultPage {
+  display: flex;
+  flex-direction: column;
+  padding: 120rem 385rem;
+  gap: 120rem;
+}

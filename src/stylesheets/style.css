@@ -7,6 +7,7 @@
 @import "components/02_atoms.css";
 @import "components/03_molecules.css";
 @import "components/04_organisms.css";
-@import "components/05_utilities.css";
+@import "components/05_wrapper.css";
+@import "components/06_template.css";
 
 @import "adaptive.css";

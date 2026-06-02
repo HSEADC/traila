@@ -222,9 +222,9 @@ html {
 }
 
 input[type="email"] {
-  padding: 8rem 25rem;
   width: 400rem;
   height: 50rem;
+  padding: 8rem 25rem;
   border-radius: 64rem;
   border: 1.2rem solid var(--color-text);
   background-color: transparent;
@@ -233,7 +233,13 @@ input[type="email"] {
   color: var(--color-text);
   outline: none;
   font-size: 18rem;
+  transition: background-color 0.2s ease;
 }
+
+input[type="email"]:hover {
+  background-color: var(--color-card);
+}
+
 input[type="email"]::placeholder {
   font-family: var(--font-family);
   font-weight: var(--font-weight-regular);
@@ -254,6 +260,10 @@ input[type="email"]::placeholder {
   border: 1.2rem solid var(--color-text);
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#my-form-button:hover {
+  background-color: var(--color-card);
 }
 
 #my-form-status {
@@ -265,24 +275,102 @@ input[type="email"]::placeholder {
   background-color: transparent;
 }
 
+/* Общие стили */
+.Q_LogoImage {
+  display: block;
+  width: 19.03rem;
+  height: auto;
+}
+
+.Q_SearchIcon {
+  display: block;
+  width: 17rem;
+  height: auto;
+}
+.Q_IconSearchClose {
+  display: block;
+  width: 30rem;
+  height: auto;
+}
+
+.Q_SearchArrow {
+  width: 30rem;
+  height: 30rem;
+  background-image: url(images/Q_Icon_Arrow-White.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Q_Highlight {
+  color: var(--color-text);
+}
+
+.Q_TagIconImg {
+  display: block;
+  width: 30rem;
+  height: auto;
+}
+
+.Q_TagIcon-Social-Network {
+  display: block;
+  width: 38rem;
+  height: auto;
+}
+
+.Q_ButtonIcon {
+  display: block;
+  width: 44rem;
+  height: auto;
+}
 /* ___________________index.html___________________ */
+
+/* ___________________interactive.html___________________ */
+.Q_TestCardImg {
+  display: block;
+  width: 300rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_TagItemImg {
+  display: block;
+  width: 19rem;
+  height: auto;
+}
+
+.Q_ArrowIcon {
+  display: block;
+  width: 30rem;
+  height: auto;
+}
+
+.Q_ArrowIconSecondary {
+  display: block;
+  width: 50rem;
+  height: auto;
+}
+
+/* ___________________test_ForestExam.html___________________ */
+.Q_AnswerIcon {
+  display: block;
+  width: 27rem;
+  height: auto;
+}
 
 /* Общие стили */
 .A_Heading-H1,
 .A_Heading-H2,
 .A_Heading-H2-medium,
-.A_Heading-H2-article,
 .A_Heading-H3,
 .A_Heading-H4,
-.A_Heading-H4-bold,
 .A_Heading-H5,
 .A_Paragraph,
-.A_Paragraph_Secondary,
-.A_Navigation-Text,
-.A_Tag-Text,
-.A_Heading-H5-Secondary,
-.A_Heading-H5-bold,
-.A_Paragraph_transparent {
+.A_ParagraphVar,
+.A_AnswerDescription,
+.A_NavigationText,
+.A_ButtonText,
+.A_Tag-Text {
   font-family: var(--font-family);
   color: var(--color-text);
 }
@@ -294,15 +382,9 @@ input[type="email"]::placeholder {
   text-transform: uppercase;
 }
 
-.A_Heading-H4-bold,
-.A_Heading-H5-bold {
-  font-weight: var(--font-weight-bold);
-}
-
 /* Medium */
 .A_Heading-H3,
 .A_Heading-H5,
-.A_Heading-H2-article,
 .A_Heading-H2-medium {
   font-weight: var(--font-weight-medium);
 }
@@ -310,11 +392,11 @@ input[type="email"]::placeholder {
 /* Regular */
 .A_Heading-H4,
 .A_Paragraph,
-.A_Paragraph_Secondary,
-.A_Navigation-Text,
-.A_Tag-Text,
-.A_Heading-H5-Secondary,
-.A_Paragraph_transparent {
+.A_ParagraphVar,
+.A_AnswerDescription,
+.A_NavigationText,
+.A_ButtonText,
+.A_Tag-Text {
   font-weight: var(--font-weight-regular);
 }
 
@@ -323,50 +405,38 @@ input[type="email"]::placeholder {
   font-size: 50rem;
 }
 .A_Heading-H2,
-.A_Heading-H2-article,
 .A_Heading-H2-medium {
   font-size: 36rem;
 }
+
 .A_Heading-H3 {
   font-size: 28rem;
   line-height: 1.3;
 }
-.A_Heading-H4-bold,
+
 .A_Heading-H4 {
   font-size: 24rem;
 }
-.A_Heading-H5,
-.A_Heading-H5-bold,
-.A_Heading-H5-Secondary {
-  font-size: 20rem;
-}
-
-.A_Heading-H5-Secondary,
 .A_Heading-H5 {
+  font-size: 20rem;
   line-height: 1.5;
 }
-.A_Paragraph {
+
+.A_Paragraph,
+.A_AnswerDescription {
   font-size: 20rem;
   line-height: 1.5;
   text-decoration: none;
 }
 
-.A_Paragraph_transparent,
-.A_Paragraph_Secondary {
+.A_ParagraphVar {
   font-size: 16rem;
   line-height: 1.5;
 }
 
-.A_Paragraph_transparent {
-  opacity: 50%;
-}
-
-.A_Navigation-Text {
+.A_NavigationText,
+.A_ButtonText {
   font-size: 18rem;
-  text-decoration: none;
-}
-
-.A_Link {
   text-decoration: none;
 }
 
@@ -374,93 +444,193 @@ input[type="email"]::placeholder {
   font-size: 14rem;
 }
 
-.A_Navigation-TextDark {
-  color: var(--color-card);
+.A_AnswerDescription {
+  opacity: 50%;
 }
 
-.A_Button {
-  background-color: var(--color-button);
-  transition: background-color 0.25s ease;
-  cursor: pointer;
-}
-
-.A_Button-Arrow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 70rem;
-  width: 267rem;
-  min-height: 50rem;
-  border: none;
-  border-radius: 71rem;
-}
-
-.A_ButtonImg {
-  display: block;
-  width: 44rem;
-  height: auto;
-}
-
-.A_Button:hover {
-  background-color: var(--color-text);
-}
-
-.A_InnerCircle {
+.A_Logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 35rem;
   height: 35rem;
   border-radius: 50%;
-  background-color: var(--color-card-accent);
+  text-decoration: none;
+  background-color: var(--color-surface);
+  transition: background-color 0.2s ease;
 }
 
-.A_LogoImage {
-  display: block;
-  width: 19.79rem;
-  height: auto;
+.A_Logo:hover {
+  background-color: var(--color-card);
 }
 
-.A_SearchIcon {
-  display: block;
-  width: 16rem;
-  height: auto;
-}
-
-.A_NavigationLink {
+.A_Search {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8rem 15rem;
-  border-radius: 20rem;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  text-decoration: none;
+  border: none;
+  background-color: var(--color-surface);
+  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
-.A_NavigationLink:hover {
-  background-color: var(--color-card-accent);
+.A_Search:hover {
+  background-color: var(--color-card);
 }
 
-.A_NavigationLink-Acrtive {
-  background-color: var(--color-card-accent);
+.A_Search.is-hidden {
+  display: none;
+}
+
+.A_SearchInput {
+  width: 152rem;
+  background-color: var(--color-surface);
+  border: none;
+}
+
+.A_SearchInput:focus {
+  outline: none;
+}
+
+.A_SearchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  min-height: 30rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-surface);
+  cursor: pointer;
+}
+
+.A_SearchButton:hover {
+  background-color: var(--color-card);
 }
 
 .A_Tag {
   padding: 15rem 25rem;
   border-radius: 64rem;
-  border: 1.2rem solid var(--color-text);
+  border: 1.5rem solid var(--color-text);
 }
 
-.A_TagIcon-Image {
-  display: block;
-  width: 28rem;
-  height: auto;
+.A_Link {
+  text-decoration: none;
 }
 
-.A_TagIcon-Social-Network {
-  display: block;
-  width: 38rem;
-  height: auto;
+.A_ButtonText {
+  color: var(--color-card);
 }
+
+.A_Button {
+  background-color: var(--color-button);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.A_Button:hover {
+  background-color: var(--color-text);
+}
+
+.A_Social-Network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  min-height: 50rem;
+  border-radius: 50%;
+  border: 1.5rem solid var(--color-text);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.A_Social-Network:hover {
+  background-color: var(--color-card);
+}
+
+/* ___________________interactive.html___________________ */
+.A_TestCard_image-iphone {
+  display: none;
+}
+
+.A_TestCardButton {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.A_TestButton {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: none;
+}
+
+/* ___________________main_ForestExam.html___________________ */
+
+.A_ButtonTest {
+  display: flex;
+  align-items: center;
+  padding-left: 70rem;
+  gap: 40rem;
+  border-radius: 70rem;
+  border: none;
+  min-height: 50rem;
+}
+
+/* ___________________test_ForestExam.html___________________ */
+
+.A_ProgressStep {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  padding: 0;
+  border: 1.5rem solid var(--color-text);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.A_ProgressStep.is-active {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+.A_ProgressStep::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 32rem;
+  height: 1.5rem;
+  background: var(--color-text);
+  transform: translateY(-50%);
+}
+
+.A_ProgressStep:last-child::after {
+  display: none;
+}
+
+.A_ProgressStep.is-completed {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+/* ___________________test_mushroom.html___________________ */
 
 /* ___________________index.html___________________ */
 .A_State_img {
@@ -594,16 +764,6 @@ input[type="email"]::placeholder {
   height: auto;
 }
 
-.A_TagItem-Image {
-  display: block;
-  width: 19rem;
-  height: auto;
-}
-
-.A_TagItem-Image-Fire {
-  width: 16rem;
-}
-
 .A_Tag-TextDownload {
   color: var(--color-card);
 }
@@ -635,81 +795,6 @@ input[type="email"]::placeholder {
   height: auto;
 }
 
-/* ___________________interactive.html___________________ */
-.A_TestCard_image {
-  display: block;
-  width: 300rem;
-  height: auto;
-}
-.A_TestCard_image-iphone {
-  display: none;
-}
-.A_TestCard_ContentButton {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 30rem;
-  min-height: 30rem;
-  border-radius: 50%;
-  border: none;
-}
-
-.A_TestCard_ContentImage {
-  display: block;
-  width: 8rem;
-  height: auto;
-}
-
-/* ___________________test_mushroom.html___________________ */
-
-.A_AnswerImage {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.A_ProgressStep {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
-  height: 40rem;
-  padding: 0;
-  border: 1.5rem solid var(--color-text);
-  border-radius: 50%;
-  background: transparent;
-  color: var(--color-text);
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.A_ProgressStep.is-active {
-  background: var(--color-text);
-  color: var(--color-card);
-}
-
-.A_ProgressStep::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 32rem;
-  height: 1.5rem;
-  background: var(--color-text);
-  transform: translateY(-50%);
-}
-
-.A_ProgressStep:last-child::after {
-  display: none;
-}
-
-.A_ProgressStep.is-completed {
-  background: var(--color-text);
-  color: var(--color-card);
-}
-
 /* ___________________results_test_mushrooms.html___________________ */
 .A_ResultDiagramImage {
   display: block;
@@ -734,12 +819,6 @@ input[type="email"]::placeholder {
   height: auto;
 }
 
-/* ___________________test1_questions.html___________________ */
-.A_Test-ExamQuestionIcon {
-  display: block;
-  width: 20rem;
-  height: auto;
-}
 /* ___________________main_test_mushroom.html___________________ */
 .A_ForestConditions-img {
   display: block;
@@ -802,11 +881,6 @@ input[type="email"]::placeholder {
 
 .A_MonthRecommendation-dataVar {
   padding-top: 50rem;
-}
-.A_TagIcon-ImageVar {
-  display: block;
-  width: 16rem;
-  height: auto;
 }
 
 .A_TagIcon-ImageWidth {
@@ -899,56 +973,103 @@ input[type="email"]::placeholder {
   border-radius: 15rem;
 }
 
-.M_Logo {
+/* Общие стили */
+.M_Navigation {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
-  height: 40rem;
-  text-decoration: none;
-  border-radius: 50%;
-  background-color: var(--color-surface);
-}
-
-.M_Search {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
-  height: 40rem;
-  padding: 2.5rem;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--color-surface);
-  cursor: pointer;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .M_NavigationMenu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  padding: 0 90rem;
   align-items: center;
-  justify-content: space-between;
-  width: 600rem;
-  min-height: 40rem;
-  border-radius: 50rem;
-  background-color: var(--color-surface);
+  gap: 10rem;
 }
 
 .M_NavigationItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 20rem;
   list-style: none;
+  border-radius: 43rem;
+  background-color: var(--color-surface);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.M_NavigationItem--active {
+  background-color: var(--color-card-accent);
+}
+
+.M_NavigationItem:hover {
+  background-color: var(--color-card);
+}
+
+.M_NavigationItem--active:hover {
+  background-color: var(--color-card-accent);
+}
+
+.M_SearchInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  height: 35rem;
+  padding: 2.5rem 2.5rem 2.5rem 10rem;
+  border-radius: 43rem;
+  background-color: var(--color-surface);
+}
+
+.M_SearchResult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 36rem;
+  padding-left: 10rem;
+  border-radius: 46rem;
+  font-family: var(--font-family);
+  color: var(--color-text);
+  font-weight: var(--font-weight-regular);
+  font-size: 16rem;
+  text-decoration: none;
+  transition: background-color 0.1s ease;
+}
+
+.M_SearchResult:hover {
+  background-color: var(--color-card);
+}
+
+.M_SearchDropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10rem);
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  width: 232rem;
+  min-height: 36rem;
+  gap: 5rem;
+  padding: 10rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
 }
 
 .M_HeroContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 27rem;
+  text-align: center;
+  gap: 40rem;
 }
 
 .M_TagGroup {
   display: flex;
   align-items: center;
-  padding-top: 27rem;
 }
 
 .M_TagIcon {
@@ -958,12 +1079,12 @@ input[type="email"]::placeholder {
   width: 50rem;
   min-height: 50rem;
   border-radius: 50%;
-  border: 1.2rem solid var(--color-text);
+  border: 1.5rem solid var(--color-text);
 }
 
 .M_Button {
   background-color: var(--color-button);
-  transition: background-color 0.25s ease;
+  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
@@ -977,14 +1098,10 @@ input[type="email"]::placeholder {
   gap: 60rem;
 }
 
-.M_Footer-text-wrapper {
+.M_Footer-Subscribe {
   display: flex;
   flex-direction: column;
-  gap: 40rem;
-}
-
-.M_Social-Network {
-  cursor: pointer;
+  gap: 30rem;
 }
 
 .M_Footer-Section {
@@ -992,22 +1109,90 @@ input[type="email"]::placeholder {
   gap: 40rem;
 }
 
-.M_Footer-Section-Divisions {
+.M_Footer-Column {
   display: flex;
   flex-direction: column;
   gap: 10rem;
 }
 
-.M_Footer-Section-Author {
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-}
-
-.M_Footer-Section-DivisionsList {
+.M_Footer-List {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+/* ___________________interactive.html___________________ */
+.M_TestCardTags {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+.M_TestCardDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.M_LearnMoreCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem;
+  padding-bottom: 20rem;
+  gap: 20rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.M_LearnMoreCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+/* ___________________main_ForestExam.html___________________ */
+.M_HeroContentTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+/* ___________________test_ForestExam.html___________________ */
+
+.M_Progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}
+
+.M_AnswerCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20rem;
+  gap: 20rem;
+  width: 670rem;
+  min-height: 133rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+  border: none;
+  text-align: start;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.M_AnswerCard.is-selected {
+  background-color: var(--color-card-accent);
+}
+
+.M_AnswerCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_AnswerHeader {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
 }
 
 /* ___________________index.html___________________ */
@@ -1227,11 +1412,6 @@ input[type="email"]::placeholder {
   background-image: url(5055e1f85690a3a52b9f.webp);
 }
 
-.M_TagItem-Card {
-  position: relative;
-  margin-left: -340rem;
-}
-
 .M_Section_Dzen-Content {
   display: flex;
   align-items: center;
@@ -1329,19 +1509,6 @@ input[type="email"]::placeholder {
   background-color: var(--color-tag);
 }
 
-.M_Articles-CardMedia {
-  display: flex;
-  justify-content: end;
-  padding: 10rem;
-  width: 414rem;
-  min-height: 173rem;
-  border-radius: 10rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: none;
-}
-
 .M_Articles-ticks.visible {
   background-image: url(9ed292b6284bd5d06bff.webp);
 }
@@ -1379,7 +1546,7 @@ input[type="email"]::placeholder {
   background-image: url(89a196be479b82afb54c.webp);
 }
 
-.M_TagItem-Article {
+.M_TagItem--active {
   background-color: var(--color-tag);
 }
 
@@ -1412,164 +1579,6 @@ input[type="email"]::placeholder {
   min-height: 50rem;
   border: none;
   border-radius: 71rem;
-}
-
-/* ___________________interactive.html___________________ */
-
-.M_TestCard_ContentTags {
-  display: flex;
-  justify-content: space-between;
-}
-
-.M_TestCard_Discription {
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-}
-
-.M_HeroTest_tags {
-  display: flex;
-  gap: 10rem;
-}
-
-.M_HeroTest_Content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10rem;
-  width: 450rem;
-  text-align: center;
-}
-
-.M_LearnCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10rem 10rem 20rem;
-  gap: 20rem;
-  text-decoration: none;
-  background-color: var(--color-card);
-  border-radius: 15rem;
-}
-
-.M_LearnCard:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-.M_LearnCard_InWork {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10rem 10rem 20rem;
-  gap: 20rem;
-  text-decoration: none;
-  background-color: var(--color-card);
-  border-radius: 15rem;
-}
-
-.M_LearnCard-imageWrapper {
-  justify-content: center;
-  align-items: start;
-  width: 300rem;
-  min-height: 206rem;
-}
-
-.M_Articles-CardMedia-trail {
-  background-image: url(a9280f077922aa9e78cd.webp);
-}
-
-.M_Articles-CardMedia-fox {
-  background-image: url(8b3a524c406e9d9834bc.webp);
-}
-
-.M_Articles-CardMedia-biotopes {
-  background-image: url(51652ac5da5f2f57e7ff.webp);
-}
-
-/* ___________________main_test_mushroom___________________ */
-.M_HeroContent-main-test {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 100rem;
-}
-
-.M_HeroContent-test_discription {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-}
-
-/* ___________________test_mushroom.html___________________ */
-.M_Answers {
-  display: flex;
-  gap: 30rem;
-}
-
-.M_TestHeader {
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-}
-
-.M_AnswerCard {
-  position: relative;
-  display: grid;
-  grid-template-areas: "stack";
-  width: 350rem;
-  height: 420rem;
-  padding: 0;
-  border: none;
-  background: transparent;
-  border-radius: 15rem;
-  overflow: hidden;
-  cursor: pointer;
-  box-sizing: border-box;
-  appearance: none;
-  -webkit-appearance: none;
-}
-
-.M_AnswerCard > * {
-  grid-area: stack;
-}
-
-.M_AnswerCard::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 1.5rem solid transparent;
-  border-radius: 15rem;
-  box-sizing: border-box;
-  pointer-events: none;
-  z-index: 3;
-}
-
-.M_AnswerCard.is-selected::after {
-  border-color: var(--color-text);
-}
-
-.M_TagIcon-Test {
-  position: relative;
-  justify-self: start;
-  align-self: start;
-  margin: 20rem;
-  z-index: 2;
-}
-
-.M_TagIcon-Test {
-  position: relative;
-  justify-self: start;
-  align-self: start;
-  margin: 20rem;
-  z-index: 2;
-}
-
-.M_Progress {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30rem;
 }
 
 /* ___________________results_test_mushrooms.html___________________ */
@@ -1612,32 +1621,9 @@ input[type="email"]::placeholder {
 }
 
 /* ___________________test1_questions.html___________________ */
-.M_Test-ExamQuestion {
-  display: flex;
-  flex-direction: column;
-  padding: 20rem;
-  gap: 20rem;
-  width: 665rem;
-  min-height: 133rem;
-  background-color: var(--color-card);
-  border-radius: 15rem;
-  border: none;
-  text-align: start;
-  cursor: pointer;
-}
 
 .M_Test-ExamQuestion:hover {
   background-color: rgb(19, 53, 36, 0.65);
-}
-
-.M_Test-ExamQuestion.is-selected {
-  background-color: var(--color-card-accent);
-}
-
-.M_Test-Exam_Title {
-  display: flex;
-  align-items: center;
-  gap: 15rem;
 }
 
 /* ___________________result_test_exam.html___________________ */
@@ -2237,39 +2223,123 @@ input[type="email"]::placeholder {
   gap: 40rem;
 }
 
+/* Общие стили */
 .O_Header {
   display: flex;
   flex-direction: column;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50rem 40rem;
-}
-
-.O_Navigation {
-  display: flex;
-  justify-content: space-between;
-}
-
-.O_Main {
-  display: flex;
-  flex-direction: column;
-  padding: 120rem 40rem;
-  gap: 120rem;
+  padding: 40rem;
 }
 
 .O_Footer {
   display: flex;
   justify-content: space-between;
-  padding: 50rem 40rem;
+  padding: 40rem;
   width: 100%;
   min-height: 305rem;
   background-color: var(--color-surface);
 }
 
+/* ___________________interactive.html___________________ */
+.O_HeaderInteractive {
+  gap: 180rem;
+  background-image: url(3787ea562b0e23b66b2f.webp);
+  min-height: 625rem;
+}
+
+.O_SectionTests {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40rem;
+  gap: 20rem;
+}
+
+.O_TestCard {
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
+  width: 670rem;
+  min-height: 210rem;
+  border-radius: 25rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.O_TestCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.O_TestBanner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50rem;
+  padding-top: 70rem;
+  width: 100%;
+  min-height: 425rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-surface);
+  text-decoration: none;
+}
+.O_TestMushrooms {
+  background-image: url(0276aeac665a153e2594.webp);
+}
+.O_TestWhatToTake {
+  background-image: url(06da3e62b83b7688711d.webp);
+}
+.O_TestWhereToGo {
+  background-image: url(c258035e865daba5f59f.webp);
+}
+.O_TestMushrooms h2 {
+  padding-top: 10rem;
+}
+
+.O_LearnMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+/* ___________________main_ForestExam.html___________________ */
+.O_HeaderForestExam {
+  gap: 250rem;
+  background-image: url(119542105ff29f2f8cc0.webp);
+  min-height: 100vh;
+}
+
+/* ___________________test_ForestExam.html___________________ */
+
+.O_TestPage {
+  display: flex;
+  flex-direction: column;
+  padding: 100rem 40rem;
+  align-items: center;
+  text-align: center;
+  gap: 100rem;
+}
+
+.O_TestContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40rem;
+}
+
+.O_QuestionList {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+}
+
 /* ___________________index.html___________________ */
-.O_Header-main {
-  gap: 220rem;
+.O_HeaderMain {
+  gap: 190rem;
   background-image: url(473f1901cb630a9aed33.webp);
   min-height: 807rem;
 }
@@ -2402,69 +2472,6 @@ input[type="email"]::placeholder {
   gap: 30rem;
 }
 
-.O_Test {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  text-decoration: none;
-}
-
-.O_Test_Var {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  text-decoration: none;
-  background-color: var(--color-card);
-}
-
-.O_Test_Var:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-.O_TestExam:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-.O_TestAttentiveness:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-.O_TestExam {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  display: flex;
-  gap: 10rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-  text-decoration: none;
-}
-
-.O_TestCardList_Content {
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-  width: 100%;
-}
-
-.O_TestAttentiveness {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  display: flex;
-  gap: 10rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-  text-decoration: none;
-}
-
 .O_Section_Dzen {
   display: flex;
   flex-direction: column;
@@ -2536,87 +2543,10 @@ input[type="email"]::placeholder {
   background-color: var(--color-card);
 }
 
-.O_Articles-Card:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-/* ___________________interactive.html___________________ */
-.O_Header-Interactive {
-  gap: 200rem;
-  background-image: url(3787ea562b0e23b66b2f.webp);
-  min-height: 695rem;
-}
-
-.O_Main-Interactive {
-  padding: 120rem 0;
-}
-
-.O_Section-Tests {
-  display: flex;
-  padding: 0 40rem;
-  gap: 30rem;
-}
-
-.O_TestCard {
-  display: flex;
-  gap: 10rem;
-  padding: 10rem;
-  width: 665rem;
-  min-height: 210rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-  text-decoration: none;
-}
-
-.O_TestCard:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-.O_TestCard_Content {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-  width: 100%;
-}
-
-.O_HeroTest {
-  display: flex;
-  flex-direction: column;
-  gap: 80rem;
-  padding: 20rem 0;
-  width: 100%;
-  min-height: 412rem;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(402f07cf69f659f1292f.webp);
-  background-color: var(--color-surface);
-}
-
-.O_LearnMore {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40rem;
-}
-
-.O_LearnMore-grid {
-  display: flex;
-  gap: 30rem;
-}
-
 /* ___________________main_test_mushroom.html___________________ */
 .O_Header-main-test {
   gap: 250rem;
   background-image: url(5e06a1b006424dcc5ff5.webp);
-  min-height: 100vh;
-}
-
-/* ___________________main_test1_questions.html___________________ */
-.O_Header-test1 {
-  gap: 250rem;
-  background-image: url(e715960cb1babfc1894f.webp);
   min-height: 100vh;
 }
 
@@ -2625,20 +2555,6 @@ input[type="email"]::placeholder {
   gap: 250rem;
   background-image: url(6224009b594bcc859ce5.webp);
   min-height: 100vh;
-}
-
-/* ___________________test_mushroom.html___________________ */
-.O_Header-test-mushroom {
-  gap: 90rem;
-}
-
-.O_Test-Mushrooms {
-  display: flex;
-  flex-direction: column;
-  padding: 70rem 0;
-  align-items: center;
-  text-align: center;
-  gap: 60rem;
 }
 
 /* ___________________results_test_mushrooms.html___________________ */
@@ -2897,6 +2813,51 @@ input[type="email"]::placeholder {
   background-image: url(f485fa1cf0d80df66a0d.webp);
 }
 
+/* Общие стили */
+.W_Search {
+  display: none;
+  position: relative;
+}
+
+.W_Search.is-open {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+/* ___________________interactive.html___________________ */
+.W_TestCardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40rem;
+  width: 100%;
+}
+
+.W_LearnMoreCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_ArticleImage {
+  display: flex;
+  justify-content: center;
+  padding: 10rem;
+  width: 240rem;
+  min-height: 146rem;
+  border-radius: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/stub.png);
+}
+
+/* ___________________interactive.html___________________ */
+.T_MainInteractive {
+  display: flex;
+  flex-direction: column;
+  gap: 120rem;
+  padding: 120rem 0;
+}
 
 @media screen and (max-width: 440px) {
   html {

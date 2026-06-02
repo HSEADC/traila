@@ -61,9 +61,9 @@ html {
 }
 
 input[type="email"] {
-  padding: 8rem 25rem;
   width: 400rem;
   height: 50rem;
+  padding: 8rem 25rem;
   border-radius: 64rem;
   border: 1.2rem solid var(--color-text);
   background-color: transparent;
@@ -72,7 +72,13 @@ input[type="email"] {
   color: var(--color-text);
   outline: none;
   font-size: 18rem;
+  transition: background-color 0.2s ease;
 }
+
+input[type="email"]:hover {
+  background-color: var(--color-card);
+}
+
 input[type="email"]::placeholder {
   font-family: var(--font-family);
   font-weight: var(--font-weight-regular);
@@ -93,6 +99,10 @@ input[type="email"]::placeholder {
   border: 1.2rem solid var(--color-text);
   background-color: transparent;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#my-form-button:hover {
+  background-color: var(--color-card);
 }
 
 #my-form-status {

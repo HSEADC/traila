@@ -2,18 +2,17 @@
 .A_Heading-H1,
 .A_Heading-H2,
 .A_Heading-H2-medium,
-.A_Heading-H2-article,
 .A_Heading-H3,
 .A_Heading-H4,
-.A_Heading-H4-bold,
 .A_Heading-H5,
 .A_Paragraph,
-.A_Paragraph_Secondary,
-.A_Navigation-Text,
+.A_ParagraphVar,
+.A_AnswerDescription,
+.A_QuestionText,
+.A_NavigationText,
+.A_ButtonText,
 .A_Tag-Text,
-.A_Heading-H5-Secondary,
-.A_Heading-H5-bold,
-.A_Paragraph_transparent {
+.A_ResultTitle {
   font-family: var(--font-family);
   color: var(--color-text);
 }
@@ -24,16 +23,13 @@
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
 }
-
-.A_Heading-H4-bold,
-.A_Heading-H5-bold {
+.A_ResultTitle {
   font-weight: var(--font-weight-bold);
 }
 
 /* Medium */
 .A_Heading-H3,
 .A_Heading-H5,
-.A_Heading-H2-article,
 .A_Heading-H2-medium {
   font-weight: var(--font-weight-medium);
 }
@@ -41,11 +37,12 @@
 /* Regular */
 .A_Heading-H4,
 .A_Paragraph,
-.A_Paragraph_Secondary,
-.A_Navigation-Text,
-.A_Tag-Text,
-.A_Heading-H5-Secondary,
-.A_Paragraph_transparent {
+.A_ParagraphVar,
+.A_AnswerDescription,
+.A_QuestionText,
+.A_NavigationText,
+.A_ButtonText,
+.A_Tag-Text {
   font-weight: var(--font-weight-regular);
 }
 
@@ -54,50 +51,40 @@
   font-size: 50rem;
 }
 .A_Heading-H2,
-.A_Heading-H2-article,
 .A_Heading-H2-medium {
   font-size: 36rem;
 }
+
 .A_Heading-H3 {
   font-size: 28rem;
   line-height: 1.3;
 }
-.A_Heading-H4-bold,
+
 .A_Heading-H4 {
   font-size: 24rem;
 }
 .A_Heading-H5,
-.A_Heading-H5-bold,
-.A_Heading-H5-Secondary {
+.A_ResultTitle {
   font-size: 20rem;
-}
-
-.A_Heading-H5-Secondary,
-.A_Heading-H5 {
   line-height: 1.5;
 }
-.A_Paragraph {
+
+.A_Paragraph,
+.A_AnswerDescription {
   font-size: 20rem;
   line-height: 1.5;
   text-decoration: none;
 }
 
-.A_Paragraph_transparent,
-.A_Paragraph_Secondary {
+.A_ParagraphVar,
+.A_QuestionText {
   font-size: 16rem;
   line-height: 1.5;
 }
 
-.A_Paragraph_transparent {
-  opacity: 50%;
-}
-
-.A_Navigation-Text {
+.A_NavigationText,
+.A_ButtonText {
   font-size: 18rem;
-  text-decoration: none;
-}
-
-.A_Link {
   text-decoration: none;
 }
 
@@ -105,92 +92,207 @@
   font-size: 14rem;
 }
 
-.A_Navigation-TextDark {
-  color: var(--color-card);
+.A_AnswerDescription,
+.A_QuestionText {
+  opacity: 50%;
 }
 
-.A_Button {
-  background-color: var(--color-button);
-  transition: background-color 0.25s ease;
-  cursor: pointer;
-}
-
-.A_Button-Arrow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 70rem;
-  width: 267rem;
-  min-height: 50rem;
-  border: none;
-  border-radius: 71rem;
-}
-
-.A_ButtonImg {
-  display: block;
-  width: 44rem;
-  height: auto;
-}
-
-.A_Button:hover {
-  background-color: var(--color-text);
-}
-
-.A_InnerCircle {
+.A_Logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 35rem;
   height: 35rem;
   border-radius: 50%;
-  background-color: var(--color-card-accent);
+  text-decoration: none;
+  background-color: var(--color-surface);
+  transition: background-color 0.2s ease;
 }
 
-.A_LogoImage {
-  display: block;
-  width: 19.79rem;
-  height: auto;
+.A_Logo:hover {
+  background-color: var(--color-card);
 }
 
-.A_SearchIcon {
-  display: block;
-  width: 16rem;
-  height: auto;
-}
-
-.A_NavigationLink {
+.A_Search {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8rem 15rem;
-  border-radius: 20rem;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  text-decoration: none;
+  border: none;
+  background-color: var(--color-surface);
+  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
-.A_NavigationLink:hover {
-  background-color: var(--color-card-accent);
+.A_Search:hover {
+  background-color: var(--color-card);
 }
 
-.A_NavigationLink-Acrtive {
-  background-color: var(--color-card-accent);
+.A_Search.is-hidden {
+  display: none;
+}
+
+.A_SearchInput {
+  width: 152rem;
+  background-color: var(--color-surface);
+  border: none;
+}
+
+.A_SearchInput:focus {
+  outline: none;
+}
+
+.A_SearchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30rem;
+  min-height: 30rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-surface);
+  cursor: pointer;
+}
+
+.A_SearchButton:hover {
+  background-color: var(--color-card);
 }
 
 .A_Tag {
   padding: 15rem 25rem;
   border-radius: 64rem;
-  border: 1.2rem solid var(--color-text);
+  border: 1.5rem solid var(--color-text);
 }
 
-.A_TagIcon-Image {
-  display: block;
-  width: 28rem;
-  height: auto;
+.A_Link {
+  text-decoration: none;
 }
 
-.A_TagIcon-Social-Network {
-  display: block;
-  width: 38rem;
-  height: auto;
+.A_ButtonText {
+  color: var(--color-card);
+}
+
+.A_Button {
+  background-color: var(--color-button);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.A_Button:hover {
+  background-color: var(--color-text);
+}
+
+.A_Social-Network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  min-height: 50rem;
+  border-radius: 50%;
+  border: 1.5rem solid var(--color-text);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.A_Social-Network:hover {
+  background-color: var(--color-card);
+}
+
+/* ___________________interactive.html___________________ */
+.A_TestCard_image-iphone {
+  display: none;
+}
+
+.A_TestCardButton {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.A_TestButton {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: none;
+}
+
+/* ___________________main_ForestExam.html___________________ */
+
+.A_ButtonTest {
+  display: flex;
+  align-items: center;
+  padding-left: 70rem;
+  gap: 40rem;
+  border-radius: 70rem;
+  border: none;
+  min-height: 50rem;
+}
+
+/* ___________________test_ForestExam.html___________________ */
+
+.A_ProgressStep {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  padding: 0;
+  border: 1.5rem solid var(--color-text);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.A_ProgressStep.is-active {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+.A_ProgressStep::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 32rem;
+  height: 1.5rem;
+  background: var(--color-text);
+  transform: translateY(-50%);
+}
+
+.A_ProgressStep:last-child::after {
+  display: none;
+}
+
+.A_ProgressStep.is-completed {
+  background: var(--color-text);
+  color: var(--color-card);
+}
+
+/* ___________________result_ForestExam.html___________________ */
+.A_ResultPercent {
+  grid-area: diagram;
+  align-self: center;
+}
+
+.A_ButtonTryAgain {
+  display: flex;
+  align-items: center;
+  padding-left: 40rem;
+  gap: 10rem;
+  border-radius: 70rem;
+  border: none;
+  min-height: 50rem;
 }
 
 /* ___________________index.html___________________ */
@@ -325,16 +427,6 @@
   height: auto;
 }
 
-.A_TagItem-Image {
-  display: block;
-  width: 19rem;
-  height: auto;
-}
-
-.A_TagItem-Image-Fire {
-  width: 16rem;
-}
-
 .A_Tag-TextDownload {
   color: var(--color-card);
 }
@@ -366,191 +458,6 @@
   height: auto;
 }
 
-/* ___________________interactive.html___________________ */
-.A_TestCard_image {
-  display: block;
-  width: 300rem;
-  height: auto;
-}
-.A_TestCard_image-iphone {
-  display: none;
-}
-.A_TestCard_ContentButton {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  width: 30rem;
-  min-height: 30rem;
-  border-radius: 50%;
-  border: none;
-}
-
-.A_TestCard_ContentImage {
-  display: block;
-  width: 8rem;
-  height: auto;
-}
-
-/* ___________________test_mushroom.html___________________ */
-
-.A_AnswerImage {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.A_ProgressStep {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
-  height: 40rem;
-  padding: 0;
-  border: 1.5rem solid var(--color-text);
-  border-radius: 50%;
-  background: transparent;
-  color: var(--color-text);
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.A_ProgressStep.is-active {
-  background: var(--color-text);
-  color: var(--color-card);
-}
-
-.A_ProgressStep::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 32rem;
-  height: 1.5rem;
-  background: var(--color-text);
-  transform: translateY(-50%);
-}
-
-.A_ProgressStep:last-child::after {
-  display: none;
-}
-
-.A_ProgressStep.is-completed {
-  background: var(--color-text);
-  color: var(--color-card);
-}
-
-/* ___________________results_test_mushrooms.html___________________ */
-.A_ResultDiagramImage {
-  display: block;
-  width: 215rem;
-  height: auto;
-  grid-area: diagram;
-  align-self: start;
-}
-
-.A_ResultDiagramText {
-  grid-area: diagram;
-  align-self: center;
-}
-
-.A_Button-TryAgain {
-  padding-left: 38rem;
-}
-
-.A_CorrectAnswerImage {
-  display: block;
-  width: 138rem;
-  height: auto;
-}
-
-/* ___________________test1_questions.html___________________ */
-.A_Test-ExamQuestionIcon {
-  display: block;
-  width: 20rem;
-  height: auto;
-}
-/* ___________________main_test_mushroom.html___________________ */
-.A_ForestConditions-img {
-  display: block;
-  width: 41rem;
-  height: auto;
-}
-
-.A_ForestConditions-imgSign {
-  display: block;
-  width: 11rem;
-  height: auto;
-}
-
-.A_ForestConditions-Tag {
-  padding: 5rem 25rem;
-  border-radius: 64rem;
-  border: 1.2rem solid var(--color-text);
-}
-.A_ForestConditions-Tag:hover {
-  background-color: var(--color-text);
-  color: var(--color-card);
-  cursor: pointer;
-}
-.A_ForestConditions-Tag-active {
-  background-color: var(--color-text);
-  color: var(--color-card);
-}
-
-.A_ForestConditions-imgVar {
-  display: block;
-  width: 25rem;
-  height: auto;
-}
-
-.A_MonthRecommendation-data {
-  padding-top: 36rem;
-}
-.A_ForestConditionsVar {
-  display: block;
-  width: 18rem;
-  height: auto;
-}
-
-.A_Tag-Text-vertically {
-  padding-left: 18rem;
-  padding-top: 10rem;
-}
-.A_Tag-Text-verticallyVar {
-  padding-left: 17rem;
-  padding-top: 45rem;
-}
-.A_Tag-Text-verticallyVarBad {
-  padding-left: 25rem;
-  padding-top: 45rem;
-}
-
-.A_Tag-Text-ForestConditions {
-  padding-top: 20rem;
-}
-
-.A_MonthRecommendation-dataVar {
-  padding-top: 50rem;
-}
-.A_TagIcon-ImageVar {
-  display: block;
-  width: 16rem;
-  height: auto;
-}
-
-.A_TagIcon-ImageWidth {
-  display: block;
-  width: 28rem;
-  height: auto;
-}
-
-.A_ForestProducts-Card-img {
-  display: block;
-  width: 188rem;
-  height: auto;
-}
 /* ___________________article_name.html___________________ */
 .A_Link-Download {
   align-self: center;

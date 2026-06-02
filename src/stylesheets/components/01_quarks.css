@@ -1,1 +1,91 @@
+/* Общие стили */
+.Q_LogoImage {
+  display: block;
+  width: 19.03rem;
+  height: auto;
+}
+
+.Q_SearchIcon {
+  display: block;
+  width: 17rem;
+  height: auto;
+}
+.Q_IconSearchClose {
+  display: block;
+  width: 30rem;
+  height: auto;
+}
+
+.Q_SearchArrow {
+  width: 30rem;
+  height: 30rem;
+  background-image: url("../../images/icons/Q_Icon_Arrow-White.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Q_Highlight {
+  color: var(--color-text);
+}
+
+.Q_TagIconImg {
+  display: block;
+  width: 30rem;
+  height: 30rem;
+}
+
+.Q_TagIcon-Social-Network {
+  display: block;
+  width: 38rem;
+  height: auto;
+}
+
+.Q_ButtonIcon {
+  display: block;
+  width: 44rem;
+  height: auto;
+}
 /* ___________________index.html___________________ */
+
+/* ___________________interactive.html___________________ */
+.Q_TestCardImg {
+  display: block;
+  width: 300rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_TagItemImg {
+  display: block;
+  width: 19rem;
+  height: auto;
+}
+
+.Q_ArrowIcon {
+  display: block;
+  width: 30rem;
+  height: auto;
+}
+
+.Q_ArrowIconSecondary {
+  display: block;
+  width: 50rem;
+  height: auto;
+}
+
+/* ___________________test_ForestExam.html___________________ */
+.Q_AnswerIcon {
+  display: block;
+  width: 27rem;
+  height: auto;
+}
+
+/* ___________________result_ForestExam.html___________________ */
+.Q_ResultChartImg {
+  display: block;
+  width: 215rem;
+  height: auto;
+  grid-area: diagram;
+  align-self: start;
+}

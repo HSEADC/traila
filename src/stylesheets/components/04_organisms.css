@@ -1,36 +1,135 @@
+/* Общие стили */
 .O_Header {
   display: flex;
   flex-direction: column;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50rem 40rem;
-}
-
-.O_Navigation {
-  display: flex;
-  justify-content: space-between;
-}
-
-.O_Main {
-  display: flex;
-  flex-direction: column;
-  padding: 120rem 40rem;
-  gap: 120rem;
+  padding: 40rem;
 }
 
 .O_Footer {
   display: flex;
   justify-content: space-between;
-  padding: 50rem 40rem;
+  padding: 40rem;
   width: 100%;
   min-height: 305rem;
   background-color: var(--color-surface);
 }
 
+/* ___________________interactive.html___________________ */
+.O_HeaderInteractive {
+  gap: 180rem;
+  background-image: url("/src/images/interactive-bg.webp");
+  min-height: 625rem;
+}
+
+.O_SectionTests {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40rem;
+  gap: 20rem;
+}
+
+.O_TestCard {
+  display: flex;
+  gap: 10rem;
+  padding: 10rem;
+  width: 670rem;
+  min-height: 210rem;
+  border-radius: 25rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.O_TestCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.O_TestBanner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50rem;
+  padding-top: 70rem;
+  width: 100%;
+  min-height: 425rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-surface);
+  text-decoration: none;
+}
+.O_TestMushrooms {
+  background-image: url("/src/images/Q_TestMushrooms.webp");
+}
+.O_TestWhatToTake {
+  background-image: url("/src/images/Q_TestWhatToTake.webp");
+}
+.O_TestWhereToGo {
+  background-image: url("/src/images/Q_TestWhereToGo.webp");
+}
+.O_TestMushrooms h2 {
+  padding-top: 10rem;
+}
+
+.O_LearnMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+/* ___________________main_ForestExam.html___________________ */
+.O_HeaderForestExam {
+  gap: 250rem;
+  background-image: url("../../images/Q_ForestExamBG.webp");
+  min-height: 100vh;
+}
+
+/* ___________________test_ForestExam.html___________________ */
+
+.O_TestPage {
+  display: flex;
+  flex-direction: column;
+  padding: 100rem 40rem;
+  align-items: center;
+  text-align: center;
+  gap: 100rem;
+}
+
+.O_TestContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40rem;
+}
+
+.O_QuestionList {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+}
+
+/* ___________________result_ForestExam.html___________________ */
+.O_ResultSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40rem;
+}
+
+.O_CorrectAnswers {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+}
+
 /* ___________________index.html___________________ */
-.O_Header-main {
-  gap: 220rem;
+.O_HeaderMain {
+  gap: 190rem;
   background-image: url("/src/images/hero-bg.webp");
   min-height: 807rem;
 }
@@ -163,69 +262,6 @@
   gap: 30rem;
 }
 
-.O_Test {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  text-decoration: none;
-}
-
-.O_Test_Var {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  text-decoration: none;
-  background-color: var(--color-card);
-}
-
-.O_Test_Var:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-.O_TestExam:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-.O_TestAttentiveness:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-.O_TestExam {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  display: flex;
-  gap: 10rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-  text-decoration: none;
-}
-
-.O_TestCardList_Content {
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-  width: 100%;
-}
-
-.O_TestAttentiveness {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  display: flex;
-  gap: 10rem;
-  padding: 10rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-  text-decoration: none;
-}
-
 .O_Section_Dzen {
   display: flex;
   flex-direction: column;
@@ -297,87 +333,10 @@
   background-color: var(--color-card);
 }
 
-.O_Articles-Card:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-/* ___________________interactive.html___________________ */
-.O_Header-Interactive {
-  gap: 200rem;
-  background-image: url("/src/images/interactive-bg.webp");
-  min-height: 695rem;
-}
-
-.O_Main-Interactive {
-  padding: 120rem 0;
-}
-
-.O_Section-Tests {
-  display: flex;
-  padding: 0 40rem;
-  gap: 30rem;
-}
-
-.O_TestCard {
-  display: flex;
-  gap: 10rem;
-  padding: 10rem;
-  width: 665rem;
-  min-height: 210rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-  text-decoration: none;
-}
-
-.O_TestCard:hover {
-  background-color: rgb(19, 53, 36, 0.65);
-}
-
-.O_TestCard_Content {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-  width: 100%;
-}
-
-.O_HeroTest {
-  display: flex;
-  flex-direction: column;
-  gap: 80rem;
-  padding: 20rem 0;
-  width: 100%;
-  min-height: 412rem;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/A_Mushrooms.webp");
-  background-color: var(--color-surface);
-}
-
-.O_LearnMore {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40rem;
-}
-
-.O_LearnMore-grid {
-  display: flex;
-  gap: 30rem;
-}
-
 /* ___________________main_test_mushroom.html___________________ */
 .O_Header-main-test {
   gap: 250rem;
   background-image: url("/src/images/test_mushroom-bg.webp");
-  min-height: 100vh;
-}
-
-/* ___________________main_test1_questions.html___________________ */
-.O_Header-test1 {
-  gap: 250rem;
-  background-image: url("/src/images/test1-bg.webp");
   min-height: 100vh;
 }
 
@@ -386,53 +345,6 @@
   gap: 250rem;
   background-image: url("/src/images/test2-bg.webp");
   min-height: 100vh;
-}
-
-/* ___________________test_mushroom.html___________________ */
-.O_Header-test-mushroom {
-  gap: 90rem;
-}
-
-.O_Test-Mushrooms {
-  display: flex;
-  flex-direction: column;
-  padding: 70rem 0;
-  align-items: center;
-  text-align: center;
-  gap: 60rem;
-}
-
-/* ___________________results_test_mushrooms.html___________________ */
-.O_MainResult {
-  display: flex;
-  flex-direction: column;
-  padding: 120rem 390rem;
-  gap: 120rem;
-}
-.O_ResultsTest {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 30rem;
-}
-
-.O_CorrectAnswersList {
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-}
-
-.O_CorrectAnswerCard {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 10rem;
-  gap: 10rem;
-  width: 100%;
-  min-height: 180rem;
-  background-color: var(--color-card);
-  border-radius: 15rem;
 }
 
 /* ___________________test1_questions.html___________________ */
