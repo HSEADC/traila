@@ -1568,10 +1568,12 @@ input[type="email"]::placeholder {
   align-items: start;
   gap: 35rem;
 }
+
 .M_Main_Article-Header-tegs {
   display: flex;
   gap: 10rem;
 }
+
 .M_Article-Info {
   display: flex;
   flex-direction: column;

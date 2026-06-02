@@ -82,6 +82,14 @@ module.exports = {
         },
       ],
     }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "../src/share/CNAME"),
+          to: path.resolve(__dirname, "../docs"),
+        },
+      ],
+    }),
   ],
   resolve: {
     fallback: {
