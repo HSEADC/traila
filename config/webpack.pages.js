@@ -64,6 +64,51 @@ const htmlPages = [
     "pages/interactive/result_CalmMovement.html",
     ["index", "allStyles", "searchVanilla", "result_tests"],
   ),
+  createPages(
+    "./src/pages/interactive/main_Route.html",
+    "pages/interactive/main_Route.html",
+    ["index", "allStyles", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/interactive/test_Route.html",
+    "pages/interactive/test_Route.html",
+    ["index", "allStyles", "searchVanilla", "test_Route", "tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/result_Route.html",
+    "pages/interactive/result_Route.html",
+    ["index", "allStyles", "searchVanilla", "result_tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/main_WhatToTake.html",
+    "pages/interactive/main_WhatToTake.html",
+    ["index", "allStyles", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/interactive/test_WhatToTake.html",
+    "pages/interactive/test_WhatToTake.html",
+    ["index", "allStyles", "searchVanilla", "test_WhatToTake", "tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/result_WhatToTake.html",
+    "pages/interactive/result_WhatToTake.html",
+    ["index", "allStyles", "searchVanilla", "result_tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/main_Observation.html",
+    "pages/interactive/main_Observation.html",
+    ["index", "allStyles", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/interactive/test_Observation.html",
+    "pages/interactive/test_Observation.html",
+    ["index", "allStyles", "searchVanilla", "test_Observation", "tests"],
+  ),
+  createPages(
+    "./src/pages/interactive/result_Observation.html",
+    "pages/interactive/result_Observation.html",
+    ["index", "allStyles", "searchVanilla", "result_tests"],
+  ),
   // после не правила
   // после не правила
   createPages("./src/404.html", "./404.html", ["index"]),

@@ -1975,19 +1975,37 @@ input[type="email"]::placeholder {
 /* ___________________main_Exams.html___________________ */
 .O_HeaderForestExam {
   gap: 250rem;
-  background-image: url(119542105ff29f2f8cc0.webp);
+  background-image: url(c2ab590c3e1ca1e3b00d.webp);
   min-height: 100vh;
 }
 
 .O_HeaderHelp {
   gap: 250rem;
-  background-image: url(a55e184907d7c7384919.webp);
+  background-image: url(aea3323566f757cf607d.webp);
   min-height: 100vh;
 }
 
 .O_CalmMovement {
   gap: 250rem;
-  background-image: url(810cd106400d6392b3c8.webp);
+  background-image: url(6287394defb1d31df7c7.webp);
+  min-height: 100vh;
+}
+
+.O_HeaderRoute {
+  gap: 250rem;
+  background-image: url(a1b64f2107430d18a484.webp);
+  min-height: 100vh;
+}
+
+.O_HeaderWhatToTake {
+  gap: 250rem;
+  background-image: url(f211a4069343f686994d.webp);
+  min-height: 100vh;
+}
+
+.O_HeaderObservation {
+  gap: 250rem;
+  background-image: url(9211712da5a556aa58b0.webp);
   min-height: 100vh;
 }
 

@@ -17,6 +17,9 @@ module.exports = {
     test_ForestExam: "./src/javascripts/test_ForestExam.js",
     test_Help: "./src/javascripts/test_Help.js",
     test_CalmMovement: "./src/javascripts/test_CalmMovement.js",
+    test_Route: "./src/javascripts/test_Route.js",
+    test_WhatToTake: "./src/javascripts/test_WhatToTake.js",
+    test_Observation: "./src/javascripts/test_Observation.js",
     // после не правила
     sectionArticles: "./src/javascripts/sectionArticles.js",
     // tests: "./src/javascripts/tests.js",

@@ -12,7 +12,7 @@ import iconChanterelle from "../images/icons/Q_Icon_Chanterelle.svg";
 import iconBerryVar from "../images/icons/Q_Icon_BerryVar.svg";
 import iconBody from "../images/icons/Q_Icon_Body.svg";
 
-import iconLeg from "../images/icons/Q_Icon_Knife.svg";
+import iconLeg from "../images/icons/Q_Icon_Leg.svg";
 
 import iconSneakers from "../images/icons/Q_Icon_Sneakers.svg";
 

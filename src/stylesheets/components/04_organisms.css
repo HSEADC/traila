@@ -100,6 +100,24 @@
   min-height: 100vh;
 }
 
+.O_HeaderRoute {
+  gap: 250rem;
+  background-image: url("../../images/Q_RouteBG.webp");
+  min-height: 100vh;
+}
+
+.O_HeaderWhatToTake {
+  gap: 250rem;
+  background-image: url("../../images/Q_WhatToTakeBG.webp");
+  min-height: 100vh;
+}
+
+.O_HeaderObservation {
+  gap: 250rem;
+  background-image: url("../../images/Q_ObservationBG.webp");
+  min-height: 100vh;
+}
+
 /* ___________________test_Exams.html___________________ */
 
 .O_TestPage {
