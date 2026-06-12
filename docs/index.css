@@ -1300,7 +1300,7 @@ input[type="email"]::placeholder {
   background-color: var(--color-card);
   cursor: pointer;
 }
-.ForestSetInfo .M_WhereToGoCard::after {
+.M_WhereToGoCard::after {
   content: "";
   position: absolute;
   inset: 0;

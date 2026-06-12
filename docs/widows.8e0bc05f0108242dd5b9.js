@@ -1,1 +1,0 @@
-document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll("p, h1, h2, h3, h4, h5, h6, span, a, button").forEach(function(n){n.innerHTML=n.innerHTML.replace(/(^|[\s>])([а-яё]{1,2})\s/gi,"$1$2&nbsp;")})});
