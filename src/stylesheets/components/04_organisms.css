@@ -64,13 +64,24 @@
 .O_TestMushrooms {
   background-image: url("/src/images/Q_TestMushrooms.webp");
 }
+
 .O_TestWhatToTake {
   background-image: url("/src/images/Q_TestWhatToTake.webp");
 }
+
 .O_TestWhereToGo {
   background-image: url("/src/images/Q_TestWhereToGo.webp");
 }
+
 .O_TestMushrooms h2 {
+  padding-top: 10rem;
+}
+
+.O_TestWhatToTake h2 {
+  padding-top: 10rem;
+}
+
+.O_TestWhereToGo h2 {
   padding-top: 10rem;
 }
 
@@ -118,6 +129,24 @@
   min-height: 100vh;
 }
 
+.O_HeaderMushrooms {
+  gap: 250rem;
+  background-image: url("../../images/Q_MushroomsBG.webp");
+  min-height: 100vh;
+}
+
+.O_HeaderWhereToGo {
+  gap: 250rem;
+  background-image: url("../../images/Q_WhereToGoBG.webp");
+  min-height: 100vh;
+}
+
+.O_HeaderForestSet {
+  gap: 250rem;
+  background-image: url("../../images/Q_ForestSetBG.webp");
+  min-height: 100vh;
+}
+
 /* ___________________test_Exams.html___________________ */
 
 .O_TestPage {
@@ -133,6 +162,29 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 40rem;
+}
+
+.O_MushroomPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rem;
+  gap: 60rem;
+}
+
+.O_WhereToGoPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rem;
+  gap: 60rem;
+}
+
+.O_ForestSetPage {
+  display: flex;
+  align-items: center;
+  padding: 130rem 240rem;
   gap: 40rem;
 }
 

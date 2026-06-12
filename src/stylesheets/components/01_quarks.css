@@ -81,6 +81,28 @@
   height: auto;
 }
 
+.Q_MushroomImage {
+  display: block;
+  width: 350rem;
+  height: auto;
+  border-radius: 25rem;
+  grid-area: card;
+}
+
+.Q_WhereToGoImage {
+  display: block;
+  width: 330rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_ForestSetImage {
+  display: block;
+  width: 220rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
 /* ___________________result_Exams.html___________________ */
 .Q_ResultChartImg {
   display: block;
@@ -88,4 +110,19 @@
   height: auto;
   grid-area: diagram;
   align-self: start;
+}
+
+.Q_CorrectAnswerImage {
+  display: block;
+  width: 138rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_ForestSetAnswerImage {
+  display: block;
+  width: 155rem;
+  height: auto;
+  border-radius: 25rem;
+  border: 1.7rem solid var(--color-text);
 }

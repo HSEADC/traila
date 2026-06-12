@@ -20,6 +20,10 @@ module.exports = {
     test_Route: "./src/javascripts/test_Route.js",
     test_WhatToTake: "./src/javascripts/test_WhatToTake.js",
     test_Observation: "./src/javascripts/test_Observation.js",
+    test_Mushrooms: "./src/javascripts/test_Mushrooms.js",
+    test_WhereToGo: "./src/javascripts/test_WhereToGo.js",
+    test_ForestSet: "./src/javascripts/test_ForestSet.js",
+    widows: "./src/javascripts/widows.js",
     // после не правила
     sectionArticles: "./src/javascripts/sectionArticles.js",
     // tests: "./src/javascripts/tests.js",

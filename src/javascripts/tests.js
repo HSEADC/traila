@@ -50,7 +50,7 @@ function chooseAnswer(stages, config) {
 
       setTimeout(() => {
         updateStage(stages, config);
-      }, 1200);
+      }, 800);
     });
   });
 }

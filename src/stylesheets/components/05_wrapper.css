@@ -43,3 +43,39 @@
   gap: 20rem;
   flex-wrap: wrap;
 }
+
+.W_MushroomCards {
+  display: flex;
+  gap: 30rem;
+}
+
+.W_WhereToGoCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_ForestSetContent {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  width: 440rem;
+}
+
+.W_ForestSetCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30rem;
+  width: 480rem;
+}
+
+/* ___________________result_Exams.html___________________ */
+.W_ForestSetAnswerHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+
+.W_ForestSetAnswerList {
+  display: flex;
+  gap: 10rem;
+}

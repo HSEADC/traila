@@ -358,6 +358,28 @@ input[type="email"]::placeholder {
   height: auto;
 }
 
+.Q_MushroomImage {
+  display: block;
+  width: 350rem;
+  height: auto;
+  border-radius: 25rem;
+  grid-area: card;
+}
+
+.Q_WhereToGoImage {
+  display: block;
+  width: 330rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_ForestSetImage {
+  display: block;
+  width: 220rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
 /* ___________________result_Exams.html___________________ */
 .Q_ResultChartImg {
   display: block;
@@ -365,6 +387,21 @@ input[type="email"]::placeholder {
   height: auto;
   grid-area: diagram;
   align-self: start;
+}
+
+.Q_CorrectAnswerImage {
+  display: block;
+  width: 138rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_ForestSetAnswerImage {
+  display: block;
+  width: 155rem;
+  height: auto;
+  border-radius: 25rem;
+  border: 1.7rem solid var(--color-text);
 }
 
 /* Общие стили */
@@ -418,6 +455,7 @@ input[type="email"]::placeholder {
 /* Размеры */
 .A_Heading-H1 {
   font-size: 50rem;
+  line-height: 1.25;
 }
 .A_Heading-H2,
 .A_Heading-H2-medium {
@@ -533,7 +571,7 @@ input[type="email"]::placeholder {
 .A_Tag {
   padding: 15rem 25rem;
   border-radius: 64rem;
-  border: 1.5rem solid var(--color-text);
+  border: 1.7rem solid var(--color-text);
 }
 
 .A_Link {
@@ -561,13 +599,42 @@ input[type="email"]::placeholder {
   width: 50rem;
   min-height: 50rem;
   border-radius: 50%;
-  border: 1.5rem solid var(--color-text);
+  border: 1.7rem solid var(--color-text);
   transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
 .A_Social-Network:hover {
   background-color: var(--color-card);
+}
+
+.A_InfoTooltipIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background: var(--color-text);
+  font-size: 14rem;
+  font-family: var(--font-family);
+  color: var(--color-card);
+  font-weight: var(--font-weight-medium);
+}
+
+.A_InfoTooltipText {
+  position: absolute;
+  width: 150rem;
+  top: -10rem;
+  right: -10rem;
+  padding: 10rem 20rem;
+  border-radius: 25rem;
+  background: var(--color-text);
+  color: var(--color-card);
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
 }
 
 /* ___________________interactive.html___________________ */
@@ -615,7 +682,7 @@ input[type="email"]::placeholder {
   width: 40rem;
   height: 40rem;
   padding: 0;
-  border: 1.5rem solid var(--color-text);
+  border: 1.7rem solid var(--color-text);
   border-radius: 50%;
   background: transparent;
   color: var(--color-text);
@@ -646,6 +713,31 @@ input[type="email"]::placeholder {
 .A_ProgressStep.is-completed {
   background: var(--color-text);
   color: var(--color-card);
+}
+
+.A_ForestSetButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 70rem;
+  border: none;
+  width: 267rem;
+  min-height: 50rem;
+}
+
+.A_ForestSetTooltipText {
+  position: absolute;
+  width: 150rem;
+  top: -2rem;
+  right: -2rem;
+  padding: 10rem 20rem;
+  border-radius: 25rem;
+  background: var(--color-text);
+  color: var(--color-card);
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
 }
 
 /* ___________________result_Exams.html___________________ */
@@ -766,7 +858,7 @@ input[type="email"]::placeholder {
   background-color: transparent;
   width: 45rem;
   min-height: 45rem;
-  border: 1.5rem solid var(--color-text);
+  border: 1.7rem solid var(--color-text);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -1013,7 +1105,7 @@ input[type="email"]::placeholder {
   width: 50rem;
   min-height: 50rem;
   border-radius: 50%;
-  border: 1.5rem solid var(--color-text);
+  border: 1.7rem solid var(--color-text);
   flex: 0 0 50rem;
 }
 
@@ -1056,6 +1148,19 @@ input[type="email"]::placeholder {
   gap: 3rem;
 }
 
+.M_InfoTooltip {
+  position: absolute;
+  top: 20rem;
+  right: 20rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.M_InfoTooltip:hover .A_InfoTooltipText {
+  opacity: 1;
+  visibility: visible;
+}
 /* ___________________interactive.html___________________ */
 .M_TestCardTags {
   display: flex;
@@ -1132,6 +1237,123 @@ input[type="email"]::placeholder {
   gap: 15rem;
 }
 
+.M_MushroomPageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+}
+
+.M_WhereToGoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+}
+
+.M_MushroomCard {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "card";
+  width: 350rem;
+  min-height: 420rem;
+  border: none;
+  border-radius: 25rem;
+  padding: 0rem;
+  background-color: var(--color-card);
+  cursor: pointer;
+}
+
+.M_MushroomCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.7rem solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.M_MushroomCard.is-selected::after {
+  border-color: var(--color-text);
+}
+
+.M_MushroomIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: 1.7rem solid var(--color-text);
+  grid-area: card;
+  margin: 20rem;
+}
+
+.M_WhereToGoCard {
+  position: relative;
+  overflow: hidden;
+  width: 330rem;
+  min-height: 420rem;
+  border-radius: 25rem;
+  background-color: var(--color-card);
+  cursor: pointer;
+}
+.ForestSetInfo .M_WhereToGoCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.7rem solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.M_WhereToGoCard.is-selected::after {
+  border-color: var(--color-text);
+}
+
+.M_ForestSetInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.M_ForestSetCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220rem;
+  min-height: 220rem;
+  border-radius: 25rem;
+  border: 1.7rem solid var(--color-text);
+  cursor: pointer;
+}
+
+.M_ForestSetCard.is-selected,
+.M_ForestSetCard.is-selected:hover {
+  background-color: var(--color-card-accent);
+  border: none;
+}
+
+.M_ForestSetCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_ForestSetTooltip {
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.M_ForestSetTooltip:hover .A_ForestSetTooltipText {
+  opacity: 1;
+  visibility: visible;
+}
 /* ___________________result_Exams.html___________________ */
 .M_ResultCard {
   display: flex;
@@ -1168,7 +1390,7 @@ input[type="email"]::placeholder {
   width: 100%;
   min-height: 180rem;
   background-color: var(--color-card);
-  border-radius: 15rem;
+  border-radius: 25rem;
 }
 
 .M_CorrectAnswerContent {
@@ -1177,6 +1399,53 @@ input[type="email"]::placeholder {
   gap: 15rem;
 }
 
+.M_MushroomAnswerCard {
+  position: relative;
+  display: flex;
+  padding: 10rem;
+  gap: 10rem;
+  width: 100%;
+  min-height: 180rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+}
+
+.M_MushroomAnswerContent {
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.M_MushroomAnswerIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: 1.7rem solid var(--color-text);
+  right: 10rem;
+}
+
+.M_ForestSetAnswerCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 10rem;
+  gap: 20rem;
+  width: 100%;
+  min-height: 260rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+}
+
+.M_ForestSetAnswer {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  align-items: center;
+}
 /* ___________________index.html___________________ */
 .M_State {
   display: flex;
@@ -1955,13 +2224,24 @@ input[type="email"]::placeholder {
 .O_TestMushrooms {
   background-image: url(0276aeac665a153e2594.webp);
 }
+
 .O_TestWhatToTake {
   background-image: url(06da3e62b83b7688711d.webp);
 }
+
 .O_TestWhereToGo {
   background-image: url(c258035e865daba5f59f.webp);
 }
+
 .O_TestMushrooms h2 {
+  padding-top: 10rem;
+}
+
+.O_TestWhatToTake h2 {
+  padding-top: 10rem;
+}
+
+.O_TestWhereToGo h2 {
   padding-top: 10rem;
 }
 
@@ -2009,6 +2289,24 @@ input[type="email"]::placeholder {
   min-height: 100vh;
 }
 
+.O_HeaderMushrooms {
+  gap: 250rem;
+  background-image: url(a096687db25a787a8afa.webp);
+  min-height: 100vh;
+}
+
+.O_HeaderWhereToGo {
+  gap: 250rem;
+  background-image: url(00b07b9976ee5b2ba4f7.webp);
+  min-height: 100vh;
+}
+
+.O_HeaderForestSet {
+  gap: 250rem;
+  background-image: url(c362cd2ea5ef3e2bf58a.webp);
+  min-height: 100vh;
+}
+
 /* ___________________test_Exams.html___________________ */
 
 .O_TestPage {
@@ -2024,6 +2322,29 @@ input[type="email"]::placeholder {
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 40rem;
+}
+
+.O_MushroomPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rem;
+  gap: 60rem;
+}
+
+.O_WhereToGoPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rem;
+  gap: 60rem;
+}
+
+.O_ForestSetPage {
+  display: flex;
+  align-items: center;
+  padding: 130rem 240rem;
   gap: 40rem;
 }
 
@@ -2484,6 +2805,42 @@ input[type="email"]::placeholder {
   display: flex;
   gap: 20rem;
   flex-wrap: wrap;
+}
+
+.W_MushroomCards {
+  display: flex;
+  gap: 30rem;
+}
+
+.W_WhereToGoCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_ForestSetContent {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  width: 440rem;
+}
+
+.W_ForestSetCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30rem;
+  width: 480rem;
+}
+
+/* ___________________result_Exams.html___________________ */
+.W_ForestSetAnswerHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rem;
+}
+
+.W_ForestSetAnswerList {
+  display: flex;
+  gap: 10rem;
 }
 
 /* ___________________interactive.html___________________ */

@@ -104,7 +104,7 @@
   width: 50rem;
   min-height: 50rem;
   border-radius: 50%;
-  border: 1.5rem solid var(--color-text);
+  border: 1.7rem solid var(--color-text);
   flex: 0 0 50rem;
 }
 
@@ -147,6 +147,19 @@
   gap: 3rem;
 }
 
+.M_InfoTooltip {
+  position: absolute;
+  top: 20rem;
+  right: 20rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.M_InfoTooltip:hover .A_InfoTooltipText {
+  opacity: 1;
+  visibility: visible;
+}
 /* ___________________interactive.html___________________ */
 .M_TestCardTags {
   display: flex;
@@ -223,6 +236,123 @@
   gap: 15rem;
 }
 
+.M_MushroomPageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+}
+
+.M_WhereToGoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+}
+
+.M_MushroomCard {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "card";
+  width: 350rem;
+  min-height: 420rem;
+  border: none;
+  border-radius: 25rem;
+  padding: 0rem;
+  background-color: var(--color-card);
+  cursor: pointer;
+}
+
+.M_MushroomCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.7rem solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.M_MushroomCard.is-selected::after {
+  border-color: var(--color-text);
+}
+
+.M_MushroomIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: 1.7rem solid var(--color-text);
+  grid-area: card;
+  margin: 20rem;
+}
+
+.M_WhereToGoCard {
+  position: relative;
+  overflow: hidden;
+  width: 330rem;
+  min-height: 420rem;
+  border-radius: 25rem;
+  background-color: var(--color-card);
+  cursor: pointer;
+}
+.M_WhereToGoCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1.7rem solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.M_WhereToGoCard.is-selected::after {
+  border-color: var(--color-text);
+}
+
+.M_ForestSetInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.M_ForestSetCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220rem;
+  min-height: 220rem;
+  border-radius: 25rem;
+  border: 1.7rem solid var(--color-text);
+  cursor: pointer;
+}
+
+.M_ForestSetCard.is-selected,
+.M_ForestSetCard.is-selected:hover {
+  background-color: var(--color-card-accent);
+  border: none;
+}
+
+.M_ForestSetCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_ForestSetTooltip {
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.M_ForestSetTooltip:hover .A_ForestSetTooltipText {
+  opacity: 1;
+  visibility: visible;
+}
 /* ___________________result_Exams.html___________________ */
 .M_ResultCard {
   display: flex;
@@ -259,7 +389,7 @@
   width: 100%;
   min-height: 180rem;
   background-color: var(--color-card);
-  border-radius: 15rem;
+  border-radius: 25rem;
 }
 
 .M_CorrectAnswerContent {
@@ -268,6 +398,53 @@
   gap: 15rem;
 }
 
+.M_MushroomAnswerCard {
+  position: relative;
+  display: flex;
+  padding: 10rem;
+  gap: 10rem;
+  width: 100%;
+  min-height: 180rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+}
+
+.M_MushroomAnswerContent {
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.M_MushroomAnswerIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: 1.7rem solid var(--color-text);
+  right: 10rem;
+}
+
+.M_ForestSetAnswerCard {
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 10rem;
+  gap: 20rem;
+  width: 100%;
+  min-height: 260rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+}
+
+.M_ForestSetAnswer {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  align-items: center;
+}
 /* ___________________index.html___________________ */
 .M_State {
   display: flex;
