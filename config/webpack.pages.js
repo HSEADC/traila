@@ -184,6 +184,14 @@ const htmlPages = [
     "pages/interactive/result_ForestSet.html",
     ["index", "allStyles", "widows", "searchVanilla", "result_tests"],
   ),
+  createPages("./src/pages/calendar.html", "pages/calendar.html", [
+    "index",
+    "allStyles",
+    "widows",
+    "searchVanilla",
+    "calendardata",
+    "calendar",
+  ]),
   // после не правила
   // после не правила
   createPages("./src/404.html", "./404.html", ["index"]),
@@ -191,11 +199,6 @@ const htmlPages = [
     "index",
     "allStyles",
     "sectionArticles",
-  ]),
-
-  createPages("./src/pages/calendar.html", "pages/calendar.html", [
-    "index",
-    "allStyles",
   ]),
 
   createPages(

@@ -3,891 +3,915 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendar</title>
+
+    <title>Календарь — TRAILA</title>
+
     <link rel="icon" href="../images/Q_logo.ico" sizes="any" />
     <link rel="icon" href="../images/Q_logo.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="../images/Q_logo.png" />
+
     <meta
       name="description"
-      content="TRAILA — интерактивное медиа о безопасных и осознанных прогулках в лесу, которое помогает уверенно ориентироваться и действовать в природе."
+      content="TRAILA — интерактивное медиа о лесе, которое помогает исследовать природу спокойно, безопасно и осознанно."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta property="og:type" content="website" />
     <meta property="og:title" content="TRAILA" />
     <meta
       property="og:description"
-      content="TRAILA — интерактивное медиа о безопасных и осознанных прогулках в лесу, которое помогает уверенно ориентироваться и действовать в природе."
+      content="TRAILA — интерактивное медиа о лесе, которое помогает исследовать природу спокойно, безопасно и осознанно."
     />
-    <meta property="og:url" content="https://hseadc.github.io/STRATA/" />
+    <meta
+      property="og:url"
+      content="https://hseadc.github.io/traila/index.html"
+    />
     <meta
       property="og:image"
-      content="https://3.downloader.disk.yandex.ru/preview/997837a4e0394808d8ab35d43c6a394681fd6ffbcd3ac7145cbba802447c78b5/inf/w84pwgl-ht2Vw4ZyORpgVt43V_elukQY-T3f1rjlpvqFR85X3SkdZvMUPlW0fL2gx12zCrgfFOJvAD7ip1KPAQ%3D%3D?uid=526120246&filename=TRAILA.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477"
+      content="https://hseadc.github.io/traila/images/TRAILA.webp"
     />
+
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="TRAILA" />
     <meta
       name="twitter:description"
-      content="TRAILA — интерактивное медиа о безопасных и осознанных прогулках в лесу, которое помогает уверенно ориентироваться и действовать в природе."
+      content="TRAILA — интерактивное медиа о лесе, которое помогает исследовать природу спокойно, безопасно и осознанно."
     />
     <meta
       name="twitter:image"
-      content="https://3.downloader.disk.yandex.ru/preview/997837a4e0394808d8ab35d43c6a394681fd6ffbcd3ac7145cbba802447c78b5/inf/w84pwgl-ht2Vw4ZyORpgVt43V_elukQY-T3f1rjlpvqFR85X3SkdZvMUPlW0fL2gx12zCrgfFOJvAD7ip1KPAQ%3D%3D?uid=526120246&filename=TRAILA.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=526120246&tknv=v3&size=2497x1477"
+      content="https://hseadc.github.io/traila/images/TRAILA.webp"
     />
-    <meta name="twitter:type" content="website" />
-    <meta name="twitter:url" content="https://hseadc.github.io/STRATA/" />
   </head>
   <body>
-    <header class="O_Header O_Header-calendar">
-      <nav class="O_Navigation">
-        <a href="../index.html" class="M_Logo" aria-label="На главную">
-          <span class="A_InnerCircle">
-            <img
-              class="A_LogoImage"
-              src="../images/Q_logo-White.svg"
-              alt="Логотип TRAILA"
-            />
-          </span>
+    <header class="O_Header O_HeaderCalendar">
+      <nav class="M_Navigation">
+        <a href="../index.html" class="A_Logo" aria-label="На главную">
+          <img
+            class="Q_LogoImage"
+            src="../images/Q_logo-White.svg"
+            alt="Логотип TRAILA"
+          />
         </a>
         <ul class="M_NavigationMenu">
-          <!-- <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationLink A_Navigation-Text">о нас</a>
-          </li> -->
-
           <li class="M_NavigationItem">
-            <a href="./articles.html" class="A_NavigationLink A_Navigation-Text"
-              >статьи</a
-            >
+            <a href="#" class="A_NavigationText">о нас</a>
           </li>
-
           <li class="M_NavigationItem">
-            <a
-              href="./interactive.html"
-              class="A_NavigationLink A_Navigation-Text"
-              >интерактивы</a
-            >
+            <a href="#" class="A_NavigationText">статьи</a>
           </li>
-
+          <li class="M_NavigationItem M_NavigationItem--active">
+            <a href="#" class="A_NavigationText">интерактивы</a>
+          </li>
           <li class="M_NavigationItem">
-            <a
-              href="./calendar.html"
-              class="A_NavigationLink A_Navigation-Text A_NavigationLink-Acrtive"
-              >календарь</a
-            >
+            <a href="#" class="A_NavigationText">маршруты</a>
+          </li>
+          <li class="M_NavigationItem">
+            <a href="#" class="A_NavigationText">календарь</a>
           </li>
         </ul>
-        <button class="M_Search" aria-label="Поиск">
-          <span class="A_InnerCircle">
+        <button class="A_Search" aria-label="Поиск">
+          <img
+            class="Q_SearchIcon"
+            src="../images/icons/Q_Icon_Search-nav.svg"
+            alt="Иконка поиска"
+          />
+        </button>
+
+        <div class="W_Search">
+          <div class="M_SearchInput">
             <img
-              class="A_SearchIcon"
-              src="../images/Q_Icon_Search.svg"
+              class="Q_SearchIcon"
+              src="../images/icons/Q_Icon_Search-nav.svg"
               alt="Иконка поиска"
             />
-          </span>
-        </button>
-        <button class="M_burger-icon">
-          <span class="A_InnerCircle">
-            <img
-              class="A_burger-icon"
-              src="../images/icons/Q_burger-icon.svg"
-              alt="Иконка свернутого меню"
+            <input
+              type="text"
+              placeholder="Поиск"
+              class="A_SearchInput A_ParagraphVar"
+              value=""
             />
-          </span>
-        </button>
+
+            <button class="A_SearchButton" aria-label="Закрыть поиск">
+              <img
+                class="Q_IconSearchClose"
+                src="../images/icons/Q_IconSearchClose.svg"
+                alt="Иконка закрыть поиск"
+              />
+            </button>
+          </div>
+          <div class="M_SearchDropdown"></div>
+        </div>
       </nav>
-      <div class="M_HeroContent M_HeroContent-articles">
+      <div class="M_HeroContent">
         <h1 class="A_Heading-H1">Интерактивный лесной календарь</h1>
         <div class="M_TagGroup">
-          <span class="A_Tag A_Navigation-Text"> Условия прогулки </span>
+          <span class="A_Tag A_NavigationText"> Условия прогулки </span>
           <div class="M_TagIcon">
             <img
-              class="A_TagIcon-Image"
+              class="Q_TagIconImg"
               src="/src/images/icons/Q_Icon_RunningMan.svg"
               alt="Иконка бегущего человека"
             />
           </div>
-          <span class="A_Tag A_Navigation-Text"> Сезоны</span>
-          <div class="M_TagIcon M_TagIcon-none">
+          <span class="A_Tag A_NavigationText"> Сезоны </span>
+          <div class="M_TagIcon">
             <img
-              class="A_TagIcon-Image"
+              class="Q_TagIconImg"
               src="/src/images/icons/Q_Icon_Mountains.svg"
               alt="Иконка гор"
             />
           </div>
-          <span class="A_Tag A_Navigation-Text M_TagIcon-none">
-            Активность
-          </span>
+          <span class="A_Tag A_NavigationText"> Активность природы </span>
         </div>
       </div>
     </header>
-    <main class="O_Main">
-      <section class="O_ForestConditions">
-        <div class="M_ForestConditions-Header">
-          <div class="M_ForestConditions-Month">
+    <main>
+      <section class="O_CalendarDashboard">
+        <div class="M_CalendarHeader">
+          <div class="M_CalendarMonth">
             <img
-              class="A_ForestConditions-img"
+              class="Q_CalendarMonthIcon"
               src="../images/icons/Q_Icon_Spring.svg"
-              alt="Иконка листика"
+              alt="Иконка лепестка"
             />
-            <h2 class="A_Heading-H2-medium">МАРТ</h2>
+
+            <h2 class="A_Heading-H2">Март</h2>
           </div>
-          <div class="M_ForestConditions-tegs">
-            <div class="M_ForestConditions-Seasons">
-              <span class="A_ForestConditions-Tag A_Paragraph_Secondary">
-                Зима
-              </span>
-              <span
-                class="A_ForestConditions-Tag A_Paragraph_Secondary A_ForestConditions-Tag-active"
-              >
-                Весна
-              </span>
-              <span class="A_ForestConditions-Tag A_Paragraph_Secondary">
-                Лето
-              </span>
-              <span class="A_ForestConditions-Tag A_Paragraph_Secondary">
-                Осень
-              </span>
+          <div class="W_CalendarFilters">
+            <div class="M_SeasonTabs">
+              <button class="A_SeasonTag A_ParagraphVar">Зима</button>
+              <button class="A_SeasonTag A_ParagraphVar">Весна</button>
+              <button class="A_SeasonTag A_ParagraphVar">Лето</button>
+              <button class="A_SeasonTag A_ParagraphVar">Осень</button>
             </div>
-            <div class="M_ForestConditions-Months">
-              <span
-                class="A_ForestConditions-Tag A_Paragraph_Secondary A_ForestConditions-Tag-active"
-              >
-                Март
-              </span>
-              <span class="A_ForestConditions-Tag A_Paragraph_Secondary">
-                Апрель
-              </span>
-              <span class="A_ForestConditions-Tag A_Paragraph_Secondary">
-                Май
-              </span>
+            <div class="M_MonthTabs">
+              <button class="A_SeasonTag A_ParagraphVar">Март</button>
+              <button class="A_SeasonTag A_ParagraphVar">Апрель</button>
+              <button class="A_SeasonTag A_ParagraphVar">Май</button>
             </div>
           </div>
         </div>
-        <div class="O_ForestConditions-Month">
-          <div class="M_MonthRecommendation">
-            <h3 class="A_Heading-H3">Рекомендация месяца</h3>
-            <div class="M_MonthRecommendation-Content">
+        <div class="W_CalendarDashboardGrid">
+          <article class="M_InfoCard M_ForestIndexCard">
+            <h3 class="A_Heading-H3">Лесной индекс</h3>
+            <div class="M_ConditionItem M_ConditionItemIndexCard">
               <img
-                class="A_ForestConditions-imgVar"
+                class="Q_ConditionIcon"
                 src="../images/icons/Q_Icon_Sheets.svg"
-                alt="Иконка листьев"
+                alt="Иконка листьв"
               />
-              <h4 class="A_Heading-H4 A_MonthRecommendation-data">3 / 5</h4>
-              <p class="A_Paragraph">Можно идти в лес</p>
+              <div class="M_ConditionResult">
+                <h4 class="A_Heading-H4">3 / 5</h4>
+                <p class="A_Paragraph">Пробуждение леса</p>
+              </div>
             </div>
-          </div>
-          <div class="M_ForestConditions-Current">
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Общий комфорт и безопасность прогулки
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_CurrentConditionsCard">
             <h3 class="A_Heading-H3">Текущие условия</h3>
-            <div class="M_ForestConditions-Current-data">
-              <div class="M_ForestConditions-Content">
+            <div class="W_CurrentConditionsItems">
+              <div class="M_ConditionItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_ConditionIcon"
                   src="../images/icons/Q_Icon_Slush.svg"
                   alt="Иконка грязи"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-data">3 / 5</h4>
-                <p class="A_Tag-Text">Высокая <br />грязь</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">4 / 5</h4>
+                  <p class="A_Tag-Text">Высокая грязь</p>
+                </div>
               </div>
-              <div class="M_ForestConditions-Content">
+              <div class="M_ConditionItem">
                 <img
-                  class="A_ForestConditionsVar"
+                  class="Q_ConditionIcon"
                   src="../images/icons/Q_Icon_Dampness.svg"
-                  alt="Иконка капли"
+                  alt="Иконка капли воды"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-data">4 / 5</h4>
-                <p class="A_Tag-Text">Активные <br />ручьи</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">4 / 5</h4>
+                  <p class="A_Tag-Text">Активные ручьи</p>
+                </div>
               </div>
-              <div class="M_ForestConditions-Content">
+              <div class="M_ConditionItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_ConditionIcon"
                   src="../images/icons/Q_Icon_Mite.svg"
                   alt="Иконка клеща"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-data">2 / 5</h4>
-                <p class="A_Tag-Text">Первые <br />клещи</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">2 / 5</h4>
+                  <p class="A_Tag-Text">Первые клещи</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="O_ForestTrendChart">
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Состояние троп после таяния снега и осадков
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_TrailComfortCard">
             <h3 class="A_Heading-H3">Состояние троп и комфорт прогулки</h3>
-            <div class="M_ForestTrendChart-vertically">
-              <h5 class="A_Heading-H5">Комфорт прогулки</h5>
-              <p class="A_Tag-Text A_Tag-Text-vertically">высокий</p>
-              <p class="A_Tag-Text A_Tag-Text-verticallyVar">средний</p>
-              <p class="A_Tag-Text A_Tag-Text-verticallyVarBad">плохой</p>
+            <div class="W_TrailComfortChartArea">
+              <div class="M_TrailComfortYAxis">
+                <h5 class="A_Heading-H5">Комфорт прогулки</h5>
+                <div class="W_TrailComfortLevels">
+                  <span class="A_Tag-Text">высокий</span>
+                  <span class="A_Tag-Text">средний</span>
+                  <span class="A_Tag-Text">плохой</span>
+                </div>
+              </div>
+              <div class="M_TrailComfortXAxis">
+                <div class="W_TrailComfortData">
+                  <span class="A_Tag-Text">начало марта</span>
+                  <span class="A_Tag-Text">10 марта</span>
+                  <span class="A_Tag-Text">20 марта</span>
+                  <span class="A_Tag-Text">конец марта</span>
+                </div>
+                <h5 class="A_Heading-H5">Дата</h5>
+              </div>
             </div>
-            <div class="M_ForestTrendChart-horizontal">
-              <p class="A_Tag-Text">начало марта</p>
-              <p class="A_Tag-Text">10 марта</p>
-              <p class="A_Tag-Text">20 марта</p>
-              <p class="A_Tag-Text">конец марта</p>
-              <h5 class="A_Heading-H5">Дата</h5>
-            </div>
-            <div class="M_ForestTrendChart-data">
-              <div class="M_ForestTrendChart-state">
+            <div class="W_TrailComfortMetrics">
+              <div class="M_TrailComfortMetric">
                 <h5 class="A_Heading-H5">Проходимость леса</h5>
-                <p class="A_Tag-Text">
-                  Состояние <br />
-                  троп и почвы
-                </p>
+                <p class="A_Tag-Text">Состояние троп и почвы</p>
               </div>
-              <div class="M_ForestTrendChart-state">
+              <div class="M_TrailComfortMetric">
                 <h5 class="A_Heading-H5">Комфорт погоды</h5>
-                <p class="A_Tag-Text">
-                  Температура, <br />
-                  ветер, осадки
-                </p>
+                <p class="A_Tag-Text">Температура, ветер, осадки</p>
               </div>
-              <div class="M_ForestTrendChart-state">
+              <div class="M_TrailComfortMetric">
                 <h5 class="A_Heading-H5">Активность природы</h5>
-                <p class="A_Tag-Text">
-                  Пробуждение <br />
-                  растений и птиц
-                </p>
+                <p class="A_Tag-Text">Пробуждение растений и птиц</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="O_ForestStatCards">
-          <div class="M_ForestStatCards">
-            <h4 class="A_Heading-H4">Световой день в лесу</h4>
-            <div class="M_ForestStatCards-ContentAll">
-              <div class="M_ForestStatCards-Content">
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Изменение условий для прогулок в течение месяца
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_DaylightCard">
+            <h3 class="A_Heading-H3">Световой день</h3>
+            <div class="W_InfoItems">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Sunrise.svg"
-                  alt="Иконка восхода"
+                  alt="Иконка рассвета"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">Восход</p>
-                <h4 class="A_Heading-H4">~06:30</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">Восход</p>
+                  <h4 class="A_Heading-H4">~06:30</h4>
+                </div>
               </div>
-              <div class="M_ForestStatCards-Content">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Sunset.svg"
                   alt="Иконка заката"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">Закат</p>
-                <h4 class="A_Heading-H4">~17:30</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">Закат</p>
+                  <h4 class="A_Heading-H4">~17:30</h4>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="M_ForestStatCardVar">
-            <h4 class="A_Heading-H4">Средняя температура</h4>
-            <div class="M_ForestStatCards-ContentAllVar">
-              <div class="M_ForestStatCards-Content">
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Количество светлого времени в течение суток
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_TemperatureCard">
+            <h3 class="A_Heading-H3">Температура</h3>
+            <div class="W_InfoItems">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_WarmTemperature.svg"
-                  alt="Иконка температуры"
+                  alt="Иконка теплой температуры"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">День</p>
-                <h4 class="A_Heading-H4">+4°C</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">День</p>
+                  <h4 class="A_Heading-H4">+4°C</h4>
+                </div>
               </div>
-              <div class="M_ForestStatCards-Content">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_ColdTemperature.svg"
-                  alt="Иконка температуры"
+                  alt="Иконка холодной температуры"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">Ночь</p>
-                <h4 class="A_Heading-H4">−3°C</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">Ночь</p>
+                  <h4 class="A_Heading-H4">−3°C</h4>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="M_ForestStatCardVar">
-            <h4 class="A_Heading-H4">Осадки</h4>
-            <div class="M_ForestStatCardPrecipitation">
-              <div class="M_ForestStatCards-Content">
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Средние дневные и ночные температуры месяца
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_PrecipitationCard">
+            <h3 class="A_Heading-H3">Осадки</h3>
+            <div class="W_InfoItems">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Autumn.svg"
-                  alt="Иконка дождя"
+                  alt="Иконка тучи с дождем"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">
-                  Вероятность
-                </p>
-                <h4 class="A_Heading-H4">65%</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">Вероятность</p>
+                  <h4 class="A_Heading-H4">65%</h4>
+                </div>
               </div>
-              <div class="M_ForestStatCards-Content">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Dampness.svg"
-                  alt="Иконка капли"
+                  alt="Иконка капли воды"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">
-                  Дождливые дни
-                </p>
-                <h4 class="A_Heading-H4">≈ 10</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">Дождливые дни</p>
+                  <h4 class="A_Heading-H4">≈ 10</h4>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="M_ForestStatCardVar">
-            <h4 class="A_Heading-H4">Ветер</h4>
-            <div class="M_ForestStatCardWind">
-              <div class="M_ForestStatCards-Content">
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Вероятность влажной и дождливой погоды
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_WindCard">
+            <h3 class="A_Heading-H3">Ветер</h3>
+            <div class="W_InfoItems">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-imgVar"
-                  src="../images/icons/Q_Icon_Wind.svg"
-                  alt="Иконка ветра"
+                  class="Q_InfoIcon"
+                  src="../images/icons/Q_Icon_Autumn.svg"
+                  alt="Иконка тучи с дождем"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">Скорость</p>
-                <h4 class="A_Heading-H4">4–6 м/с</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">Скорость</p>
+                  <h4 class="A_Heading-H4">4–6 м/с</h4>
+                </div>
               </div>
-              <div class="M_ForestStatCards-Content">
+              <div class="M_InfoItem">
                 <img
-                  class="A_ForestConditions-imgSign"
-                  src="../images/icons/Q_Icon_Important.svg"
-                  alt="Иконка восклицательный знак"
+                  class="Q_InfoIcon"
+                  src="../images/icons/Q_Icon_Dampness.svg"
+                  alt="Иконка капли воды"
                 />
-
-                <p class="A_Tag-Text A_Tag-Text-ForestConditions">Порывы</p>
-                <h4 class="A_Heading-H4">до 10 м/с</h4>
+                <div class="M_ConditionResult">
+                  <p class="A_Tag-Text">Порывы</p>
+                  <h4 class="A_Heading-H4">до 10 м/с</h4>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="O_ForestStatOther">
-          <div class="O_ForestState-Calendar">
-            <h4 class="A_Heading-H4">Индекс проходимости</h4>
-            <div class="M_Passability-Index">
-              <div class="M_StateVar M_State-Permafrost-Calendar">
-                <h4 class="A_Heading-H4">15%</h4>
-                <p class="A_Tag-Text">Мерзлота</p>
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Средняя ветровая активность месяца
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_PassabilityIndexCard">
+            <h3 class="A_Heading-H3">Индекс проходимости</h3>
+            <div class="M_PassabilityItems">
+              <div class="M_ConditionItem M_FrostItem">
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">15%</h4>
+                  <p class="A_Tag-Text">Мерзлота</p>
+                </div>
                 <img
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Permafrost.svg"
-                  class="A_ForestState"
                   alt="Иконка сосулек"
                 />
               </div>
-              <div class="M_StateVar M_State-Dampness-Calendar">
-                <h4 class="A_Heading-H4">10%</h4>
-                <p class="A_Tag-Text">Сырость</p>
+              <div class="M_ConditionItem M_DampnessItem">
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">20%</h4>
+                  <p class="A_Tag-Text">Сырость</p>
+                </div>
                 <img
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Dampness.svg"
-                  class="A_ForestStateVar"
-                  alt="Иконка капли"
+                  alt="Иконка капли воды"
                 />
               </div>
-              <div class="M_StateVar M_State-Slush-Calendar">
-                <h4 class="A_Heading-H4">30%</h4>
-                <p class="A_Tag-Text">Грязь</p>
+              <div class="M_ConditionItem M_MudItem">
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">45%</h4>
+                  <p class="A_Tag-Text">Грязь</p>
+                </div>
                 <img
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Slush.svg"
-                  class="A_ForestState"
                   alt="Иконка грязи"
                 />
               </div>
-              <div class="M_StateVar M_State-Dirt-Calendar">
-                <h4 class="A_Heading-H4">45%</h4>
-                <p class="A_Tag-Text">Слякоть</p>
+              <div class="M_ConditionItem M_SlushItem">
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">35%</h4>
+                  <p class="A_Tag-Text">Слякоть</p>
+                </div>
                 <img
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Dirt.svg"
-                  class="A_ForestState"
                   alt="Иконка слякоти"
                 />
               </div>
             </div>
-          </div>
-          <div class="O_ForestSky-Calendar">
-            <h4 class="A_Heading-H4">Состояние неба</h4>
-            <div class="M_StateSky-Calendar">
-              <img
-                src="../images/icons/Q_Icon_Sun.svg"
-                class="A_ForestState-Sky"
-                alt="Иконка солнца"
-              />
-              <div class="M_ForestSky-text">
-                <h4 class="A_Heading-H4">15%</h4>
-                <p class="A_Tag-Text">Мерзлота</p>
-              </div>
-            </div>
-            <div class="M_StateCloudy-Calendar">
-              <img
-                src="../images/icons/Q_Icon_Cloudy.svg"
-                class="A_ForestState-Sky"
-                alt="Иконка облаков"
-              />
-              <div class="M_ForestSky-text">
-                <h4 class="A_Heading-H4">25%</h4>
-                <p class="A_Tag-Text">Облачно</p>
-              </div>
-            </div>
-            <div class="M_StateAutumn-Calendar">
-              <img
-                src="../images/icons/Q_Icon_Autumn.svg"
-                class="A_ForestState-Sky"
-                alt="Иконка дождливого облака"
-              />
-              <div class="M_ForestSky-text">
-                <h4 class="A_Heading-H4">65%</h4>
-                <p class="A_Tag-Text">Осадки</p>
-              </div>
-            </div>
-          </div>
-          <div class="O_ForestActivity">
-            <h4 class="A_Heading-H4">Активность природы</h4>
-            <div class="M_ForestActivity-data">
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap"
-              >
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Факторы, влияющие на состояние троп
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_SkyConditionCard">
+            <h3 class="A_Heading-H3">Состояние неба</h3>
+            <div class="W_SkyConditionItems">
+              <div class="M_SkyConditionItem M_SkyConditionItem--clear">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
+                  src="../images/icons/Q_Icon_Sun.svg"
+                  alt="Иконка слякоти"
+                />
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">15%</h4>
+                  <p class="A_Tag-Text">Ясно</p>
+                </div>
+              </div>
+              <div class="M_SkyConditionItem M_SkyConditionItem--cloudy">
+                <img
+                  class="Q_InfoIcon"
+                  src="../images/icons/Q_Icon_Cloudy.svg"
+                  alt="Иконка облачно"
+                />
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">25%</h4>
+                  <p class="A_Tag-Text">Облачно</p>
+                </div>
+              </div>
+              <div class="M_SkyConditionItem M_SkyConditionItem--rain">
+                <img
+                  class="Q_InfoIcon"
+                  src="../images/icons/Q_Icon_Autumn.svg"
+                  alt="Иконка тучи с дождем"
+                />
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">65%</h4>
+                  <p class="A_Tag-Text">Осадки</p>
+                </div>
+              </div>
+            </div>
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Наиболее характерная картина погоды месяца
+              </span>
+            </button>
+          </article>
+          <article class="M_InfoCard M_NatureActivityCard">
+            <h3 class="A_Heading-H3">Активность природы</h3>
+            <div class="W_NatureActivityItems">
+              <div class="M_NatureActivityItem">
+                <img
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Grass.svg"
                   alt="Иконка травы"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">40%</h4>
-                <p class="A_Tag-Text">Растения</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">40%</h4>
+                  <p class="A_Tag-Text">Растения</p>
+                </div>
               </div>
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap M_MonthRecommendation-Content-Birt"
-              >
+              <div class="M_NatureActivityItem">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Bird.svg"
                   alt="Иконка птицы"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">60%</h4>
-                <p class="A_Tag-Text">Птицы</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">60%</h4>
+                  <p class="A_Tag-Text">Птицы</p>
+                </div>
               </div>
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap M_MonthRecommendation-Content-Dampness"
-              >
+              <div class="M_NatureActivityItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Dampness.svg"
-                  alt="Иконка капли"
+                  alt="Иконка капли воды"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">80%</h4>
-                <p class="A_Tag-Text">Ручьи</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">80%</h4>
+                  <p class="A_Tag-Text">Ручьи</p>
+                </div>
               </div>
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap M_MonthRecommendation-Content-FlowerSheets"
-              >
+              <div class="M_NatureActivityItem">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_FlowerSheets.svg"
                   alt="Иконка цветов"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">30%</h4>
-                <p class="A_Tag-Text">Первые цветы</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">30%</h4>
+                  <p class="A_Tag-Text">Цветы</p>
+                </div>
               </div>
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap"
-              >
+              <div class="M_NatureActivityItem">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Insect.svg"
                   alt="Иконка мухи"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">20%</h4>
-                <p class="A_Tag-Text">Насекомые</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">20%</h4>
+                  <p class="A_Tag-Text">Насекомые</p>
+                </div>
               </div>
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap M_MonthRecommendation-Content-Bear"
-              >
+              <div class="M_NatureActivityItem">
                 <img
-                  class="A_ForestConditions-img"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Bear.svg"
                   alt="Иконка медведя"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">50%</h4>
-                <p class="A_Tag-Text">Следы животны</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">50%</h4>
+                  <p class="A_Tag-Text">Следы животны</p>
+                </div>
               </div>
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap M_MonthRecommendation-Content-Tree"
-              >
+              <div class="M_NatureActivityItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Tree.svg"
-                  alt="Иконка деревьев"
+                  alt="Иконка дерева"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">35%</h4>
-                <p class="A_Tag-Text">Почки деревьев</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">35%</h4>
+                  <p class="A_Tag-Text">Деревья</p>
+                </div>
               </div>
-              <div
-                class="M_MonthRecommendation-Content M_MonthRecommendation-Content-gap"
-              >
+              <div class="M_NatureActivityItem">
                 <img
-                  class="A_ForestConditions-imgVar"
+                  class="Q_InfoIcon"
                   src="../images/icons/Q_Icon_Branch.svg"
                   alt="Иконка ветки"
                 />
-                <h4 class="A_Heading-H4 A_MonthRecommendation-dataVar">55%</h4>
-                <p class="A_Tag-Text">Общая активность</p>
+                <div class="M_ConditionResult">
+                  <h4 class="A_Heading-H4">55%</h4>
+                  <p class="A_Tag-Text">Общая активность</p>
+                </div>
               </div>
             </div>
-          </div>
+            <button class="M_InfoTooltip">
+              <span class="A_InfoTooltipIcon">i</span>
+              <span class="A_InfoTooltipText A_Tag-Text A_CalendarTooltip">
+                Сезонные изменения и пробуждение леса
+              </span>
+            </button>
+          </article>
         </div>
       </section>
-    </main>
-    <section class="O_ForestRisks">
-      <div class="M_ForestRisks_Data">
-        <div class="M_TagIcon M_TagIcon-none">
-          <img
-            class="A_TagIcon-Image"
-            src="/src/images/icons/Q_Icon_Cloudy.svg"
-            alt="Иконка облаков"
-          />
-        </div>
-        <div class="M_ForestRisks_DataText">
-          <h4 class="A_Heading-H4">Ограниченная видимость</h4>
-          <p class="A_Paragraph_Secondary">Туман по утрам</p>
-        </div>
-      </div>
-      <div class="M_ForestRisks_Data">
-        <div class="M_TagIcon M_TagIcon-none">
-          <img
-            class="A_TagIcon-Image"
-            src="/src/images/icons/Q_Icon_Slush.svg"
-            alt="Иконка слякоти"
-          />
-        </div>
-        <div class="M_ForestRisks_DataText">
-          <h4 class="A_Heading-H4">Таяние снега</h4>
-          <p class="A_Paragraph_Secondary">Влажная почва</p>
-        </div>
-      </div>
-      <div class="M_ForestRisks_Data">
-        <div class="M_TagIcon M_TagIcon-none">
-          <img
-            class="A_TagIcon-ImageVar"
-            src="/src/images/icons/Q_Icon_Branch.svg"
-            alt="Иконка ветки"
-          />
-        </div>
-        <div class="M_ForestRisks_DataText">
-          <h4 class="A_Heading-H4">Поваленные ветки</h4>
-          <p class="A_Paragraph_Secondary">После зимних ветров</p>
-        </div>
-      </div>
-      <div class="M_ForestRisks_Data">
-        <div class="M_TagIcon M_TagIcon-none">
-          <img
-            class="A_TagIcon-ImageVar"
-            src="/src/images/icons/Q_Icon_Tree.svg"
-            alt="Иконка дерева"
-          />
-        </div>
-        <div class="M_ForestRisks_DataText">
-          <h4 class="A_Heading-H4">Мокрые корни деревьев</h4>
-          <p class="A_Paragraph_Secondary">Скользкие участки</p>
-        </div>
-      </div>
-      <div class="M_ForestRisks_Data">
-        <div class="M_TagIcon M_TagIcon-none">
-          <img
-            class="A_TagIcon-ImageVar"
-            src="/src/images/icons/Q_Icon_Dampness.svg"
-            alt="Иконка капли"
-          />
-        </div>
-        <div class="M_ForestRisks_DataText">
-          <h4 class="A_Heading-H4">Лужи на тропах</h4>
-          <p class="A_Paragraph_Secondary">Низины затапливает</p>
-        </div>
-      </div>
-      <div class="M_ForestRisks_Data">
-        <div class="M_TagIcon M_TagIcon-none">
-          <img
-            class="A_TagIcon-ImageWidth"
-            src="/src/images/icons/Q_Icon_Winter.svg"
-            alt="Иконка снежинки"
-          />
-        </div>
-        <div class="M_ForestRisks_DataText">
-          <h4 class="A_Heading-H4">Неустойчивый лёд</h4>
-          <p class="A_Paragraph_Secondary">На лесных водоёмах</p>
-        </div>
-      </div>
-    </section>
-    <section class="O_ForestProducts">
-      <h2 class="A_Heading-H2">Что можно собирать в марте</h2>
-      <div class="O_ForestProducts-List">
-        <div class="M_ForestProducts-gap">
-          <div class="M_ForestConditions-Month">
-            <img
-              class="A_ForestConditions-img"
-              src="../images/icons/Q_Icon_Grass.svg"
-              alt="Иконка травы"
-            />
-            <h3 class="A_Heading-H3">Листья и зелень</h3>
-          </div>
-          <div class="M_ForestProducts-Cards">
-            <div class="M_ForestProducts-Card">
+      <section class="O_CalendarCollect">
+        <h2 class="A_Heading-H2">Что можно собирать в марте</h2>
+        <div class="W_CollectGroups">
+          <div class="M_CollectCategory">
+            <div class="M_CollectCategoryHeader">
               <img
-                class="A_ForestProducts-Card-img"
-                src="../images/Q_ForestProducts-Card-nettle.webp"
-                alt="Изображение крапивы"
+                class="Q_InfoIcon"
+                src="../images/icons/Q_Icon_Grass.svg"
+                alt="Иконка травы"
               />
-              <h4 class="A_Heading-H4">Крапива</h4>
+              <h3 class="A_Heading-H3">Листья и зелень</h3>
             </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-whine.webp"
-                  alt="Изображение сныти"
-                />
+            <div class="W_CollectCards">
+              <div class="M_CollectCard" data-collect-id="nettles">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_Nettles.webp"
+                    alt="Изображение крапивы в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
+                <h4 class="A_Heading-H4">Крапива</h4>
+              </div>
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_Sleep.webp"
+                    alt="Изображение сныти в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
                 <h4 class="A_Heading-H4">Сныть</h4>
               </div>
-            </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-WildGarlic.webp"
-                  alt="Изображение черемши"
-                />
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_WildGarlic.webp"
+                    alt="Изображение черемши в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
                 <h4 class="A_Heading-H4">Черемша</h4>
               </div>
             </div>
           </div>
-        </div>
-        <div class="M_ForestProducts-gap">
-          <div class="M_ForestConditions-Month">
-            <img
-              class="A_ForestConditions-img"
-              src="../images/icons/Q_Icon_TreeVar.svg"
-              alt="Иконка дерева"
-            />
-            <h3 class="A_Heading-H3">Лесные ресурсы</h3>
-          </div>
-          <div class="M_ForestProducts-Cards">
-            <div class="M_ForestProducts-Card">
+          <div class="M_CollectCategory">
+            <div class="M_CollectCategoryHeader">
               <img
-                class="A_ForestProducts-Card-img"
-                src="../images/Q_ForestProducts-Card-BirchSap.webp"
-                alt="Изображение берёзового сока"
+                class="Q_InfoIcon"
+                src="../images/icons/Q_Icon_Tree.svg"
+                alt="Иконка дерева"
               />
-              <h4 class="A_Heading-H4">Берёзовый сок</h4>
+              <h3 class="A_Heading-H3">Лесные ресурсы</h3>
             </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-PineBuds.webp"
-                  alt="Изображение почек сосны"
-                />
+            <div class="W_CollectCards">
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_BirchTree.webp"
+                    alt="Изображение берёзового сока"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
+                <h4 class="A_Heading-H4">Березовый сок</h4>
+              </div>
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_PineBuds.webp"
+                    alt="Изображение почек сосны в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
                 <h4 class="A_Heading-H4">Почки сосны</h4>
               </div>
-            </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-AlderCatkins.webp"
-                  alt="Изображение серёжкек ольхи"
-                />
-                <h4 class="A_Heading-H4">Серёжки ольхи</h4>
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_Alder.webp"
+                    alt="Изображение ольхы в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
+                <h4 class="A_Heading-H4">Ольха</h4>
               </div>
             </div>
           </div>
-        </div>
-        <div class="M_ForestProducts-gap">
-          <div class="M_ForestConditions-Month">
-            <img
-              class="A_ForestConditions-img"
-              src="../images/icons/Q_Icon_Flower.svg"
-              alt="Иконка цветка"
-            />
-            <h3 class="A_Heading-H3">Цветы и почки</h3>
-          </div>
-          <div class="M_ForestProducts-Cards">
-            <div class="M_ForestProducts-Card">
+          <div class="M_CollectCategory">
+            <div class="M_CollectCategoryHeader">
               <img
-                class="A_ForestProducts-Card-img"
-                src="../images/Q_ForestProducts-Card-Lungwort.webp"
-                alt="Изображение медуницы"
+                class="Q_InfoIcon"
+                src="../images/icons/Q_Icon_Flower.svg"
+                alt="Иконка цветка"
               />
-              <h4 class="A_Heading-H4">Медуница</h4>
+              <h3 class="A_Heading-H3">Цветы и почки</h3>
             </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-Flower.webp"
-                  alt="Изображение мать-и-мачехи"
-                />
+            <div class="W_CollectCards">
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_Lungwort.webp"
+                    alt="Изображение медуницы в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
+                <h4 class="A_Heading-H4">Медуница</h4>
+              </div>
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_Flower.webp"
+                    alt="Изображение мать-и-мачехи в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
                 <h4 class="A_Heading-H4">Мать-и-мачеха</h4>
               </div>
-            </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-BirchBuds.webp"
-                  alt="Изображение почек березы"
-                />
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_BirchBuds.webp"
+                    alt="Изображение почек березы в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
                 <h4 class="A_Heading-H4">Почки березы</h4>
               </div>
             </div>
           </div>
-        </div>
-        <div class="M_ForestProducts-gap">
-          <div class="M_ForestConditions-Month">
-            <img
-              class="A_ForestConditions-img"
-              src="../images/icons/Q_Icon_Mushroom.svg"
-              alt="Иконка гриба"
-            />
-            <h3 class="A_Heading-H3">Весенние грибы</h3>
-          </div>
-          <div class="M_ForestProducts-Cards">
-            <div class="M_ForestProducts-Card">
+          <div class="M_CollectCategory">
+            <div class="M_CollectCategoryHeader">
               <img
-                class="A_ForestProducts-Card-img"
-                src="../images/Q_ForestProducts-Card-Morel.webp"
-                alt="Изображение сморчка"
+                class="Q_InfoIcon"
+                src="../images/icons/Q_Icon_WhiteMushroom.svg"
+                alt="Иконка белого гриба"
               />
-              <h4 class="A_Heading-H4">Сморчок</h4>
+              <h3 class="A_Heading-H3">Весенние грибы</h3>
             </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-Line.webp"
-                  alt="Изображение строчка"
-                />
+            <div class="W_CollectCards">
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_Morel.webp"
+                    alt="Изображение сморчка в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
+                <h4 class="A_Heading-H4">Сморчок</h4>
+              </div>
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_MushroomLine.webp"
+                    alt="Изображение строчка в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
                 <h4 class="A_Heading-H4">Строчок</h4>
               </div>
-            </div>
-            <div class="M_ForestProducts-Cards">
-              <div class="M_ForestProducts-Card">
-                <img
-                  class="A_ForestProducts-Card-img"
-                  src="../images/Q_ForestProducts-Card-Sarkoscifa.webp"
-                  alt="Изображение почек березы"
-                />
+              <div class="M_CollectCard">
+                <div class="M_CollectCardMedia">
+                  <img
+                    class="Q_CollectImage"
+                    src="../images/calendar/Q_CollectImage_Sarcoscifa.webp"
+                    alt="Изображение саркосцифы в лесу"
+                    loading="lazy"
+                  />
+                  <button class="A_Button A_CollectLink">
+                    <img
+                      class="Q_CollectLink"
+                      src="../images/icons/Q_Icon_ArrowVar.svg"
+                      alt="Иконка стрелки"
+                    />
+                  </button>
+                </div>
                 <h4 class="A_Heading-H4">Саркосцифа</h4>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="O_Section-Checklist O_Section-Checklist-Calendar">
-      <h2 class="A_Heading-H2">Лесной чек-лист на Март</h2>
-      <div class="O_Section-Checklist-Cards">
-        <a href="./articles/article_biotopes.html" class="A_Link"
-          ><div class="M_Card-CheckList-biotopes">
-            <h4 class="A_Heading-H4">Где растут грибы</h4>
-            <button class="A_TestCard_ContentButton A_Button">
-              <img
-                class="A_TestCard_ContentVar"
-                src="../images/icons/Q_Icon_ArrowVar.svg"
-                alt="Иконка стрелки"
-              />
-            </button></div
-        ></a>
-        <a href="./articles/article_trail.html" class="A_Link"
-          ><div class="M_Card-CheckList-trail">
-            <h4 class="A_Heading-H4">Тропа</h4>
-            <button class="A_TestCard_ContentButton A_Button">
-              <img
-                class="A_TestCard_ContentVar"
-                src="../images/icons/Q_Icon_ArrowVar.svg"
-                alt="Иконка стрелки"
-              />
-            </button></div
-        ></a>
-        <a href="./articles/article_seasons.html" class="A_Link"
-          ><div class="M_Card-CheckList-seasons">
-            <h4 class="A_Heading-H4">Что искать в лесу</h4>
-            <button class="A_TestCard_ContentButton A_Button">
-              <img
-                class="A_TestCard_ContentVar"
-                src="../images/icons/Q_Icon_ArrowVar.svg"
-                alt="Иконка стрелки"
-              />
-            </button></div
-        ></a>
-        <a href="./articles/article_compass.html" class="A_Link"
-          ><div class="M_Card-CheckList-compass">
-            <h4 class="A_Heading-H4">Компас</h4>
-            <button class="A_TestCard_ContentButton A_Button">
-              <img
-                class="A_TestCard_ContentVar"
-                src="../images/icons/Q_Icon_ArrowVar.svg"
-                alt="Иконка стрелки"
-              />
-            </button></div
-        ></a>
-        <a href="./articles/article_ticks.html" class="A_Link"
-          ><div class="M_Card-CheckList-ticks A_Link-CheckList-ticks">
-            <h4 class="A_Heading-H4">Клещи</h4>
-            <button class="A_TestCard_ContentButton A_Button">
-              <img
-                class="A_TestCard_ContentVar"
-                src="../images/icons/Q_Icon_ArrowVar.svg"
-                alt="Иконка стрелки"
-              />
-            </button></div
-        ></a>
-      </div>
-    </section>
-    <footer class="O_Footer">
-      <div class="M_Footer-Area">
-        <div class="M_Footer-text-wrapper">
-          <p class="A_Heading-H3">Остались вопросы?</p>
-          <form
-            id="my-form"
-            action="https://formspree.io/f/xnngorro"
-            method="POST"
-          >
-            <input type="email" name="email" placeholder="Введите ваш e-mail" />
-            <button id="my-form-button" class="button">
-              <img
-                class="A_Icon-Arrow"
-                src="/src/images/Q_Arrow-White.svg"
-                alt="Иконка стрелки"
-              />
-            </button>
-            <p id="my-form-status"></p>
-          </form>
-        </div>
-        <div class="M_Social-Network M_TagIcon">
+        <button class="A_Button A_DownloadButton">
+          <p class="A_NavigationText A_ButtonText">Скачать данные</p>
           <img
-            class="A_TagIcon-Social-Network"
-            src="/src/images/Q_Icon_Dzen.svg"
-            alt="Иконка Дзена"
+            class="Q_CollectLink"
+            src="../images/icons/Q_Icon_ArrowVar.svg"
+            alt="Иконка стрелки"
           />
+        </button>
+      </section>
+      <section class="O_CollectModal" hidden>
+        <div class="W_CollectModalOverlay"></div>
+        <button class="A_Button A_CollectModalPrev" type="button">
+          <img
+            class="Q_CollectBack"
+            src="../images/icons/Q_Icon_ArrowPrew.svg"
+            alt="Иконка стрелки"
+          />
+        </button>
+        <div class="O_CollectModalCard">
+          <button class="A_Button A_CollectBack">
+            <img
+              class="Q_CollectBack"
+              src="../images/icons/Q_Icon_Arrow-Green.svg"
+              alt="Иконка стрелки назад"
+            />
+          </button>
+          <h2 class="A_Heading-H2 A_CollectTitle" data-modal-title>Крапива</h2>
+          <p class="A_Paragraph A_CollectDescription" data-modal-description>
+            Молодые листья для супов и салатов
+          </p>
+          <img
+            class="Q_CollectModalImage"
+            src="../images/calendar/Q_CollectImage_Nettles.webp"
+            alt="Изображение крапивы в лесу"
+            loading="lazy"
+          />
+          <div class="W_CollectModalStats">
+            <div class="M_CollectModalStat">
+              <h3 class="A_Heading-H3" data-modal-chance>70%</h3>
+              <p class="A_Tag-Text">Шанс встретить</p>
+            </div>
+            <div class="M_CollectModalStat">
+              <h3 class="A_Heading-H3" data-modal-risk>Высокая</h3>
+              <p class="A_Tag-Text">Лёгкость поиска</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="M_Footer-Section">
-        <div class="M_Footer-Section-Divisions">
-          <h3 class="A_Heading-H5">Разделы</h3>
-
-          <ul class="M_Footer-Section-DivisionsList">
-            <!-- <li class="M_Footer-Section-DivisionsList-item">
-              <a href="#" class="A_Paragraph">о нас</a>
-            </li> -->
-            <li class="M_Footer-Section-DivisionsList-item">
-              <a href="./articles.html" class="A_Paragraph">статьи</a>
-            </li>
-            <li class="M_Footer-Section-DivisionsList-item">
-              <a href="./interactive.html" class="A_Paragraph">интерактивы</a>
-            </li>
-            <li class="M_Footer-Section-DivisionsList-item">
-              <a href="./calendar.html" class="A_Paragraph">календарь</a>
-            </li>
-          </ul>
-        </div>
-        <div class="M_Footer-Section-Author">
-          <h3 class="A_Heading-H5">Автор</h3>
-
-          <ul class="M_Footer-Section-DivisionsList">
-            <li class="M_Footer-Section-DivisionsList-item">
-              <p class="A_Paragraph">Ирина Кондратенко</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+        <button class="A_Button A_CollectModalNext" type="button">
+          <img
+            class="Q_CollectBack"
+            src="../images/icons/Q_Icon_Arrow.svg"
+            alt="Иконка стрелки"
+          />
+        </button>
+      </section>
+    </main>
   </body>
 </html>

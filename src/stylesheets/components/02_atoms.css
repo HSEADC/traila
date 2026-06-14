@@ -351,6 +351,76 @@
   min-height: 50rem;
 }
 
+/* ___________________calendar.html___________________ */
+.A_SeasonTag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 25rem;
+  border: 1.7rem solid var(--color-text);
+  background-color: var(--color-background);
+  border-radius: 64rem;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.A_SeasonTag:hover {
+  background-color: var(--color-card);
+}
+
+.A_SeasonTag.is-active {
+  background-color: var(--color-text);
+  color: var(--color-surface);
+}
+
+.M_InfoTooltip .A_InfoTooltipText {
+  color: var(--color-card-accent);
+}
+
+.A_DownloadButton {
+  display: flex;
+  align-items: center;
+  padding: 5rem 5rem 5rem 60rem;
+  gap: 35rem;
+  border: none;
+  border-radius: 71rem;
+  height: 50rem;
+}
+
+.A_ButtonText {
+  color: var(--color-card);
+}
+
+.A_CollectBack {
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  width: 50rem;
+  height: 50rem;
+}
+
+.A_CollectTitle {
+  grid-row: 2 / 3;
+}
+
+.A_CollectDescription {
+  grid-row: 3 / 4;
+}
+
+.A_CollectModalPrev,
+.A_CollectModalNext {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  width: 50rem;
+  height: 50rem;
+}
 /* ___________________index.html___________________ */
 .A_State_img {
   display: block;
@@ -465,6 +535,19 @@
 
 .A_Articles-CardList-Arrow {
   display: none;
+}
+
+.A_CollectLink {
+  grid-area: image;
+  align-self: flex-start;
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  width: 29rem;
+  height: 29rem;
 }
 
 /* ___________________404.html___________________ */

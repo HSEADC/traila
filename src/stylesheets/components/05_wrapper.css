@@ -79,3 +79,96 @@
   display: flex;
   gap: 10rem;
 }
+
+/* ___________________calendar.html___________________ */
+.W_CalendarFilters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.W_CalendarDashboardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 325rem);
+  grid-template-rows: 230rem 230rem 204rem 260rem 260rem;
+  gap: 20rem;
+}
+
+.W_CurrentConditionsItems {
+  display: flex;
+  gap: 15rem;
+}
+
+.W_TrailComfortLevels {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 57rem;
+  width: 80rem;
+}
+
+.W_TrailComfortData {
+  display: flex;
+  gap: 105rem;
+  padding-left: 210rem;
+  width: 855rem;
+}
+
+.W_TrailComfortMetrics {
+  display: flex;
+  gap: 135rem;
+  padding-left: 70rem;
+  padding-top: 40rem;
+  text-align: center;
+}
+
+.W_InfoItems {
+  display: flex;
+  justify-content: center;
+  gap: 60rem;
+}
+
+.W_SkyConditionItems {
+  display: flex;
+  flex-direction: column;
+  gap: 22rem;
+  padding-top: 14rem;
+}
+
+.W_NatureActivityItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50rem;
+  row-gap: 100rem;
+  padding-top: 20rem;
+  padding-left: 30rem;
+}
+
+.W_CollectGroups {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+}
+
+.W_CollectCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_CollectModalOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 20, 12, 0.3);
+  backdrop-filter: blur(12rem);
+}
+
+.W_CollectModalStats {
+  grid-row: 5 / 6;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 60rem;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--color-card-accent);
+  border-radius: 25rem;
+}
