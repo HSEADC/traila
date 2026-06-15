@@ -108,9 +108,9 @@
 
 .W_TrailComfortData {
   display: flex;
-  gap: 105rem;
+  justify-content: space-between;
   padding-left: 210rem;
-  width: 855rem;
+  width: 815rem;
 }
 
 .W_TrailComfortMetrics {

@@ -298,12 +298,26 @@ document.addEventListener("DOMContentLoaded", () => {
       updateConditionResult(item, value, config.label);
 
       const icon = item.querySelector(".Q_InfoIcon, .Q_ConditionIcon");
+      const shouldRemoveIcon = data.manualLayout?.removeInfoIcon?.[config.key];
+
       if (icon) {
         icon.src = config.icon;
         icon.alt = `Иконка: ${config.label}`;
+
+        if (shouldRemoveIcon) {
+          icon.style.display = "none";
+        } else {
+          icon.style.display = "";
+        }
       }
 
-      item.style.top = `${getPassabilityTop(value)}rem`;
+      const manualTop = data.manualLayout?.passabilityTop?.[config.key];
+
+      item.style.top =
+        manualTop !== undefined
+          ? `${manualTop}rem`
+          : `${getPassabilityTop(value)}rem`;
+
       item.style.setProperty("--passability-height", `${getPercent(value)}%`);
     });
   }
@@ -318,12 +332,26 @@ document.addEventListener("DOMContentLoaded", () => {
       updateConditionResult(item, value, config.label);
 
       const icon = item.querySelector(".Q_InfoIcon, .Q_ConditionIcon");
+      const shouldRemoveIcon = data.manualLayout?.removeInfoIcon?.[config.key];
+
       if (icon) {
         icon.src = config.icon;
         icon.alt = `Иконка: ${config.label}`;
+
+        if (shouldRemoveIcon) {
+          icon.style.display = "none";
+        } else {
+          icon.style.display = "";
+        }
       }
 
-      item.style.paddingLeft = `${getSkyPadding(value)}rem`;
+      const manualPaddingLeft = data.manualLayout?.skyPaddingLeft?.[config.key];
+
+      item.style.paddingLeft =
+        manualPaddingLeft !== undefined
+          ? `${manualPaddingLeft}rem`
+          : `${getSkyPadding(value)}rem`;
+
       item.style.setProperty("--sky-width", `${getPercent(value)}%`);
     });
   }
@@ -392,61 +420,70 @@ document.addEventListener("DOMContentLoaded", () => {
     bindCollectCards();
   }
 
-  function normalizeCollectItems(groups) {
-    return groups.flatMap((group) =>
-      group.items.map((title) => {
-        const modalData = window.COLLECT_MODAL_DATA?.[title] || {};
-        const image =
-          window.COLLECT_IMAGES?.[title] ||
-          "../images/calendar/Q_CollectImage_Placeholder.webp";
+  function normalizeCollectItem(item, groupTitle) {
+    const isObject = typeof item === "object";
 
-        return {
-          title,
-          image,
-          description:
-            modalData.description || getDefaultDescription(title, group.title),
-          chance: modalData.chance || "—",
-          ease: modalData.ease || "—",
-          group: group.title,
-        };
-      }),
-    );
-  }
+    const id = isObject ? item.id : item;
+    const title = isObject ? item.title : item;
 
-  function renderCollectCard(title) {
+    const modalData =
+      window.COLLECT_MODAL_DATA?.[id] ||
+      window.COLLECT_MODAL_DATA?.[title] ||
+      {};
+
     const image =
+      window.COLLECT_IMAGES?.[id] ||
       window.COLLECT_IMAGES?.[title] ||
       "../images/calendar/Q_CollectImage_Placeholder.webp";
 
+    return {
+      id,
+      title,
+      image,
+      description:
+        modalData.description || getDefaultDescription(title, groupTitle),
+      chance: modalData.chance || "—",
+      ease: modalData.ease || "—",
+      group: groupTitle,
+    };
+  }
+
+  function normalizeCollectItems(groups) {
+    return groups.flatMap((group) =>
+      group.items.map((item) => normalizeCollectItem(item, group.title)),
+    );
+  }
+
+  function renderCollectCard(item) {
+    const collectItem = normalizeCollectItem(item, "");
+
     return `
-      <div class="M_CollectCard" data-collect-title="${escapeHtml(title)}">
-        <div class="M_CollectCardMedia">
+    <div class="M_CollectCard" data-collect-id="${escapeHtml(collectItem.id)}">
+      <div class="M_CollectCardMedia">
+        <img
+          class="Q_CollectImage"
+          src="${collectItem.image}"
+          alt="Изображение: ${escapeHtml(collectItem.title)}"
+          loading="lazy"
+        />
+        <button class="A_Button A_CollectLink" type="button" aria-label="Открыть карточку">
           <img
-            class="Q_CollectImage"
-            src="${image}"
-            alt="Изображение: ${escapeHtml(title)}"
-            loading="lazy"
+            class="Q_CollectLink"
+            src="${STATIC.collectArrowIcon}"
+            alt="Иконка стрелки"
           />
-          <button class="A_Button A_CollectLink" type="button" aria-label="Открыть карточку">
-            <img
-              class="Q_CollectLink"
-              src="${STATIC.collectArrowIcon}"
-              alt="Иконка стрелки"
-            />
-          </button>
-        </div>
-        <h4 class="A_Heading-H4">${title}</h4>
+        </button>
       </div>
-    `;
+      <h4 class="A_Heading-H4">${escapeHtml(collectItem.title)}</h4>
+    </div>
+  `;
   }
 
   function bindCollectCards() {
     document.querySelectorAll(".M_CollectCard").forEach((card) => {
       card.addEventListener("click", () => {
-        const title = card.dataset.collectTitle;
-        const index = state.collectItems.findIndex(
-          (item) => item.title === title,
-        );
+        const id = card.dataset.collectId;
+        const index = state.collectItems.findIndex((item) => item.id === id);
 
         openCollectModal(index >= 0 ? index : 0);
       });

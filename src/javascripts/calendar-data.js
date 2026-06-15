@@ -189,16 +189,42 @@ window.CALENDAR_MONTHS = {
       ["0 / 5", "Активность клещей"],
     ],
     trailDates: ["начало декабря", "10 декабря", "20 декабря", "конец декабря"],
-    daylight: ["08:40", "15:50"],
+    daylight: ["~08:40", "~15:50"],
     temperature: ["−4°C", "−10°C"],
     precipitation: ["65%", "≈ 14"],
     wind: ["5–7 м/с", "до 13 м/с"],
     passability: { frost: "70%", dampness: "35%", mud: "15%", slush: "20%" },
     sky: { clear: "15%", cloudy: "45%", rain: "65%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 5,
+        dampness: 40,
+        mud: 41,
+        slush: 50,
+      },
+
+      skyPaddingLeft: {
+        clear: 58,
+        cloudy: 296,
+        rain: 477,
+      },
+
+      removeInfoIcon: {
+        frost: false,
+        dampness: false,
+        mud: true,
+        slush: false,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "5%",
       birds: "25%",
-      streams: "0%",
+      streams: "5%",
       flowers: "0%",
       insects: "0%",
       tracks: "85%",
@@ -210,12 +236,39 @@ window.CALENDAR_MONTHS = {
       {
         type: "winter",
         title: "Зимние находки",
-        items: ["Брусника", "Клюква", "Шиповник"],
+        items: [
+          {
+            id: "WinterLingonberry",
+            title: "Брусника",
+          },
+          {
+            id: "WinterCranberry",
+            title: "Клюква",
+          },
+          {
+            id: "WinterRosehip",
+            title: "Шиповник",
+          },
+        ],
       },
+
       {
         type: "resources",
         title: "Лесные ресурсы",
-        items: ["Шишки", "Береста", "Чага"],
+        items: [
+          {
+            id: "WinterCones",
+            title: "Шишки",
+          },
+          {
+            id: "WinterBirchbark",
+            title: "Береста",
+          },
+          {
+            id: "WinterChaga",
+            title: "Чага",
+          },
+        ],
       },
     ],
   },
@@ -229,12 +282,38 @@ window.CALENDAR_MONTHS = {
       ["0 / 5", "Активность клещей"],
     ],
     trailDates: ["начало января", "10 января", "20 января", "конец января"],
-    daylight: ["~08:50", "16:10"],
+    daylight: ["~08:50", "~16:10"],
     temperature: ["−7°C", "−14°C"],
     precipitation: ["60%", "≈ 12"],
     wind: ["6–8 м/с", "до 14 м/с"],
     passability: { frost: "90%", dampness: "15%", mud: "2%", slush: "8%" },
     sky: { clear: "20%", cloudy: "50%", rain: "60%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 5,
+        dampness: 41,
+        mud: 70,
+        slush: 58,
+      },
+
+      skyPaddingLeft: {
+        clear: 90,
+        cloudy: 292,
+        rain: 442,
+      },
+
+      removeInfoIcon: {
+        frost: false,
+        dampness: true,
+        mud: true,
+        slush: true,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "2%",
       birds: "30%",
@@ -250,12 +329,39 @@ window.CALENDAR_MONTHS = {
       {
         type: "winter",
         title: "Зимние находки",
-        items: ["Брусника", "Клюква", "Шиповник"],
+        items: [
+          {
+            id: "WinterLingonberry",
+            title: "Брусника",
+          },
+          {
+            id: "WinterCranberry",
+            title: "Клюква",
+          },
+          {
+            id: "WinterRosehip",
+            title: "Шиповник",
+          },
+        ],
       },
+
       {
         type: "resources",
         title: "Лесные ресурсы",
-        items: ["Шишки", "Береста", "Чага"],
+        items: [
+          {
+            id: "WinterCones",
+            title: "Шишки",
+          },
+          {
+            id: "WinterBirchbark",
+            title: "Береста",
+          },
+          {
+            id: "WinterChaga",
+            title: "Чага",
+          },
+        ],
       },
     ],
   },
@@ -275,6 +381,32 @@ window.CALENDAR_MONTHS = {
     wind: ["5–7 м/с", "до 12 м/с"],
     passability: { frost: "75%", dampness: "30%", mud: "8%", slush: "25%" },
     sky: { clear: "20%", cloudy: "45%", rain: "60%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 5,
+        dampness: 45,
+        mud: 58,
+        slush: 55,
+      },
+
+      skyPaddingLeft: {
+        clear: 8,
+        cloudy: 255,
+        rain: 490,
+      },
+
+      removeInfoIcon: {
+        frost: false,
+        dampness: false,
+        mud: true,
+        slush: false,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "8%",
       birds: "35%",
@@ -290,12 +422,39 @@ window.CALENDAR_MONTHS = {
       {
         type: "winter",
         title: "Зимние находки",
-        items: ["Брусника", "Клюква", "Шиповник"],
+        items: [
+          {
+            id: "WinterLingonberry",
+            title: "Брусника",
+          },
+          {
+            id: "WinterCranberry",
+            title: "Клюква",
+          },
+          {
+            id: "WinterRosehip",
+            title: "Шиповник",
+          },
+        ],
       },
+
       {
         type: "resources",
         title: "Лесные ресурсы",
-        items: ["Шишки", "Береста", "Чага"],
+        items: [
+          {
+            id: "WinterCones",
+            title: "Шишки",
+          },
+          {
+            id: "WinterBirchbark",
+            title: "Береста",
+          },
+          {
+            id: "WinterChaga",
+            title: "Чага",
+          },
+        ],
       },
     ],
   },
@@ -315,6 +474,32 @@ window.CALENDAR_MONTHS = {
     wind: ["4–6 м/с", "до 10 м/с"],
     passability: { frost: "15%", dampness: "20%", mud: "45%", slush: "35%" },
     sky: { clear: "15%", cloudy: "25%", rain: "65%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 55,
+        dampness: 25,
+        mud: -35,
+        slush: -18,
+      },
+
+      skyPaddingLeft: {
+        clear: 75,
+        cloudy: 190,
+        rain: 433,
+      },
+
+      removeInfoIcon: {
+        frost: false,
+        dampness: false,
+        mud: false,
+        slush: false,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "40%",
       birds: "60%",
@@ -365,6 +550,32 @@ window.CALENDAR_MONTHS = {
     wind: ["3–5 м/с", "до 9 м/с"],
     passability: { frost: "5%", dampness: "30%", mud: "45%", slush: "10%" },
     sky: { clear: "25%", cloudy: "35%", rain: "55%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 58,
+        dampness: 40,
+        mud: -30,
+        slush: 60,
+      },
+
+      skyPaddingLeft: {
+        clear: 192,
+        cloudy: 312,
+        rain: 452,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: false,
+        mud: false,
+        slush: false,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "75%",
       birds: "85%",
@@ -415,6 +626,32 @@ window.CALENDAR_MONTHS = {
     wind: ["2–4 м/с", "до 7 м/с"],
     passability: { frost: "0%", dampness: "15%", mud: "20%", slush: "0%" },
     sky: { clear: "40%", cloudy: "30%", rain: "45%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 90,
+        dampness: 55,
+        mud: -10,
+        slush: 90,
+      },
+
+      skyPaddingLeft: {
+        clear: 365,
+        cloudy: 180,
+        rain: 452,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: false,
+        mud: false,
+        slush: true,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "95%",
       birds: "100%",
@@ -459,12 +696,37 @@ window.CALENDAR_MONTHS = {
       ["5 / 5", "Активность клещей"],
     ],
     trailDates: ["начало июня", "10 июня", "20 июня", "конец июня"],
-    daylight: ["04:00", "21:30"],
+    daylight: ["~04:00", "~21:30"],
     temperature: ["+22°C", "+12°C"],
     precipitation: ["40%", "≈ 5"],
     wind: ["2–3 м/с", "до 6 м/с"],
     passability: { frost: "0%", dampness: "10%", mud: "15%", slush: "0%" },
     sky: { clear: "45%", cloudy: "25%", rain: "40%" },
+    manualLayout: {
+      passabilityTop: {
+        frost: 90,
+        dampness: 45,
+        mud: -30,
+        slush: 90,
+      },
+
+      skyPaddingLeft: {
+        clear: 472,
+        cloudy: 170,
+        rain: 378,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: false,
+        mud: false,
+        slush: true,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "100%",
       birds: "95%",
@@ -509,12 +771,38 @@ window.CALENDAR_MONTHS = {
       ["4 / 5", "Активность клещей"],
     ],
     trailDates: ["начало июля", "10 июля", "20 июля", "конец июля"],
-    daylight: ["04:20", "~21:10"],
+    daylight: ["~04:20", "~21:10"],
     temperature: ["+24°C", "+14°C"],
     precipitation: ["35%", "≈ 4"],
     wind: ["2–4 м/с", "до 5 м/с"],
     passability: { frost: "0%", dampness: "5%", mud: "10%", slush: "0%" },
     sky: { clear: "55%", cloudy: "20%", rain: "35%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 90,
+        dampness: 30,
+        mud: 15,
+        slush: 90,
+      },
+
+      skyPaddingLeft: {
+        clear: 445,
+        cloudy: 125,
+        rain: 305,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: true,
+        mud: false,
+        slush: true,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "100%",
       birds: "85%",
@@ -559,12 +847,38 @@ window.CALENDAR_MONTHS = {
       ["3 / 5", "Активность клещей"],
     ],
     trailDates: ["начало августа", "10 августа", "20 августа", "конец августа"],
-    daylight: ["05:10", "~20:10"],
+    daylight: ["~05:10", "~20:10"],
     temperature: ["+22°C", "+12°C"],
     precipitation: ["40%", "≈ 5"],
     wind: ["2–4 м/с", "до 6 м/с"],
     passability: { frost: "0%", dampness: "8%", mud: "12%", slush: "0%" },
     sky: { clear: "50%", cloudy: "25%", rain: "40%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 90,
+        dampness: 30,
+        mud: 30,
+        slush: 90,
+      },
+
+      skyPaddingLeft: {
+        clear: 475,
+        cloudy: 115,
+        rain: 360,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: true,
+        mud: false,
+        slush: true,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "95%",
       birds: "75%",
@@ -614,12 +928,37 @@ window.CALENDAR_MONTHS = {
       "20 сентября",
       "конец сентября",
     ],
-    daylight: ["06:20", "19:10"],
+    daylight: ["~06:20", "~19:10"],
     temperature: ["+14°C", "+6°C"],
     precipitation: ["55%", "≈ 9"],
     wind: ["3–5 м/с", "до 8 м/с"],
     passability: { frost: "0%", dampness: "20%", mud: "18%", slush: "5%" },
     sky: { clear: "35%", cloudy: "35%", rain: "55%" },
+    manualLayout: {
+      passabilityTop: {
+        frost: 90,
+        dampness: 8,
+        mud: 15,
+        slush: 62,
+      },
+
+      skyPaddingLeft: {
+        clear: 270,
+        cloudy: 270,
+        rain: 495,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: false,
+        mud: false,
+        slush: true,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "75%",
       birds: "70%",
@@ -640,7 +979,7 @@ window.CALENDAR_MONTHS = {
       {
         type: "resources",
         title: "Лесные ресурсы",
-        items: ["Брусника", "Клюква", "Орех лещины"],
+        items: ["Брусника", "Клюква", "Орехи лещины"],
       },
       {
         type: "flowers",
@@ -670,6 +1009,32 @@ window.CALENDAR_MONTHS = {
     wind: ["4–6 м/с", "до 10 м/с"],
     passability: { frost: "5%", dampness: "45%", mud: "55%", slush: "40%" },
     sky: { clear: "25%", cloudy: "40%", rain: "65%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 62,
+        dampness: 8,
+        mud: -35,
+        slush: 20,
+      },
+
+      skyPaddingLeft: {
+        clear: 122,
+        cloudy: 292,
+        rain: 470,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: false,
+        mud: false,
+        slush: false,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "45%",
       birds: "55%",
@@ -720,6 +1085,32 @@ window.CALENDAR_MONTHS = {
     wind: ["5–7 м/с", "до 12 м/с"],
     passability: { frost: "20%", dampness: "65%", mud: "70%", slush: "75%" },
     sky: { clear: "10%", cloudy: "40%", rain: "75%" },
+
+    manualLayout: {
+      passabilityTop: {
+        frost: 75,
+        dampness: 18,
+        mud: -25,
+        slush: -37,
+      },
+
+      skyPaddingLeft: {
+        clear: 7,
+        cloudy: 267,
+        rain: 490,
+      },
+
+      removeInfoIcon: {
+        frost: true,
+        dampness: false,
+        mud: false,
+        slush: false,
+
+        clear: false,
+        cloudy: false,
+        rain: false,
+      },
+    },
     nature: {
       plants: "20%",
       birds: "35%",
@@ -772,6 +1163,7 @@ window.COLLECT_IMAGES = {
   Саркосцифа: collectImage("Sarcoscifa"),
 
   Брусника: collectImage("Lingonberry"),
+  "Лист брусники": collectImage("LingonberryLeaf"),
   Клюква: collectImage("Cranberry"),
   Шиповник: collectImage("Rosehip"),
   Шишки: collectImage("Cones"),
@@ -805,7 +1197,6 @@ window.COLLECT_IMAGES = {
   "Белые грибы": collectImage("Porcini"),
 
   Кислица: collectImage("WoodSorrel"),
-  "Орех лещины": collectImage("Hazelnut"),
   "Орехи лещины": collectImage("Hazelnut"),
   Рябина: collectImage("Rowan"),
   Боярышник: collectImage("Hawthorn"),
@@ -814,12 +1205,319 @@ window.COLLECT_IMAGES = {
   "Хвоя сосны": collectImage("PineNeedles"),
   Вешенки: collectImage("OysterMushrooms"),
   Рядовки: collectImage("Tricholoma"),
+
+  WinterLingonberry: collectImage("WinterLingonberry"),
+  WinterCranberry: collectImage("WinterCranberry"),
+  WinterRosehip: collectImage("WinterRosehip"),
+  WinterCones: collectImage("WinterCones"),
+  WinterBirchbark: collectImage("WinterBirchbark"),
+  WinterChaga: collectImage("WinterChaga"),
 };
 
 window.COLLECT_MODAL_DATA = {
   Крапива: {
-    description: "Молодые листья для супов и салатов",
+    description: "Молодые съедобные листья вдоль троп",
+    chance: "90%",
+    ease: "Высокая",
+  },
+
+  Сныть: {
+    description: "Распространённая весенняя лесная зелень",
+    chance: "85%",
+    ease: "Высокая",
+  },
+
+  Черемша: {
+    description: "Ароматные листья во влажных местах",
+    chance: "35%",
+    ease: "Средняя",
+  },
+
+  "Берёзовый сок": {
+    description: "Весенний сок взрослых берёз",
+    chance: "75%",
+    ease: "Высокая",
+  },
+
+  "Почки сосны": {
+    description: "Молодые почки на концах ветвей",
+    chance: "80%",
+    ease: "Высокая",
+  },
+
+  Ольха: {
+    description: "Дерево влажных берегов и низин",
+    chance: "65%",
+    ease: "Высокая",
+  },
+
+  Медуница: {
+    description: "Ранний лесной цветок весны",
+    chance: "60%",
+    ease: "Средняя",
+  },
+
+  "Мать-и-мачеха": {
+    description: "Жёлтые цветы на прогретых склонах",
     chance: "70%",
     ease: "Высокая",
+  },
+
+  "Почки березы": {
+    description: "Ароматные весенние берёзовые почки",
+    chance: "85%",
+    ease: "Высокая",
+  },
+
+  Сморчок: {
+    description: "Редкий весенний гриб складчатой формы",
+    chance: "25%",
+    ease: "Низкая",
+  },
+
+  Строчок: {
+    description: "Весенний гриб необычной формы",
+    chance: "30%",
+    ease: "Средняя",
+  },
+
+  Саркосцифа: {
+    description: "Ярко-красный гриб на древесине",
+    chance: "20%",
+    ease: "Низкая",
+  },
+
+  Брусника: {
+    description: "Вечнозелёный кустарник хвойных лесов",
+    chance: "70%",
+    ease: "Высокая",
+  },
+
+  "Лист брусники": {
+    description: "Вечнозелёный кустарник хвойных лесов",
+    chance: "70%",
+    ease: "Высокая",
+  },
+
+  Клюква: {
+    description: "Ягода болот и влажных мест",
+    chance: "40%",
+    ease: "Средняя",
+  },
+
+  Шиповник: {
+    description: "Плоды колючего лесного кустарника",
+    chance: "75%",
+    ease: "Высокая",
+  },
+
+  Шишки: {
+    description: "Семенные шишки хвойных деревьев",
+    chance: "95%",
+    ease: "Высокая",
+  },
+
+  Береста: {
+    description: "Наружный слой коры берёзы",
+    chance: "90%",
+    ease: "Высокая",
+  },
+
+  Чага: {
+    description: "Берёзовый гриб чёрного цвета",
+    chance: "35%",
+    ease: "Средняя",
+  },
+
+  Щавель: {
+    description: "Кислые листья лесных опушек",
+    chance: "80%",
+    ease: "Высокая",
+  },
+
+  "Иван-чай": {
+    description: "Высокое растение с розовыми цветами",
+    chance: "85%",
+    ease: "Высокая",
+  },
+
+  "Молодая хвоя": {
+    description: "Свежие весенние побеги хвойных",
+    chance: "90%",
+    ease: "Высокая",
+  },
+
+  "Смола сосны": {
+    description: "Ароматная смола на стволах сосен",
+    chance: "75%",
+    ease: "Высокая",
+  },
+
+  "Побеги сосны": {
+    description: "Молодые светлые весенние приросты",
+    chance: "85%",
+    ease: "Высокая",
+  },
+
+  Ландыш: {
+    description: "Ароматные белые цветы весны",
+    chance: "55%",
+    ease: "Средняя",
+  },
+
+  Черёмуха: {
+    description: "Душистое дерево с белыми кистями",
+    chance: "70%",
+    ease: "Высокая",
+  },
+
+  Купальница: {
+    description: "Яркий жёлтый цветок влажных лугов",
+    chance: "40%",
+    ease: "Средняя",
+  },
+
+  Лютик: {
+    description: "Яркий жёлтый цветок лета",
+    chance: "80%",
+    ease: "Высокая",
+  },
+
+  Ромашка: {
+    description: "Популярный луговой лекарственный цветок",
+    chance: "90%",
+    ease: "Высокая",
+  },
+
+  Клевер: {
+    description: "Медоносное растение лугов и опушек",
+    chance: "95%",
+    ease: "Высокая",
+  },
+
+  Лисички: {
+    description: "Популярные жёлтые лесные грибы",
+    chance: "60%",
+    ease: "Средняя",
+  },
+
+  Подберёзовик: {
+    description: "Гриб рядом с берёзами",
+    chance: "65%",
+    ease: "Средняя",
+  },
+
+  Маслята: {
+    description: "Грибы сосновых лесов после дождя",
+    chance: "70%",
+    ease: "Высокая",
+  },
+
+  Мята: {
+    description: "Ароматное растение влажных участков",
+    chance: "50%",
+    ease: "Средняя",
+  },
+
+  Душица: {
+    description: "Душистая трава солнечных опушек",
+    chance: "55%",
+    ease: "Средняя",
+  },
+
+  Черника: {
+    description: "Лесная ягода хвойных лесов",
+    chance: "75%",
+    ease: "Высокая",
+  },
+
+  "Живица сосны": {
+    description: "Застывающая смола на сосновой коре",
+    chance: "70%",
+    ease: "Высокая",
+  },
+
+  Пижма: {
+    description: "Жёлтые соцветия вдоль дорог",
+    chance: "80%",
+    ease: "Высокая",
+  },
+
+  Зверобой: {
+    description: "Лекарственное растение солнечных мест",
+    chance: "70%",
+    ease: "Высокая",
+  },
+
+  Тысячелистник: {
+    description: "Белые соцветия лугов и опушек",
+    chance: "85%",
+    ease: "Высокая",
+  },
+
+  Подосиновики: {
+    description: "Грибы возле осин и берёз",
+    chance: "55%",
+    ease: "Средняя",
+  },
+
+  "Белые грибы": {
+    description: "Ценные лесные грибы крупных размеров",
+    chance: "45%",
+    ease: "Средняя",
+  },
+
+  Кислица: {
+    description: "Нежные кислые листья леса",
+    chance: "80%",
+    ease: "Высокая",
+  },
+
+  "Орехи лещины": {
+    description: "Созревшие лесные орехи лещины",
+    chance: "40%",
+    ease: "Средняя",
+  },
+
+  Рябина: {
+    description: "Яркие ягоды осеннего леса",
+    chance: "85%",
+    ease: "Высокая",
+  },
+
+  Боярышник: {
+    description: "Красные плоды колючего кустарника",
+    chance: "60%",
+    ease: "Средняя",
+  },
+
+  Опята: {
+    description: "Грибы большими группами на древесине",
+    chance: "75%",
+    ease: "Высокая",
+  },
+
+  Сухоцветы: {
+    description: "Высохшие растения поздней осени",
+    chance: "85%",
+    ease: "Высокая",
+  },
+
+  "Хвоя сосны": {
+    description: "Зелёная хвоя взрослых сосен",
+    chance: "95%",
+    ease: "Высокая",
+  },
+
+  Вешенки: {
+    description: "Грибы на мёртвой древесине",
+    chance: "40%",
+    ease: "Средняя",
+  },
+
+  Рядовки: {
+    description: "Поздние осенние пластинчатые грибы",
+    chance: "50%",
+    ease: "Средняя",
   },
 };

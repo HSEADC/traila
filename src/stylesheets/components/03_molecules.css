@@ -530,7 +530,7 @@
   display: flex;
   align-items: center;
   padding-top: 10rem;
-  gap: 45rem;
+  gap: 90rem;
 }
 
 .M_TrailComfortMetric {
@@ -617,7 +617,7 @@
 .M_SkyConditionItem {
   display: flex;
   align-items: center;
-  gap: 20rem;
+  gap: 25rem;
 }
 
 .M_SkyConditionItem--clear {
