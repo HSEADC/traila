@@ -10,6 +10,95 @@
   gap: 10rem;
 }
 
+/* ___________________index.html___________________ */
+.W_DaylightInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 770rem;
+  left: 175rem;
+  top: -37rem;
+}
+
+.W_PassabilityBars {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40rem;
+}
+
+.W_SkyConditions {
+  display: flex;
+  flex-direction: column;
+  gap: 22rem;
+  padding-top: 22rem;
+}
+
+.W_ConditionLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+}
+
+.W_ConditionValues {
+  display: flex;
+  flex-direction: column;
+  gap: 29rem;
+  padding-top: 10rem;
+}
+
+.W_ConditionInfo {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+
+.W_ChecklistCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_ArticleCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_SkillsCards {
+  display: grid;
+  grid-template-columns: repeat(2, 670rem);
+  grid-template-rows: repeat(2, 186rem);
+  gap: 20rem;
+}
+
+.W_RoutesCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_RouteMetrics {
+  display: flex;
+  gap: 18rem;
+}
+
+/* ___________________aboutus.html___________________ */
+.W_ProjectValuesCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_ProjectValueHeader {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+.W_ForestDiscoveryText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+}
+
 /* ___________________interactive.html___________________ */
 .W_TestCardContent {
   display: flex;

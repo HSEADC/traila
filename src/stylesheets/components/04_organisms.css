@@ -16,6 +16,134 @@
   min-height: 305rem;
   background-color: var(--color-surface);
 }
+/* ___________________index.html___________________ */
+.O_HeaderHome {
+  gap: 190rem;
+  background-image: url("/src/images/Q_HomeBG.webp");
+  min-height: 807rem;
+}
+
+.O_MainHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 0;
+  gap: 120rem;
+}
+
+.O_MonthlyCalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_CalendarOverview {
+  display: grid;
+  grid-template-rows: 136rem 194rem 50rem;
+  grid-template-columns: 440rem 535rem 345rem;
+  gap: 20rem;
+}
+
+.O_MonthlyChecklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_UsefulMaterials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_ExpertInterview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+}
+
+.O_SkillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_RoutesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_DzenSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50rem;
+  width: 100%;
+  min-height: 425rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  background-image: url("/src/images/Q_DzenBG.webp");
+}
+
+/* ___________________aboutus.html___________________ */
+.O_HeaderAboutus {
+  gap: 180rem;
+  background-image: url("/src/images/Q_AboutusBG.webp");
+  min-height: 625rem;
+}
+
+.O_MainAboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 0;
+  gap: 120rem;
+}
+
+.O_AboutProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80rem;
+  width: 100%;
+  min-height: 500rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_AboutProjectBG.svg");
+  background-color: var(--color-surface);
+}
+
+.O_ProjectValues {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_ForestDiscovery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70rem;
+  padding-top: 160rem;
+  width: 100%;
+  min-height: 570rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/src/images/Q_ForestDiscoveryBG.svg");
+  background-color: var(--color-surface);
+}
 
 /* ___________________interactive.html___________________ */
 .O_HeaderInteractive {
@@ -211,10 +339,17 @@
   min-height: 625rem;
 }
 
+.O_MainCalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120rem;
+  padding: 120rem 0;
+}
+
 .O_CalendarDashboard {
   display: flex;
   flex-direction: column;
-  padding: 120rem 40rem;
   gap: 60rem;
 }
 
@@ -223,8 +358,7 @@
   flex-direction: column;
   gap: 60rem;
   align-items: center;
-  padding-left: 40rem;
-  padding-bottom: 120rem;
+  padding: 0 40rem;
 }
 
 .O_CollectModal {
@@ -252,162 +386,6 @@
 
 .O_CollectModal[hidden] {
   display: none;
-}
-
-/* ___________________index.html___________________ */
-.O_HeaderMain {
-  gap: 190rem;
-  background-image: url("/src/images/hero-bg.webp");
-  min-height: 807rem;
-}
-
-.O_Calendar {
-  display: flex;
-  flex-direction: column;
-  gap: 70rem;
-  align-items: center;
-}
-
-.O_CalendarState {
-  display: grid;
-  grid-template-columns: 536rem 431rem 353rem;
-  grid-template-rows: 136rem 264rem;
-  gap: 20rem;
-}
-
-.O_Daylight {
-  display: flex;
-  padding: 25rem 35rem;
-  gap: 130rem;
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Daylight.webp");
-}
-
-.O_ForestState {
-  display: flex;
-  flex-direction: column;
-  padding: 25rem 35rem;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_ForestStats.webp");
-}
-
-.O_ForestSky {
-  display: flex;
-  flex-direction: column;
-  padding: 25rem 35rem;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_ForestSky.webp");
-}
-.O_ForestOther {
-  display: flex;
-  flex-direction: column;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  gap: 20rem;
-}
-
-.O_ForestState-Other {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 15rem;
-  min-height: 194rem;
-  padding: 20rem 25rem;
-  background-color: var(--color-surface);
-}
-
-.O_Section-Checklist-Cards {
-  display: flex;
-  gap: 30rem;
-}
-
-.O_Section-MainArticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 70rem;
-  width: 1360rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Section-MainArticle.webp");
-}
-
-.O_Section-ArticlesList {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-  align-items: center;
-}
-
-.O_Section-TestsList {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-  align-items: center;
-}
-
-.O_ArticlesList {
-  display: flex;
-  gap: 30rem;
-}
-
-.O_Articles-CardList {
-  display: flex;
-  flex-direction: column;
-  padding: 10rem;
-  gap: 10rem;
-  width: 317rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-.O_Section-TestsList_Cards {
-  display: grid;
-  grid-template-columns: repeat(2, 665rem);
-  grid-template-rows: repeat(2, 180rem);
-  gap: 30rem;
-}
-
-.O_Section_Dzen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Section-Dzen.webp");
-}
-
-.O_InWork {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 120rem 40rem;
-  gap: 40rem;
 }
 
 /* ___________________404.html___________________ */

@@ -192,6 +192,12 @@ const htmlPages = [
     "calendardata",
     "calendar",
   ]),
+  createPages("./src/pages/aboutus.html", "pages/aboutus.html", [
+    "index",
+    "allStyles",
+    "widows",
+    "searchVanilla",
+  ]),
   // после не правила
   // после не правила
   createPages("./src/404.html", "./404.html", ["index"]),

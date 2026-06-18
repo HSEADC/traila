@@ -160,6 +160,375 @@
   opacity: 1;
   visibility: visible;
 }
+
+/* ___________________index.html___________________ */
+.M_HeroInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+}
+
+.M_HomeHeroContent {
+  gap: 75rem;
+}
+
+.M_CalendarDaylight {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 35rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/home-calendar/Q_DaylightGraph.svg");
+}
+
+.M_DaylightInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  align-items: center;
+  text-align: center;
+}
+
+.M_CalendarPassability {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 35rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/home-calendar/Q_PassabilityChart.svg");
+}
+
+.M_PassabilityBar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  align-items: center;
+  text-align: center;
+  width: 90rem;
+}
+
+.M_PassabilityBar--frost {
+  top: 72rem;
+}
+
+.M_PassabilityBar--humidity {
+  top: 95rem;
+}
+
+.M_PassabilityBar--mud {
+  top: 35rem;
+}
+
+.M_PassabilityBar--slush {
+  top: -5rem;
+}
+
+.M_CalendarSky {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 35rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/home-calendar/Q_SkyChart.svg");
+}
+
+.M_SkyCondition {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25rem;
+}
+
+.M_SkyCondition--clear {
+  left: 72rem;
+}
+
+.M_SkyCondition--cloudy {
+  left: 165rem;
+}
+
+.M_SkyCondition--rain {
+  left: 370rem;
+}
+
+.M_CalendarConditions {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 10rem;
+  padding: 20rem 0rem 15rem 20rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+}
+
+.M_ChecklistCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20rem 20rem 30rem 20rem;
+  border-radius: 25rem;
+  text-decoration: none;
+  background-color: var(--color-surface);
+  width: 256rem;
+  min-height: 290rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.M_ChecklistCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_ChecklistCard--mushrooms {
+  gap: 20rem;
+  background-image: url("/src/images/home-calendar/M_ChecklistCard--1.svg");
+}
+
+.M_ChecklistCard--ticks {
+  padding-top: 30rem;
+  gap: 30rem;
+  background-image: url("/src/images/home-calendar/M_ChecklistCard--2.svg");
+}
+
+.M_ChecklistCard--route {
+  padding-top: 30rem;
+  align-items: center;
+  gap: 30rem;
+  background-image: url("/src/images/home-calendar/M_ChecklistCard--3.svg");
+}
+
+.M_ChecklistCard--water {
+  padding-top: 52rem;
+  align-items: center;
+  gap: 40rem;
+  background-image: url("/src/images/home-calendar/M_ChecklistCard--4.svg");
+}
+
+.M_ChecklistCard--preparation {
+  padding-top: 47rem;
+  align-items: center;
+  gap: 23rem;
+  background-image: url("/src/images/home-calendar/M_ChecklistCard--5.svg");
+}
+
+.M_ChecklistTitle {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 20rem;
+  background-color: var(--color-card-accent);
+  border-radius: 15rem;
+}
+
+.M_ChecklistTitle--mushrooms {
+  position: relative;
+  top: 30rem;
+}
+
+.M_ArticleCard {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 10rem;
+  text-decoration: none;
+  border-radius: 25rem;
+  width: 325rem;
+  min-height: 315rem;
+  background-color: var(--color-card);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.M_ArticleCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_ArticleImage {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10rem;
+  border-radius: 25rem;
+  min-height: 173rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.M_TagItemCard {
+  position: relative;
+  top: 10rem;
+  align-self: flex-start;
+}
+
+.M_ArticleImage--landmarks {
+  background-position: start;
+  background-image: url("/src/images/articles/Q__ArticleImage--landmarks.webp");
+}
+
+.M_ArticleImage--ticks {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--ticksVar.webp");
+}
+
+.M_ArticleImage--mushroomer {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--mushroomer.webp");
+}
+
+.M_ArticleImage--backpack {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--backpack.webp");
+}
+
+.M_ExpertContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 60rem;
+}
+
+.M_ContentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20rem;
+  width: 562rem;
+}
+
+.M_ContentTegs {
+  display: flex;
+  gap: 10rem;
+}
+
+.M_SkillCard {
+  display: flex;
+  padding: 10rem;
+  gap: 10rem;
+  border-radius: 25rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.M_SkillCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_SkillCard--Help {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  flex-direction: column;
+}
+
+.M_SkillCard--Things {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.M_SkillCard--ForestExam {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.M_SkillContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 0 5rem;
+}
+
+.M_SkillContent--compact {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 5rem 0;
+}
+
+.M_SkillTegs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.M_SkillTegs--compact {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+.M_RouteCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 10rem 10rem 20rem;
+  gap: 10rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+  width: 440rem;
+  min-height: 180rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.M_RouteCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_RouteContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+  padding-top: 23rem;
+}
+
+.M_RouteMetric {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+.M_MetricValue {
+  display: flex;
+  flex-direction: column;
+}
+
+.M_DzenHeader {
+  display: flex;
+  align-items: center;
+  gap: 50rem;
+}
+
+/* ___________________aboutus.html___________________ */
+.M_ProjectValueCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  padding: 20rem;
+  background-color: var(--color-card-accent);
+  border-radius: 25rem;
+  width: 325rem;
+  min-height: 155rem;
+}
 /* ___________________interactive.html___________________ */
 .M_TestCardTags {
   display: flex;
@@ -691,245 +1060,7 @@
   align-items: center;
   gap: 5rem;
 }
-/* ___________________index.html___________________ */
-.M_State {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
 
-.M_State-Sunset {
-  padding-left: 600rem;
-}
-
-.M_Passability-Index {
-  align-self: flex-start;
-  display: flex;
-  gap: 40rem;
-}
-
-.M_StateVar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
-
-.M_State-Permafrost {
-  padding-left: 25rem;
-  padding-top: 60rem;
-}
-.M_State-Dampness-Main {
-  padding-left: 10rem;
-  padding-top: 80rem;
-}
-.M_State-Dampness {
-  padding-left: 25rem;
-  padding-top: 125rem;
-}
-.M_State-DampnessVar {
-  padding-left: 10rem;
-  padding-top: 80rem;
-}
-.M_State-Slush {
-  padding-left: 18rem;
-  padding-top: 25rem;
-}
-
-.M_State-Dirt {
-  position: relative;
-  padding-left: 30rem;
-  margin: -12rem;
-}
-
-.M_StateSky {
-  display: flex;
-  padding-top: 15rem;
-  padding-left: 10rem;
-  align-items: center;
-  gap: 27rem;
-}
-
-.M_StateCloudy {
-  display: flex;
-  padding-top: 22rem;
-  padding-left: 65rem;
-  align-items: center;
-  gap: 27rem;
-}
-
-.M_ForestSky-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
-
-.M_StateAutumn {
-  display: flex;
-  padding-top: 24rem;
-  padding-left: 212rem;
-  align-items: center;
-  gap: 27rem;
-}
-
-.M_State-Other {
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-}
-
-.M_Card-CheckList-biotopes {
-  display: flex;
-  align-items: center;
-  padding-top: 160rem;
-  gap: 30rem;
-  min-height: 263rem;
-  width: 263rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Card-CheckList-biotopes.webp");
-}
-
-.M_Card-CheckList-biotopes:hover {
-  background-image: url("/src/images/Q_Card-CheckList-biotopes-hover.webp");
-}
-
-.M_Card-CheckList-trail {
-  display: flex;
-  align-items: center;
-  padding-top: 32rem;
-  gap: 145rem;
-  min-height: 263rem;
-  width: 207rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Card-CheckList-trail.webp");
-}
-
-.M_Card-CheckList-trail:hover {
-  background-image: url("/src/images/Q_Card-CheckList-trail-hover.webp");
-}
-
-.M_Card-CheckList-seasons {
-  display: flex;
-  align-items: center;
-  padding-top: 160rem;
-  gap: 30rem;
-  min-height: 263rem;
-  width: 263rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Card-CheckList-seasons.webp");
-}
-
-.M_Card-CheckList-seasons:hover {
-  background-image: url("/src/images/Q_Card-CheckList-seasons-hover.webp");
-}
-
-.M_Card-CheckList-compass {
-  display: flex;
-  align-items: center;
-  padding-top: 35rem;
-  padding-left: 40rem;
-  gap: 145rem;
-  min-height: 263rem;
-  width: 258rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Card-CheckList-compass.webp");
-}
-
-.M_Card-CheckList-compass:hover {
-  background-image: url("/src/images/Q_Card-CheckList-compass-hover.webp");
-}
-
-.M_Card-CheckList-ticks {
-  display: flex;
-  align-items: center;
-  padding-top: 32rem;
-  gap: 145rem;
-  min-height: 263rem;
-  width: 207rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_Card-CheckList-ticks.webp");
-}
-
-.M_Card-CheckList-ticks:hover {
-  background-image: url("/src/images/Q_Card-CheckList-ticks-hover.webp");
-}
-
-.M_Section-MainContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 5rem;
-}
-
-.M_Articles-CardList {
-  display: flex;
-  justify-content: end;
-  padding: 10rem;
-  width: 297rem;
-  min-height: 173rem;
-  border-radius: 10rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: none;
-}
-
-.M_Articles-CardLis-storm {
-  background-image: url("/src/images/articles/article_storm.webp");
-}
-
-.M_Articles-CardLis-boletus {
-  background-image: url("/src/images/articles/article_boletus.webp");
-}
-
-.M_Articles-CardLis-fox {
-  background-image: url("/src/images/articles/article_fox.webp");
-}
-
-.M_Articles-CardLis-bonfire {
-  background-image: url("/src/images/articles/article_bonfire.webp");
-}
-
-.M_Section_Dzen-Content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30rem;
-}
-
-.M_Articles-CardMedia-Anxiety.visible {
-  background-image: url("/src/images/Q_Articles-CardMedia-Anxiety.webp");
-}
-
-.M_Articles-CardMedia-Routes.visible {
-  background-image: url("/src/images/Q_Articles-CardMedia-Routes.webp");
-}
-
-.M_Articles-CardMedia-Atmosphere.visible {
-  background-image: url("/src/images/Q_Articles-CardMedia-Atmosphere.webp");
-}
-
-.M_burger-icon {
-  display: none;
-}
 /* ___________________404.html___________________ */
 .M_HeroContent-NotFound {
   gap: 0;

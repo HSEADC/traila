@@ -324,7 +324,95 @@ input[type="email"]::placeholder {
   height: auto;
 }
 /* ___________________index.html___________________ */
+.Q_ChecklistImage--mushrooms {
+  position: relative;
+  top: 25rem;
+  left: 10rem;
+  display: block;
+  width: 139rem;
+  height: 93rem;
+  border-radius: 15rem;
+}
 
+.Q_ChecklistImage--ticks {
+  align-self: center;
+  display: block;
+  width: 196rem;
+  height: 93rem;
+  border-radius: 15rem;
+}
+
+.Q_ChecklistImage--route {
+  position: relative;
+  top: 20rem;
+  align-self: center;
+  display: block;
+  width: 187rem;
+  height: 128rem;
+  border-radius: 15rem;
+}
+
+.Q_ChecklistImage--water {
+  align-self: center;
+  display: block;
+  width: 187rem;
+  height: 70rem;
+  border-radius: 15rem;
+}
+
+.Q_ChecklistImage--preparation {
+  align-self: center;
+  display: block;
+  width: 195.3rem;
+  height: 82.23rem;
+  border-radius: 15rem;
+}
+
+.Q_ExpertImage {
+  display: block;
+  width: 557rem;
+  height: auto;
+}
+
+.Q_SkillCard--Help {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_SkillCard--Things {
+  display: block;
+  width: 300rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_SkillCard--ForestExam {
+  display: block;
+  width: 300rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_RouteIcon {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+}
+
+.Q_RouteMap {
+  display: block;
+  width: 147rem;
+  min-height: auto;
+}
+
+/* ___________________aboutus.html___________________ */
+.Q_ProjectValueIcon {
+  display: block;
+  width: 28rem;
+  min-height: 28rem;
+}
 /* ___________________interactive.html___________________ */
 .Q_TestCardImg {
   display: block;
@@ -684,6 +772,88 @@ input[type="email"]::placeholder {
   transition: opacity 0.2s ease;
 }
 
+/* ___________________index.html___________________ */
+.A_LinkCalendar {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.A_ButtonCalendar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding-left: 94rem;
+  gap: 66rem;
+  border-radius: 70rem;
+  border: none;
+  min-height: 50rem;
+  width: 100%;
+}
+
+.A_ButtonCard {
+  align-self: center;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  width: 30rem;
+  height: 30rem;
+}
+
+.A_Heading-H4--card {
+  position: relative;
+  left: -30rem;
+}
+
+.A_ShowMoreButton {
+  align-self: center;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 71rem;
+  border: none;
+  width: 270rem;
+  height: 50rem;
+}
+
+.A_ButtonInterview {
+  display: flex;
+  align-items: center;
+  padding: 5rem 5rem 5rem 53rem;
+  gap: 24rem;
+  border: none;
+  border-radius: 71rem;
+  height: 50rem;
+  width: 270rem;
+}
+
+/* ___________________aboutus.html___________________ */
+.A_AboutProjectTitle {
+  width: 530rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.A_DiscoveryParagraph {
+  width: 626rem;
+  text-align: center;
+}
+
+.A_ForestDiscoveryButton {
+  display: flex;
+  align-items: center;
+  padding: 5rem 5rem 5rem 80rem;
+  gap: 40rem;
+  border: none;
+  border-radius: 71rem;
+  height: 50rem;
+  width: 270rem;
+}
+
 /* ___________________interactive.html___________________ */
 .A_TestCard_image-iphone {
   display: none;
@@ -834,10 +1004,11 @@ input[type="email"]::placeholder {
   display: flex;
   align-items: center;
   padding: 5rem 5rem 5rem 60rem;
-  gap: 35rem;
+  gap: 31rem;
   border: none;
   border-radius: 71rem;
   height: 50rem;
+  width: 270rem;
 }
 
 .A_ButtonText {
@@ -874,121 +1045,6 @@ input[type="email"]::placeholder {
   width: 50rem;
   height: 50rem;
 }
-/* ___________________index.html___________________ */
-.A_State_img {
-  display: block;
-  width: 41rem;
-  height: auto;
-}
-
-.A_ForestState {
-  display: block;
-  width: 39rem;
-  height: auto;
-  padding-top: 25rem;
-}
-
-.A_ForestState-Sky {
-  display: block;
-  width: 39rem;
-  height: auto;
-}
-
-.A_ForestStateVar {
-  display: block;
-  width: 18rem;
-  height: auto;
-  padding-top: 25rem;
-}
-
-.A_Tag-Text_State {
-  padding-top: 13rem;
-}
-
-.A_ForestState-Other {
-  display: block;
-  width: 18rem;
-  height: auto;
-}
-
-.A_ForestState-Mite {
-  display: block;
-  width: 28rem;
-  height: auto;
-}
-
-.A_Tag-Text-Dampness {
-  padding-left: 30rem;
-}
-
-.A_Tag-Text-Fire {
-  padding-left: 10rem;
-}
-
-.A_Tag-Text-Insect {
-  padding-left: 68rem;
-}
-
-.A_Tag-Text-Mite {
-  padding-left: 113rem;
-}
-
-.A_Button-ForestState {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 100rem;
-  width: 353rem;
-  min-height: 50rem;
-  border: none;
-  border-radius: 71rem;
-}
-
-.A_TestCard_ContentVar {
-  display: block;
-  width: 27rem;
-  height: auto;
-}
-
-.A_Button-MainArticle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 60rem;
-  width: 267rem;
-  min-height: 50rem;
-  border: none;
-  border-radius: 71rem;
-}
-
-.A_TestCardList_image {
-  display: block;
-  min-height: auto;
-}
-.A_TestCardList_image-iphone {
-  display: none;
-}
-.A_Button-Dzen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  width: 45rem;
-  min-height: 45rem;
-  border: 1.7rem solid var(--color-text);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.A_Button-Dzen-img {
-  display: block;
-  width: 20rem;
-  height: auto;
-}
-
-.A_Articles-CardList-Arrow {
-  display: none;
-}
 
 .A_CollectLink {
   grid-area: image;
@@ -1002,7 +1058,6 @@ input[type="email"]::placeholder {
   width: 29rem;
   height: 29rem;
 }
-
 /* ___________________404.html___________________ */
 .A_Heading-NotFound {
   font-family: var(--font-family);
@@ -1290,6 +1345,375 @@ input[type="email"]::placeholder {
 .M_InfoTooltip:hover .A_InfoTooltipText {
   opacity: 1;
   visibility: visible;
+}
+
+/* ___________________index.html___________________ */
+.M_HeroInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+}
+
+.M_HomeHeroContent {
+  gap: 75rem;
+}
+
+.M_CalendarDaylight {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 35rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/Q_DaylightGraph.svg);
+}
+
+.M_DaylightInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  align-items: center;
+  text-align: center;
+}
+
+.M_CalendarPassability {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 35rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/Q_PassabilityChart.svg);
+}
+
+.M_PassabilityBar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  align-items: center;
+  text-align: center;
+  width: 90rem;
+}
+
+.M_PassabilityBar--frost {
+  top: 72rem;
+}
+
+.M_PassabilityBar--humidity {
+  top: 95rem;
+}
+
+.M_PassabilityBar--mud {
+  top: 35rem;
+}
+
+.M_PassabilityBar--slush {
+  top: -5rem;
+}
+
+.M_CalendarSky {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  padding: 20rem 35rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/Q_SkyChart.svg);
+}
+
+.M_SkyCondition {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25rem;
+}
+
+.M_SkyCondition--clear {
+  left: 72rem;
+}
+
+.M_SkyCondition--cloudy {
+  left: 165rem;
+}
+
+.M_SkyCondition--rain {
+  left: 370rem;
+}
+
+.M_CalendarConditions {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  display: flex;
+  gap: 10rem;
+  padding: 20rem 0rem 15rem 20rem;
+  background-color: var(--color-surface);
+  border-radius: 25rem;
+}
+
+.M_ChecklistCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20rem 20rem 30rem 20rem;
+  border-radius: 25rem;
+  text-decoration: none;
+  background-color: var(--color-surface);
+  width: 256rem;
+  min-height: 290rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.M_ChecklistCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_ChecklistCard--mushrooms {
+  gap: 20rem;
+  background-image: url(images/M_ChecklistCard--1.svg);
+}
+
+.M_ChecklistCard--ticks {
+  padding-top: 30rem;
+  gap: 30rem;
+  background-image: url(images/M_ChecklistCard--2.svg);
+}
+
+.M_ChecklistCard--route {
+  padding-top: 30rem;
+  align-items: center;
+  gap: 30rem;
+  background-image: url(images/M_ChecklistCard--3.svg);
+}
+
+.M_ChecklistCard--water {
+  padding-top: 52rem;
+  align-items: center;
+  gap: 40rem;
+  background-image: url(images/M_ChecklistCard--4.svg);
+}
+
+.M_ChecklistCard--preparation {
+  padding-top: 47rem;
+  align-items: center;
+  gap: 23rem;
+  background-image: url(images/M_ChecklistCard--5.svg);
+}
+
+.M_ChecklistTitle {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15rem 20rem;
+  background-color: var(--color-card-accent);
+  border-radius: 15rem;
+}
+
+.M_ChecklistTitle--mushrooms {
+  position: relative;
+  top: 30rem;
+}
+
+.M_ArticleCard {
+  display: flex;
+  flex-direction: column;
+  padding: 10rem;
+  gap: 10rem;
+  text-decoration: none;
+  border-radius: 25rem;
+  width: 325rem;
+  min-height: 315rem;
+  background-color: var(--color-card);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.M_ArticleCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_ArticleImage {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10rem;
+  border-radius: 25rem;
+  min-height: 173rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.M_TagItemCard {
+  position: relative;
+  top: 10rem;
+  align-self: flex-start;
+}
+
+.M_ArticleImage--landmarks {
+  background-position: start;
+  background-image: url(3ef05f4c6602a59cf74f.webp);
+}
+
+.M_ArticleImage--ticks {
+  background-position: center;
+  background-image: url(2244a2a039484fd3c505.webp);
+}
+
+.M_ArticleImage--mushroomer {
+  background-position: center;
+  background-image: url(b41bd6af09a0bd972d1b.webp);
+}
+
+.M_ArticleImage--backpack {
+  background-position: center;
+  background-image: url(a77914eaa7a511df3f24.webp);
+}
+
+.M_ExpertContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 60rem;
+}
+
+.M_ContentHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20rem;
+  width: 562rem;
+}
+
+.M_ContentTegs {
+  display: flex;
+  gap: 10rem;
+}
+
+.M_SkillCard {
+  display: flex;
+  padding: 10rem;
+  gap: 10rem;
+  border-radius: 25rem;
+  background-color: var(--color-card);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.M_SkillCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_SkillCard--Help {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  flex-direction: column;
+}
+
+.M_SkillCard--Things {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.M_SkillCard--ForestExam {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.M_SkillContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 0 5rem;
+}
+
+.M_SkillContent--compact {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 5rem 0;
+}
+
+.M_SkillTegs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.M_SkillTegs--compact {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+.M_RouteCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 10rem 10rem 20rem;
+  gap: 10rem;
+  background-color: var(--color-card);
+  border-radius: 25rem;
+  width: 440rem;
+  min-height: 180rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.M_RouteCard:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_RouteContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+  padding-top: 23rem;
+}
+
+.M_RouteMetric {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+.M_MetricValue {
+  display: flex;
+  flex-direction: column;
+}
+
+.M_DzenHeader {
+  display: flex;
+  align-items: center;
+  gap: 50rem;
+}
+
+/* ___________________aboutus.html___________________ */
+.M_ProjectValueCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  padding: 20rem;
+  background-color: var(--color-card-accent);
+  border-radius: 25rem;
+  width: 325rem;
+  min-height: 155rem;
 }
 /* ___________________interactive.html___________________ */
 .M_TestCardTags {
@@ -1822,245 +2246,7 @@ input[type="email"]::placeholder {
   align-items: center;
   gap: 5rem;
 }
-/* ___________________index.html___________________ */
-.M_State {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
 
-.M_State-Sunset {
-  padding-left: 600rem;
-}
-
-.M_Passability-Index {
-  align-self: flex-start;
-  display: flex;
-  gap: 40rem;
-}
-
-.M_StateVar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
-
-.M_State-Permafrost {
-  padding-left: 25rem;
-  padding-top: 60rem;
-}
-.M_State-Dampness-Main {
-  padding-left: 10rem;
-  padding-top: 80rem;
-}
-.M_State-Dampness {
-  padding-left: 25rem;
-  padding-top: 125rem;
-}
-.M_State-DampnessVar {
-  padding-left: 10rem;
-  padding-top: 80rem;
-}
-.M_State-Slush {
-  padding-left: 18rem;
-  padding-top: 25rem;
-}
-
-.M_State-Dirt {
-  position: relative;
-  padding-left: 30rem;
-  margin: -12rem;
-}
-
-.M_StateSky {
-  display: flex;
-  padding-top: 15rem;
-  padding-left: 10rem;
-  align-items: center;
-  gap: 27rem;
-}
-
-.M_StateCloudy {
-  display: flex;
-  padding-top: 22rem;
-  padding-left: 65rem;
-  align-items: center;
-  gap: 27rem;
-}
-
-.M_ForestSky-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5rem;
-}
-
-.M_StateAutumn {
-  display: flex;
-  padding-top: 24rem;
-  padding-left: 212rem;
-  align-items: center;
-  gap: 27rem;
-}
-
-.M_State-Other {
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-}
-
-.M_Card-CheckList-biotopes {
-  display: flex;
-  align-items: center;
-  padding-top: 160rem;
-  gap: 30rem;
-  min-height: 263rem;
-  width: 263rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(ec73982d91fbb52febdc.webp);
-}
-
-.M_Card-CheckList-biotopes:hover {
-  background-image: url(25fb735071b9fcdbf4ed.webp);
-}
-
-.M_Card-CheckList-trail {
-  display: flex;
-  align-items: center;
-  padding-top: 32rem;
-  gap: 145rem;
-  min-height: 263rem;
-  width: 207rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(725839556e881b4330c8.webp);
-}
-
-.M_Card-CheckList-trail:hover {
-  background-image: url(2237628b5934283dcf05.webp);
-}
-
-.M_Card-CheckList-seasons {
-  display: flex;
-  align-items: center;
-  padding-top: 160rem;
-  gap: 30rem;
-  min-height: 263rem;
-  width: 263rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(5a3754de7b6d03216be4.webp);
-}
-
-.M_Card-CheckList-seasons:hover {
-  background-image: url(be1c4907ad06c59d537b.webp);
-}
-
-.M_Card-CheckList-compass {
-  display: flex;
-  align-items: center;
-  padding-top: 35rem;
-  padding-left: 40rem;
-  gap: 145rem;
-  min-height: 263rem;
-  width: 258rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(10d9441dcd9eeda97352.webp);
-}
-
-.M_Card-CheckList-compass:hover {
-  background-image: url(83962254e96621b86ee8.webp);
-}
-
-.M_Card-CheckList-ticks {
-  display: flex;
-  align-items: center;
-  padding-top: 32rem;
-  gap: 145rem;
-  min-height: 263rem;
-  width: 207rem;
-  flex-direction: column;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(eac85cf744c092609816.webp);
-}
-
-.M_Card-CheckList-ticks:hover {
-  background-image: url(8f8764a712243e6bf10a.webp);
-}
-
-.M_Section-MainContent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 5rem;
-}
-
-.M_Articles-CardList {
-  display: flex;
-  justify-content: end;
-  padding: 10rem;
-  width: 297rem;
-  min-height: 173rem;
-  border-radius: 10rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: none;
-}
-
-.M_Articles-CardLis-storm {
-  background-image: url(9c0e678b05ad6b9bcdc3.webp);
-}
-
-.M_Articles-CardLis-boletus {
-  background-image: url(c54e6a90d489a46f2bfd.webp);
-}
-
-.M_Articles-CardLis-fox {
-  background-image: url(89a196be479b82afb54c.webp);
-}
-
-.M_Articles-CardLis-bonfire {
-  background-image: url(5055e1f85690a3a52b9f.webp);
-}
-
-.M_Section_Dzen-Content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30rem;
-}
-
-.M_Articles-CardMedia-Anxiety.visible {
-  background-image: url(87f4b727d6b83df2120f.webp);
-}
-
-.M_Articles-CardMedia-Routes.visible {
-  background-image: url(a57d0b152d1853579222.webp);
-}
-
-.M_Articles-CardMedia-Atmosphere.visible {
-  background-image: url(b9585490f76d1b2ccf08.webp);
-}
-
-.M_burger-icon {
-  display: none;
-}
 /* ___________________404.html___________________ */
 .M_HeroContent-NotFound {
   gap: 0;
@@ -2552,6 +2738,134 @@ input[type="email"]::placeholder {
   min-height: 305rem;
   background-color: var(--color-surface);
 }
+/* ___________________index.html___________________ */
+.O_HeaderHome {
+  gap: 190rem;
+  background-image: url(825a605c151ffa9e9e88.webp);
+  min-height: 807rem;
+}
+
+.O_MainHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 0;
+  gap: 120rem;
+}
+
+.O_MonthlyCalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_CalendarOverview {
+  display: grid;
+  grid-template-rows: 136rem 194rem 50rem;
+  grid-template-columns: 440rem 535rem 345rem;
+  gap: 20rem;
+}
+
+.O_MonthlyChecklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_UsefulMaterials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_ExpertInterview {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+}
+
+.O_SkillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_RoutesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_DzenSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50rem;
+  width: 100%;
+  min-height: 425rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  background-image: url(916fe914d031832d75b0.webp);
+}
+
+/* ___________________aboutus.html___________________ */
+.O_HeaderAboutus {
+  gap: 180rem;
+  background-image: url(ee2912267555eecbf267.webp);
+  min-height: 625rem;
+}
+
+.O_MainAboutUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 0;
+  gap: 120rem;
+}
+
+.O_AboutProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 80rem;
+  width: 100%;
+  min-height: 500rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/Q_AboutProjectBG.svg);
+  background-color: var(--color-surface);
+}
+
+.O_ProjectValues {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_ForestDiscovery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70rem;
+  padding-top: 160rem;
+  width: 100%;
+  min-height: 570rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(images/Q_ForestDiscoveryBG.svg);
+  background-color: var(--color-surface);
+}
 
 /* ___________________interactive.html___________________ */
 .O_HeaderInteractive {
@@ -2747,10 +3061,17 @@ input[type="email"]::placeholder {
   min-height: 625rem;
 }
 
+.O_MainCalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120rem;
+  padding: 120rem 0;
+}
+
 .O_CalendarDashboard {
   display: flex;
   flex-direction: column;
-  padding: 120rem 40rem;
   gap: 60rem;
 }
 
@@ -2759,8 +3080,7 @@ input[type="email"]::placeholder {
   flex-direction: column;
   gap: 60rem;
   align-items: center;
-  padding-left: 40rem;
-  padding-bottom: 120rem;
+  padding: 0 40rem;
 }
 
 .O_CollectModal {
@@ -2788,162 +3108,6 @@ input[type="email"]::placeholder {
 
 .O_CollectModal[hidden] {
   display: none;
-}
-
-/* ___________________index.html___________________ */
-.O_HeaderMain {
-  gap: 190rem;
-  background-image: url(473f1901cb630a9aed33.webp);
-  min-height: 807rem;
-}
-
-.O_Calendar {
-  display: flex;
-  flex-direction: column;
-  gap: 70rem;
-  align-items: center;
-}
-
-.O_CalendarState {
-  display: grid;
-  grid-template-columns: 536rem 431rem 353rem;
-  grid-template-rows: 136rem 264rem;
-  gap: 20rem;
-}
-
-.O_Daylight {
-  display: flex;
-  padding: 25rem 35rem;
-  gap: 130rem;
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(5e52eda8043a0a443173.webp);
-}
-
-.O_ForestState {
-  display: flex;
-  flex-direction: column;
-  padding: 25rem 35rem;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(708c0e5071933c605574.webp);
-}
-
-.O_ForestSky {
-  display: flex;
-  flex-direction: column;
-  padding: 25rem 35rem;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(faa350b253a986bf9e3e.webp);
-}
-.O_ForestOther {
-  display: flex;
-  flex-direction: column;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  gap: 20rem;
-}
-
-.O_ForestState-Other {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 15rem;
-  min-height: 194rem;
-  padding: 20rem 25rem;
-  background-color: var(--color-surface);
-}
-
-.O_Section-Checklist-Cards {
-  display: flex;
-  gap: 30rem;
-}
-
-.O_Section-MainArticle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 70rem;
-  width: 1360rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(34cca8c4efc2659bd5ae.webp);
-}
-
-.O_Section-ArticlesList {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-  align-items: center;
-}
-
-.O_Section-TestsList {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-  align-items: center;
-}
-
-.O_ArticlesList {
-  display: flex;
-  gap: 30rem;
-}
-
-.O_Articles-CardList {
-  display: flex;
-  flex-direction: column;
-  padding: 10rem;
-  gap: 10rem;
-  width: 317rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-.O_Section-TestsList_Cards {
-  display: grid;
-  grid-template-columns: repeat(2, 665rem);
-  grid-template-rows: repeat(2, 180rem);
-  gap: 30rem;
-}
-
-.O_Section_Dzen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(dd9499179e06e2fec9e2.webp);
-}
-
-.O_InWork {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 120rem 40rem;
-  gap: 40rem;
 }
 
 /* ___________________404.html___________________ */
@@ -3197,6 +3361,95 @@ input[type="email"]::placeholder {
   display: flex;
   flex-direction: column;
   gap: 10rem;
+}
+
+/* ___________________index.html___________________ */
+.W_DaylightInfo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 770rem;
+  left: 175rem;
+  top: -37rem;
+}
+
+.W_PassabilityBars {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 40rem;
+}
+
+.W_SkyConditions {
+  display: flex;
+  flex-direction: column;
+  gap: 22rem;
+  padding-top: 22rem;
+}
+
+.W_ConditionLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+}
+
+.W_ConditionValues {
+  display: flex;
+  flex-direction: column;
+  gap: 29rem;
+  padding-top: 10rem;
+}
+
+.W_ConditionInfo {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+
+.W_ChecklistCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_ArticleCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_SkillsCards {
+  display: grid;
+  grid-template-columns: repeat(2, 670rem);
+  grid-template-rows: repeat(2, 186rem);
+  gap: 20rem;
+}
+
+.W_RoutesCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_RouteMetrics {
+  display: flex;
+  gap: 18rem;
+}
+
+/* ___________________aboutus.html___________________ */
+.W_ProjectValuesCards {
+  display: flex;
+  gap: 20rem;
+}
+
+.W_ProjectValueHeader {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+.W_ForestDiscoveryText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
 }
 
 /* ___________________interactive.html___________________ */

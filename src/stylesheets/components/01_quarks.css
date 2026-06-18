@@ -47,7 +47,95 @@
   height: auto;
 }
 /* ___________________index.html___________________ */
+.Q_ChecklistImage--mushrooms {
+  position: relative;
+  top: 25rem;
+  left: 10rem;
+  display: block;
+  width: 139rem;
+  height: 93rem;
+  border-radius: 15rem;
+}
 
+.Q_ChecklistImage--ticks {
+  align-self: center;
+  display: block;
+  width: 196rem;
+  height: 93rem;
+  border-radius: 15rem;
+}
+
+.Q_ChecklistImage--route {
+  position: relative;
+  top: 20rem;
+  align-self: center;
+  display: block;
+  width: 187rem;
+  height: 128rem;
+  border-radius: 15rem;
+}
+
+.Q_ChecklistImage--water {
+  align-self: center;
+  display: block;
+  width: 187rem;
+  height: 70rem;
+  border-radius: 15rem;
+}
+
+.Q_ChecklistImage--preparation {
+  align-self: center;
+  display: block;
+  width: 195.3rem;
+  height: 82.23rem;
+  border-radius: 15rem;
+}
+
+.Q_ExpertImage {
+  display: block;
+  width: 557rem;
+  height: auto;
+}
+
+.Q_SkillCard--Help {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_SkillCard--Things {
+  display: block;
+  width: 300rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_SkillCard--ForestExam {
+  display: block;
+  width: 300rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_RouteIcon {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+}
+
+.Q_RouteMap {
+  display: block;
+  width: 147rem;
+  min-height: auto;
+}
+
+/* ___________________aboutus.html___________________ */
+.Q_ProjectValueIcon {
+  display: block;
+  width: 28rem;
+  min-height: 28rem;
+}
 /* ___________________interactive.html___________________ */
 .Q_TestCardImg {
   display: block;

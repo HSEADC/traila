@@ -58,13 +58,13 @@
           <li class="M_NavigationItem">
             <a href="#" class="A_NavigationText">статьи</a>
           </li>
-          <li class="M_NavigationItem M_NavigationItem--active">
+          <li class="M_NavigationItem">
             <a href="#" class="A_NavigationText">интерактивы</a>
           </li>
           <li class="M_NavigationItem">
             <a href="#" class="A_NavigationText">маршруты</a>
           </li>
-          <li class="M_NavigationItem">
+          <li class="M_NavigationItem M_NavigationItem--active">
             <a href="#" class="A_NavigationText">календарь</a>
           </li>
         </ul>
@@ -124,7 +124,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="O_MainCalendar">
       <section class="O_CalendarDashboard">
         <div class="M_CalendarHeader">
           <div class="M_CalendarMonth">
@@ -912,6 +912,124 @@
           />
         </button>
       </section>
+      <a href="./interactive.html" class="O_TestBanner O_TestWhatToTake">
+        <h2 class="A_Heading-H2">Прокачай лесные навыки</h2>
+        <button class="A_Button A_TestButton">
+          <img
+            class="Q_ArrowIconSecondary"
+            src="../images/icons/Q_Icon_ArrowVar.svg"
+            alt="Иконка стрелки"
+          />
+        </button>
+      </a>
+      <section class="O_LearnMore">
+        <h2 class="A_Heading-H2">Узнать больше</h2>
+        <div class="W_LearnMoreCards">
+          <a href="#" class="M_LearnMoreCard">
+            <div class="W_ArticleImage">
+              <span class="M_TagItem M_TagItem--active">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
+              </span>
+            </div>
+
+            <h4 class="A_Heading-H4">Название статьи</h4>
+          </a>
+          <a href="#" class="M_LearnMoreCard">
+            <div class="W_ArticleImage">
+              <span class="M_TagItem M_TagItem--active">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
+              </span>
+            </div>
+
+            <h4 class="A_Heading-H4">Название статьи</h4>
+          </a>
+          <a href="#" class="M_LearnMoreCard">
+            <div class="W_ArticleImage">
+              <span class="M_TagItem M_TagItem--active">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
+              </span>
+            </div>
+
+            <h4 class="A_Heading-H4">Название статьи</h4>
+          </a>
+        </div>
+      </section>
     </main>
+    <footer class="O_Footer">
+      <div class="M_Footer-Area">
+        <div class="M_Footer-Subscribe">
+          <p class="A_Heading-H3">Остались вопросы?</p>
+          <form
+            id="my-form"
+            action="https://formspree.io/f/xnngorro"
+            method="POST"
+          >
+            <input type="email" name="email" placeholder="Введите ваш e-mail" />
+            <button id="my-form-button" class="A_FooterSubmit">
+              <img
+                class="A_Icon-Arrow"
+                src="/src/images/Q_Arrow-White.svg"
+                alt="Иконка стрелки"
+              />
+            </button>
+            <p id="my-form-status"></p>
+          </form>
+        </div>
+        <div class="A_Social-Network">
+          <img
+            class="Q_TagIcon-Social-Network"
+            src="/src/images/Q_Icon_Dzen.svg"
+            alt="Иконка Дзена"
+          />
+        </div>
+      </div>
+      <div class="M_Footer-Section">
+        <div class="M_Footer-Column">
+          <h3 class="A_Heading-H5">Разделы</h3>
+
+          <ul class="M_Footer-List">
+            <li class="M_Footer-Item">
+              <a href="#" class="A_Paragraph">о нас</a>
+            </li>
+            <li class="M_Footer-Item">
+              <a href="#" class="A_Paragraph">статьи</a>
+            </li>
+            <li class="M_Footer-Item">
+              <a href="#" class="A_Paragraph">интерактивы</a>
+            </li>
+            <li class="M_Footer-Item">
+              <a href="#" class="A_Paragraph">маршруты</a>
+            </li>
+            <li class="M_Footer-Item">
+              <a href="#" class="A_Paragraph">календарь</a>
+            </li>
+          </ul>
+        </div>
+        <div class="M_Footer-Column">
+          <h3 class="A_Heading-H5">Автор</h3>
+
+          <ul class="M_Footer-List">
+            <li class="M_Footer-Item">
+              <p class="A_Paragraph">Ирина Кондратенко</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
