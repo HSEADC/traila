@@ -198,14 +198,46 @@ const htmlPages = [
     "widows",
     "searchVanilla",
   ]),
-  // после не правила
-  // после не правила
   createPages("./src/404.html", "./404.html", ["index"]),
   createPages("./src/pages/articles.html", "pages/articles.html", [
     "index",
     "allStyles",
-    "sectionArticles",
+    "widows",
+    "searchVanilla",
   ]),
+  createPages("./src/pages/routes.html", "pages/routes.html", [
+    "index",
+    "allStyles",
+    "widows",
+    "searchVanilla",
+  ]),
+  createPages(
+    "./src/pages/routes/bottomlessLake.html",
+    "pages/routes/bottomlessLake.html",
+    ["index", "allStyles", "widows", "searchVanilla", "map_bottomlessLake"],
+  ),
+  createPages(
+    "./src/pages/routes/losinyOstrovTrail.html",
+    "pages/routes/losinyOstrovTrail.html",
+    ["index", "allStyles", "widows", "searchVanilla", "map_losinyOstrovTrail"],
+  ),
+  createPages(
+    "./src/pages/routes/reserveForest.html",
+    "pages/routes/reserveForest.html",
+    ["index", "allStyles", "widows", "searchVanilla", "map_reserveForest"],
+  ),
+  createPages(
+    "./src/pages/routes/sparrowHills.html",
+    "pages/routes/sparrowHills.html",
+    ["index", "allStyles", "widows", "searchVanilla", "map_sparrowHills"],
+  ),
+  createPages(
+    "./src/pages/routes/troparevoForest.html",
+    "pages/routes/troparevoForest.html",
+    ["index", "allStyles", "widows", "searchVanilla", "map_troparevoForest"],
+  ),
+  // после не правила
+  // после не правила
 
   createPages(
     "./src/pages/articles/article_ticks.html",

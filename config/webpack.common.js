@@ -26,6 +26,11 @@ module.exports = {
     widows: "./src/javascripts/widows.js",
     calendardata: "./src/javascripts/calendar-data.js",
     calendar: "./src/javascripts/calendar.js",
+    map_bottomlessLake: "./src/javascripts/map_bottomlessLake.js",
+    map_losinyOstrovTrail: "./src/javascripts/map_losinyOstrovTrail.js",
+    map_reserveForest: "./src/javascripts/map_reserveForest.js",
+    map_sparrowHills: "./src/javascripts/map_sparrowHills.js",
+    map_troparevoForest: "./src/javascripts/map_troparevoForest.js",
     // после не правила
     sectionArticles: "./src/javascripts/sectionArticles.js",
   },

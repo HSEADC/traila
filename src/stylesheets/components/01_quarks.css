@@ -92,9 +92,11 @@
 }
 
 .Q_ExpertImage {
+  position: relative;
   display: block;
   width: 557rem;
   height: auto;
+  left: -60rem;
 }
 
 .Q_SkillCard--Help {
@@ -260,4 +262,30 @@
   width: 100%;
   height: auto;
   border-radius: 25rem;
+}
+
+/* ___________________routes.html___________________ */
+
+.Q_RouteMapPreview {
+  grid-area: image;
+  display: block;
+  width: 870rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+.Q_RouteCoverImage {
+  grid-area: image;
+  display: block;
+  width: 420rem;
+  height: auto;
+  border-radius: 25rem;
+}
+
+/* ___________________route.html___________________ */
+
+.Q_RouteHighlightIcon {
+  display: block;
+  width: 30rem;
+  height: 30rem;
 }

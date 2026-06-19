@@ -261,3 +261,34 @@
   background-color: var(--color-card-accent);
   border-radius: 25rem;
 }
+
+/* ___________________routes.html___________________ */
+
+.W_RouteStats {
+  display: flex;
+  gap: 25rem;
+}
+
+.W_ForestRouteCards {
+  display: flex;
+  gap: 20rem;
+}
+
+/* ___________________route.html___________________ */
+.W_RouteCharacteristics {
+  display: flex;
+  gap: 45rem;
+}
+
+.W_RouteStopMarkers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30rem;
+}
+
+.W_RouteStopsList {
+  display: flex;
+  flex-direction: column;
+  gap: 22rem;
+}

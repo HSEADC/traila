@@ -12,14 +12,16 @@
 .A_NavigationText,
 .A_ButtonText,
 .A_Tag-Text,
-.A_ResultTitle {
+.A_ResultTitle,
+.A_ErrorCode {
   font-family: var(--font-family);
   color: var(--color-text);
 }
 
 /* Bold */
 .A_Heading-H1,
-.A_Heading-H2 {
+.A_Heading-H2,
+.A_ErrorCode {
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
 }
@@ -54,6 +56,7 @@
 .A_Heading-H2,
 .A_Heading-H2-medium {
   font-size: 36rem;
+  line-height: 1.3;
 }
 
 .A_Heading-H3 {
@@ -96,6 +99,10 @@
 .A_AnswerDescription,
 .A_QuestionText {
   opacity: 50%;
+}
+
+.A_ErrorCode {
+  font-size: 300rem;
 }
 
 .A_Logo {
@@ -377,7 +384,7 @@
   top: 50%;
   left: 100%;
   width: 32rem;
-  height: 1.5rem;
+  height: 1.7rem;
   background: var(--color-text);
   transform: translateY(-50%);
 }
@@ -517,15 +524,77 @@
   width: 29rem;
   height: 29rem;
 }
-/* ___________________404.html___________________ */
-.A_Heading-NotFound {
-  font-family: var(--font-family);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text);
-  text-transform: uppercase;
-  font-size: 300rem;
+
+/* ___________________routes.html___________________ */
+.A_RouteButton {
+  position: relative;
+  bottom: 20rem;
+  right: 20rem;
+  grid-area: image;
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: none;
 }
 
+/* ___________________route.html___________________ */
+.A_RouteStopMarker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  height: 40rem;
+  border: 1.7rem solid var(--color-text);
+  border-radius: 50%;
+}
+
+.A_RouteStopMarker:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1.7rem;
+  height: 32rem;
+  background: var(--color-text);
+  transform: translateX(-50%);
+}
+
+.A_RouteMapMarker {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-card-accent);
+  border: 2px solid var(--color-text);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.A_RouteMapMarkerNumber {
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.A_DownloadRouteButton {
+  display: flex;
+  align-items: center;
+  padding: 5rem 5rem 5rem 51rem;
+  gap: 25rem;
+  border: none;
+  border-radius: 71rem;
+  height: 50rem;
+  width: 270rem;
+}
 /* ___________________articles.html___________________ */
 .A_Header-Filter-IconImage {
   display: block;

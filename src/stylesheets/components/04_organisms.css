@@ -16,6 +16,7 @@
   min-height: 305rem;
   background-color: var(--color-surface);
 }
+
 /* ___________________index.html___________________ */
 .O_HeaderHome {
   gap: 190rem;
@@ -94,6 +95,7 @@
 }
 
 /* ___________________aboutus.html___________________ */
+
 .O_HeaderAboutus {
   gap: 180rem;
   background-image: url("/src/images/Q_AboutusBG.webp");
@@ -145,11 +147,27 @@
   background-color: var(--color-surface);
 }
 
+/* ___________________404.html___________________ */
+
+.O_Error404 {
+  gap: 180rem;
+  background-image: url("/src/images/Q_ErrorBG.webp");
+  min-height: 100vh;
+}
+
 /* ___________________interactive.html___________________ */
 .O_HeaderInteractive {
   gap: 180rem;
   background-image: url("/src/images/Q_InteractiveBG.webp");
   min-height: 625rem;
+}
+
+.O_MainInteractive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 0;
+  gap: 120rem;
 }
 
 .O_SectionTests {
@@ -221,6 +239,7 @@
 }
 
 /* ___________________main_Exams.html___________________ */
+
 .O_HeaderForestExam {
   gap: 250rem;
   background-image: url("../../images/Q_ForestExamBG.webp");
@@ -388,13 +407,73 @@
   display: none;
 }
 
-/* ___________________404.html___________________ */
-.O_Header-NotFound {
+/* ___________________routes.html___________________ */
+.O_HeaderRoutes {
   gap: 180rem;
-  background-image: url("/src/images/404-bg.webp");
-  min-height: 100vh;
+  background-image: url("/src/images/Q_RoutesBG.webp");
+  min-height: 625rem;
 }
 
+.O_MainRoute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120rem 0;
+  gap: 120rem;
+}
+
+/* ___________________route.html___________________ */
+.O_HeaderBottomLessLake {
+  background-image: url("/src/images/routes/Q_BottomLessLakeBG.webp");
+  min-height: 350rem;
+  border-radius: 0 0 25rem 25rem;
+}
+
+.O_HeaderReserveForest {
+  background-image: url("/src/images/routes/Q_HeaderReserveForestBG.webp");
+  min-height: 350rem;
+  border-radius: 0 0 25rem 25rem;
+}
+
+.O_HeaderTroparevoForest {
+  background-image: url("/src/images/routes/Q_TroparevoForestBG.webp");
+  min-height: 350rem;
+  border-radius: 0 0 25rem 25rem;
+}
+
+.O_HeaderSparrowHills {
+  background-image: url("/src/images/routes/Q_SparrowHillsBG.webp");
+  min-height: 350rem;
+  border-radius: 0 0 25rem 25rem;
+}
+
+.O_HeaderLosinyOstrovTrail {
+  background-image: url("/src/images/routes/Q_LosinyOstrovTrailBG.webp");
+  min-height: 350rem;
+  border-radius: 0 0 25rem 25rem;
+}
+
+.O_RouteOverview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60rem;
+}
+
+.O_RouteMap {
+  display: grid;
+  grid-template-columns: 325rem 1015rem;
+  grid-template-rows: 362rem 218rem;
+  gap: 20rem;
+}
+
+.O_RouteDiscoveries {
+  display: flex;
+  flex-direction: column;
+  gap: 60rem;
+  align-items: center;
+  padding: 0 40rem;
+}
 /* ___________________articles.html___________________ */
 .O_Header-articles {
   gap: 200rem;
