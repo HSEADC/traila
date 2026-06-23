@@ -13,7 +13,8 @@
 .A_ButtonText,
 .A_Tag-Text,
 .A_ResultTitle,
-.A_ErrorCode {
+.A_ErrorCode,
+.A_NumberedTitle {
   font-family: var(--font-family);
   color: var(--color-text);
 }
@@ -25,7 +26,8 @@
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
 }
-.A_ResultTitle {
+.A_ResultTitle,
+.A_NumberedTitle {
   font-weight: var(--font-weight-bold);
 }
 
@@ -64,7 +66,8 @@
   line-height: 1.3;
 }
 
-.A_Heading-H4 {
+.A_Heading-H4,
+.A_NumberedTitle {
   font-size: 24rem;
 }
 .A_Heading-H5,
@@ -620,4 +623,26 @@
 
 .A_CardDownloadButton .A_Tag-Text {
   color: var(--color-card);
+}
+
+/* ___________________article.html___________________ */
+.A_ArticleLead {
+  margin-bottom: 20rem;
+}
+
+.A_DownloadArticleButton {
+  margin-block: 20rem;
+  position: sticky;
+  align-self: center;
+  bottom: 60rem;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 5rem 5rem 5rem 60rem;
+  gap: 31rem;
+  border: none;
+  border-radius: 71rem;
+  height: 50rem;
+  width: 270rem;
+  text-decoration: none;
 }

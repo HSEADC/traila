@@ -1411,3 +1411,136 @@
   background-position: center;
   background-image: url("/src/images/articles/Q_ArticleImage--firstaidkit.webp");
 }
+
+/* ___________________article.html___________________ */
+.M_AuthorPreview {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+}
+
+.M_ArticleQuote {
+  padding: 30rem;
+  border-radius: 25rem;
+  background-color: var(--color-card-accent);
+}
+
+.M_InfoCardArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  padding: 30rem;
+  background-color: var(--color-card-accent);
+  border-radius: 25rem;
+  width: 100%;
+  min-height: auto;
+}
+
+.M_TipList {
+  padding: 30rem;
+  border-radius: 20rem;
+  background-color: var(--color-surface);
+}
+
+.M_TipItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20rem;
+}
+
+.M_TipItem::before {
+  content: "•";
+  flex-shrink: 0;
+  color: var(--color-text);
+  font-size: 24rem;
+  line-height: 1;
+}
+
+.A_TipText {
+  margin: 0;
+}
+
+.M_ArticleImageBlock {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 25rem;
+}
+
+.M_InteractiveBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  width: 100%;
+  min-height: 120rem;
+  border-radius: 25rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/articles/Q_InteractiveBanner.svg");
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.M_InteractiveBanner:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_DzenBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  width: 100%;
+  min-height: 120rem;
+  border-radius: 25rem;
+  background-color: var(--color-surface);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../images/articles/Q_DzenBanner.svg");
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.M_DzenBanner:hover {
+  background-color: rgba(19, 53, 36, 0.7);
+}
+
+.M_FeatureCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  padding: 20rem;
+  border-radius: 25rem;
+  background-color: var(--color-card-accent);
+}
+
+.M_FeatureHeader {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}
+
+.M_NumberedList {
+  display: flex;
+  flex-direction: column;
+  gap: 35rem;
+  padding: 30rem;
+  border-radius: 25rem;
+  background-color: var(--color-surface);
+}
+
+.M_NumberedItem {
+  display: flex;
+  flex-direction: column;
+  gap: 11rem;
+}
+
+.M_NumberedHeader {
+  display: flex;
+  align-items: center;
+  gap: 15rem;
+}

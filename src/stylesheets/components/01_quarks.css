@@ -296,3 +296,30 @@
   width: 25rem;
   height: 25rem;
 }
+
+/* ___________________article.html___________________ */
+.Q_AuthorAvatar {
+  display: block;
+  width: 95rem;
+  height: 95rem;
+}
+
+.Q_ArticleImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.Q_FeatureIcon {
+  display: block;
+  width: 30rem;
+  height: 30rem;
+}
+
+.Q_NumberedIcon {
+  display: block;
+  width: 33rem;
+  height: 33rem;
+}

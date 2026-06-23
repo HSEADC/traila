@@ -495,3 +495,37 @@
   flex-direction: column;
   gap: 20rem;
 }
+
+/* ___________________article.html___________________ */
+.O_HeaderArticle {
+  background-image: url("../../images/articles/Q_ArticleImage--interview.webp");
+  min-height: 350rem;
+  border-bottom-left-radius: 25rem;
+  border-bottom-right-radius: 25rem;
+}
+
+.O_ArticlePage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 100rem 270rem 120rem 270rem;
+  gap: 100rem;
+}
+
+.O_ArticleHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 60rem;
+}
+
+.O_ArticleIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+}
+
+.O_ArticleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 23rem;
+}

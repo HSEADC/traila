@@ -312,3 +312,51 @@
   gap: 20rem;
   flex-wrap: wrap;
 }
+
+/* ___________________article.html___________________ */
+.W_ArticleTags {
+  display: flex;
+  gap: 10rem;
+}
+
+.W_AuthorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.W_ArticleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 60rem;
+}
+
+.W_TipItems {
+  display: flex;
+  flex-direction: column;
+  gap: 30rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.W_FeatureGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rem;
+}
+
+.W_ArticleMediaGrid {
+  margin-block: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  min-height: 250rem;
+  gap: 20rem;
+}
+
+.W_ArticleMediaGrid--asymmetric {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20rem;
+  height: 250rem;
+}
