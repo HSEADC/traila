@@ -567,6 +567,13 @@ input[type="email"]::placeholder {
   height: 30rem;
 }
 
+/* ___________________articles.html___________________ */
+.Q_FilterIcon {
+  display: block;
+  width: 25rem;
+  height: 25rem;
+}
+
 /* Общие стили */
 .A_Heading-H1,
 .A_Heading-H2,
@@ -1164,121 +1171,31 @@ input[type="email"]::placeholder {
   height: 50rem;
   width: 270rem;
 }
+
 /* ___________________articles.html___________________ */
-.A_Header-Filter-IconImage {
-  display: block;
-  width: 20rem;
-  height: auto;
+.A_FilterButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: none;
 }
 
-.A_Tag-TextDownload {
+.A_CardDownloadButton {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 0 15rem;
+  height: 30rem;
+  border-radius: 52rem;
+  user-select: none;
+  border: none;
+}
+
+.A_CardDownloadButton .A_Tag-Text {
   color: var(--color-card);
-}
-
-.A_Download-Image {
-  display: block;
-  width: 12rem;
-  height: auto;
-  pointer-events: none;
-}
-
-.A_Articles-Link {
-  text-decoration: none;
-}
-
-.A_Articles-Link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.A_Icon-Arrow {
-  display: block;
-  width: 20.76rem;
-  height: auto;
-}
-
-/* ___________________article_name.html___________________ */
-.A_Link-Download {
-  align-self: center;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 8vh;
-}
-
-.A_Paragraph-padding-bottom {
-  padding-bottom: 20rem;
-}
-
-.A_ForestState-Article {
-  display: block;
-  width: 20rem;
-  min-height: auto;
-}
-
-.A_Tag-Text-Article {
-  padding-bottom: 15rem;
-  text-align: center;
-}
-
-.A_Paragraph-padding-top {
-  padding-top: 20rem;
-}
-
-.A_ForestState-SkyVar {
-  width: 22rem;
-}
-
-.A_Article-Important-img {
-  display: block;
-  width: 40rem;
-  min-height: auto;
-}
-
-.A_Article-Important-imgVar {
-  display: block;
-  width: 20rem;
-  min-height: auto;
-}
-.A_Article-Info-Stat-Card {
-  padding-top: 70rem;
-}
-.A_Article-Info-Stat-Card-DirectionVar {
-  padding-top: 60rem;
-}
-
-.A_Article-Info-Stat-Card-Ravine {
-  padding-top: 90rem;
-}
-.A_Article-Info-Stat-Card-Mountain {
-  padding-top: 72rem;
-}
-.A_Article-Info-Stat-Card-RavineVar {
-  padding-top: 95rem;
-}
-.A_Article-Info-Stat-Card-Dampness {
-  padding-top: 80rem;
-}
-.A_Article-Info-Stat-Card-Grass {
-  padding-top: 80rem;
-}
-.A_Article-Info-Stat-Card-Sheets {
-  padding-top: 80rem;
-}
-.A_Article-Info-Stat-Card-WateringCan {
-  padding-top: 85rem;
-}
-.A_Article-Info-Stat-Card-Forest {
-  padding-top: 65rem;
-}
-.A_Article-Big-img {
-  width: 900rem;
-  min-height: 250rem;
-  border-radius: 15rem;
 }
 
 /* Общие стили */
@@ -1444,6 +1361,20 @@ input[type="email"]::placeholder {
   visibility: visible;
 }
 
+.M_TagItem {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 0 15rem;
+  height: 30rem;
+  border-radius: 52rem;
+  user-select: none;
+}
+
+.M_TagItem--active {
+  background-color: var(--color-tag);
+}
+
 /* ___________________index.html___________________ */
 .M_HeroInfo {
   display: flex;
@@ -1503,19 +1434,19 @@ input[type="email"]::placeholder {
 }
 
 .M_PassabilityBar--frost {
-  top: 72rem;
+  top: 150rem;
 }
 
 .M_PassabilityBar--humidity {
-  top: 95rem;
+  top: 73rem;
 }
 
 .M_PassabilityBar--mud {
-  top: 35rem;
+  top: 25rem;
 }
 
 .M_PassabilityBar--slush {
-  top: -5rem;
+  top: 150rem;
 }
 
 .M_CalendarSky {
@@ -1540,15 +1471,15 @@ input[type="email"]::placeholder {
 }
 
 .M_SkyCondition--clear {
-  left: 72rem;
+  left: 370rem;
 }
 
 .M_SkyCondition--cloudy {
-  left: 165rem;
+  left: 138rem;
 }
 
 .M_SkyCondition--rain {
-  left: 370rem;
+  left: 310rem;
 }
 
 .M_CalendarConditions {
@@ -1661,26 +1592,6 @@ input[type="email"]::placeholder {
   position: relative;
   top: 10rem;
   align-self: flex-start;
-}
-
-.M_ArticleImage--landmarks {
-  background-position: start;
-  background-image: url(3ef05f4c6602a59cf74f.webp);
-}
-
-.M_ArticleImage--ticks {
-  background-position: center;
-  background-image: url(2244a2a039484fd3c505.webp);
-}
-
-.M_ArticleImage--mushroomer {
-  background-position: center;
-  background-image: url(b41bd6af09a0bd972d1b.webp);
-}
-
-.M_ArticleImage--backpack {
-  background-position: center;
-  background-image: url(a77914eaa7a511df3f24.webp);
 }
 
 .M_ExpertContent {
@@ -2465,470 +2376,240 @@ input[type="email"]::placeholder {
   border-radius: 25rem;
   background-color: var(--color-card-accent);
 }
+
 /* ___________________articles.html___________________ */
-.M_HeroContent-articles {
-  gap: 20rem;
-}
-
-.M_Header-Toolbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.M_Header-FilterButton {
+.M_FilterHeader {
   display: flex;
   align-items: center;
   gap: 10rem;
-  background-color: transparent;
-  border: none;
   cursor: pointer;
 }
 
-.M_Header-Filter-Icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
-  min-height: 40rem;
-  border-radius: 50%;
-  background-color: var(--color-button);
-}
-
-.M_Header-FilterGroup {
+.M_FilterGroup {
   display: none;
   flex-direction: column;
   gap: 15rem;
 }
 
-.M_Header-FilterGroup.open {
+.M_FilterGroup.is-open {
   display: flex;
 }
 
-.M_Header-FilterGroup-Tegs {
-  display: flex;
-  gap: 10rem;
-}
-
-.M_TagItem {
-  display: flex;
-  align-items: center;
-  gap: 8rem;
-  padding: 0 15rem;
-  height: 30rem;
-  border-radius: 52rem;
-  user-select: none;
-}
-
-.M_TagItem-filter {
-  background-color: rgba(45, 78, 30, 0.3);
+.M_FilterTag {
+  background-color: var(--color-surface);
+  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
-.M_TagItem-filter:hover {
-  background-color: rgba(45, 78, 30, 0.6);
-  cursor: pointer;
-}
-
-.M_TagItem-filter.active {
-  background-color: var(--color-tag);
-}
-
-.M_Articles-ticks.visible {
-  background-image: url(9ed292b6284bd5d06bff.webp);
-}
-.M_Articles-storm.visible {
-  background-image: url(9c0e678b05ad6b9bcdc3.webp);
-}
-.M_Articles-compass.visible {
-  background-image: url(0cfd1359b4a51af7587e.webp);
-}
-.M_Articles-trail.visible {
-  background-image: url(2c7ca07ddfc6ab145082.webp);
-}
-.M_Articles-backpack.visible {
-  background-image: url(ee84da4c1ac4b8ce0ce0.webp);
-}
-.M_Articles-clothing.visible {
-  background-image: url(981aee85f252e8424291.webp);
-}
-.M_Articles-bonfire.visible {
-  background-image: url(5055e1f85690a3a52b9f.webp);
-}
-.M_Articles-tea.visible {
-  background-image: url(876b847297de91e5dbb0.webp);
-}
-.M_Articles-seasons.visible {
-  background-image: url(5c47bf44968a55e8d5f1.webp);
-}
-.M_Articles-biotopes.visible {
-  background-image: url(0de40f984989386891a6.webp);
-}
-.M_Articles-boletus.visible {
-  background-image: url(c54e6a90d489a46f2bfd.webp);
-}
-.M_Articles-fox.visible {
-  background-image: url(89a196be479b82afb54c.webp);
-}
-
-.M_TagItem--active {
-  background-color: var(--color-tag);
-}
-
-.M_Articles-CardContent {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-
-.M_Articles-CardFooter {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10rem;
-}
-
-.M_Download-Button {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  border: none;
-  gap: 10rem;
-  background-color: var(--color-button);
-  text-decoration: none;
-}
-
-.M_Button-more {
-  align-self: center;
-  width: 267rem;
-  min-height: 50rem;
-  border: none;
-  border-radius: 71rem;
-}
-
-/* ___________________article_name.html___________________ */
-
-.M_Main_Article-Header {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 35rem;
-}
-
-.M_Main_Article-Header-tegs {
-  display: flex;
-  gap: 10rem;
-}
-
-.M_Article-Info {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-}
-
-.M_State-Body {
-  position: relative;
-  left: -5rem;
-  padding-top: 125rem;
-}
-.M_State-Winter {
-  position: relative;
-  left: 10rem;
-  padding-top: 100rem;
-}
-.M_State-BodyVarImg {
-  padding-left: 55rem;
-  padding-top: 45rem;
-}
-.M_State-FlowerSheets {
-  position: relative;
-  left: 5rem;
-  padding-top: 110rem;
-}
-.M_State-Grass {
-  position: relative;
-  left: -50rem;
-  padding-top: 85rem;
-}
-
-.M_State-Ear {
-  padding-top: 95rem;
-  padding-left: 40rem;
-}
-.M_State-Autumn {
-  padding-top: 70rem;
-  padding-left: 95rem;
-}
-.M_State-Iphone {
-  padding-top: 80rem;
-  padding-left: 80rem;
-}
-.M_State-Bear {
-  padding-top: 80rem;
-  padding-left: 45rem;
-}
-.M_State-TreeVar {
-  padding-top: 55rem;
-  padding-right: 30rem;
-}
-.M_State-Hand {
-  padding-top: 58rem;
-  padding-left: 40rem;
-}
-.M_State-Spring {
-  padding-top: 40rem;
-  padding-left: 80rem;
-}
-.M_State-Flower {
-  padding-top: 43rem;
-  padding-right: 10rem;
-}
-.M_State-Sun {
-  padding-top: 10rem;
-  padding-right: 45rem;
-}
-.M_State-Leg {
-  padding-top: 20rem;
-  padding-left: 40rem;
-}
-.M_State-SunVar {
-  position: relative;
-  padding-top: 0rem;
-  left: 85rem;
-}
-.M_State-Mite {
-  padding-top: 20rem;
-  padding-left: 55rem;
-}
-
-.M_State-BodyVar {
-  padding-top: 17rem;
-  padding-right: 52rem;
-}
-
-.M_State-Forest {
-  position: relative;
-  top: -5rem;
-  padding-right: 7rem;
-}
-
-.M_State-Knee {
-  padding-top: 10rem;
-  padding-left: 40rem;
-}
-.M_State-FirstAidKit {
-  padding-top: 10rem;
-  padding-left: 30rem;
-}
-.M_State-DirectionVar {
-  padding-top: 10rem;
-  padding-right: 15rem;
-}
-
-.M_Article-Info-img {
-  display: flex;
-  gap: 30rem;
-}
-
-.M_Article-Info-img-Small {
-  display: block;
-  width: 280rem;
-  min-height: auto;
-}
-.M_Article-Info-img-Small-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300rem;
-  min-height: 250rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 15rem;
-}
-
-.M_Article-Info-img-Small-bg-trail {
-  background-image: url(c7f4ec16281adbee99bc.webp);
-}
-
-.M_Article-Info-img-Small-bg-sun {
-  background-image: url(43bfea778d68b0d9efb1.webp);
-}
-
-.M_Article-Info-img-Small-bg-relief {
-  background-image: url(b4689fa57eaf93209c64.webp);
-}
-.M_Article-Info-img-Small-bg-wind {
-  background-image: url(39c21d72c7a939cf716e.webp);
-}
-.M_Article-Info-img-Small-bg-firewood {
-  background-image: url(6197f6b33f862f597595.webp);
-}
-.M_Article-Info-img-Small-bg-heat {
-  background-image: url(12c97869f8d39c2e0ce6.webp);
-}
-.M_Article-Info-img-Small-bg-Mush {
-  background-image: url(1ca249d62bf4a9aa6f63.webp);
-}
-.M_Article-Info-img-Small-bg-cap {
-  background-image: url(8b8bb17ef2c730060e39.webp);
-}
-.M_Article-Info-img-Small-bg-MushVar {
-  background-image: url(ac9a09209a0c6a91773d.webp);
-}
-.M_Article-Info-img-Large {
-  display: block;
-  width: 570rem;
-  min-height: auto;
-}
-
-.M_Article-Info-Steps {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-}
-
-.M_Article-Info-Step {
-  display: flex;
-  flex-direction: column;
-  padding: 20rem 17rem 20rem 20rem;
-  gap: 30rem;
-  width: 284rem;
-  min-height: auto;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-.M_Article-Info-Content {
-  display: flex;
-  gap: 30rem;
-}
-
-.M_Article-Info-Steps-Title {
-  display: flex;
-  align-items: center;
-  gap: 12rem;
-}
-
-.M_List {
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-  padding: 30rem 20rem;
-  width: 900rem;
-  min-height: 426rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-.M_List_Content {
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-}
-
-.M_List_Content-Title {
-  display: flex;
-  gap: 15rem;
-}
-
-.M_Article-Important {
-  display: flex;
-  gap: 30rem;
-  padding: 30rem 40rem;
-  width: 900rem;
-  min-height: auto;
-  border-radius: 15rem;
+.M_FilterTag:hover {
   background-color: var(--color-card-accent);
 }
 
-.M_Article-storm-tegs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15rem;
-  width: 900rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(d75cde67b845addcdcf1.webp);
+.M_FilterTag--active {
+  background-color: var(--color-card-accent);
 }
 
-.M_Article-biotopes-tegs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15rem;
-  width: 900rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(7bd675eb058f2a5d9f04.webp);
-}
-
-.M_Article-clothing-tegs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15rem;
-  width: 900rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(2327f08085f3f14a5c3d.webp);
-}
-
-.M_Article-Info-Stat-Card {
+.M_GuideFlex {
   display: flex;
   flex-direction: column;
-  padding-top: 70rem;
-  width: 202rem;
-  min-height: 281rem;
-  border-radius: 15rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 10rem;
+  gap: 10rem;
+  text-decoration: none;
+  border-radius: 25rem;
+  width: 440rem;
+  min-height: 315rem;
+  background-color: var(--color-card);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
-.M_Article-Info-Stat-Card-Forest {
-  background-image: url(68dbc5136203cc6f39dd.webp);
+.M_GuideFlex:hover {
+  background-color: rgba(19, 53, 36, 0.7);
 }
 
-.M_Article-Info-Stat-Card-Ravine {
-  padding-top: 80rem;
-  background-image: url(3eafd68da1802bc2a795.webp);
-}
-
-.M_Article-Info-Stat-Card-Mountain {
-  background-image: url(4f6c22ad81ad0a0aeca5.webp);
-}
-
-.M_Article-Info-Stat-Card-Grass {
-  background-image: url(dfe70b704ee9c4be4dcf.webp);
-}
-
-.M_Article-Info-Stat-Card-Dampness {
-  background-image: url(a00c4ac170e8b4660086.webp);
-}
-
-.M_Article-Info-Stat-Card-RavineVar {
-  background-image: url(73b2bb4f1bf865c3f5f1.webp);
-}
-
-.M_Article-Info-Stat-Card-ForestVar {
-  background-image: url(d361ed2659f717f19b71.webp);
-}
-
-.M_Article-Info-Stat-Card-GrassVar {
-  background-image: url(0708ff982661c11d59b8.webp);
-}
-
-.M_Article-Info-Stat-Cards {
+.M_CardFooter {
   display: flex;
-  flex-direction: column;
-  gap: 40rem;
+  justify-content: space-between;
+}
+
+.M_ArticleImage--ticks {
+  background-position: center;
+  background-image: url(2b4aa08d5a6f1b2917f1.webp);
+}
+
+.M_ArticleImage--storm {
+  background-position: center;
+  background-image: url(d8bb36820612da51da3f.webp);
+}
+
+.M_ArticleImage--lost {
+  background-position: center;
+  background-image: url(15ec4406d796e44ba8ef.webp);
+}
+
+.M_ArticleImage--route {
+  background-position: center;
+  background-image: url(480620181c7781cf5ed1.webp);
+}
+
+.M_ArticleImage--landmarks {
+  background-position: start;
+  background-image: url(3ef05f4c6602a59cf74f.webp);
+}
+
+.M_ArticleImage--compass {
+  background-position: start;
+  background-image: url(1c5163a5ec184522a1d5.webp);
+}
+
+.M_ArticleImage--backpack {
+  background-position: center;
+  background-image: url(a77914eaa7a511df3f24.webp);
+}
+
+.M_ArticleImage--clothes {
+  background-position: center;
+  background-image: url(9c3725b4f3b770073393.webp);
+}
+
+.M_ArticleImage--preparation {
+  background-position: center;
+  background-image: url(9b457f7cf1066bb17cc9.webp);
+}
+
+.M_ArticleImage--chanterelles {
+  background-position: center;
+  background-image: url(96a9eabb95fe477a39ed.webp);
+}
+
+.M_ArticleImage--doppelgangers {
+  background-position: center;
+  background-image: url(b9a36769313235511357.webp);
+}
+
+.M_ArticleImage--mushroomer {
+  background-position: center;
+  background-image: url(b41bd6af09a0bd972d1b.webp);
+}
+
+.M_ArticleImage--nettles {
+  background-position: center;
+  background-image: url(d793dc1838be5d959f51.webp);
+}
+
+.M_ArticleImage--wildgarlic {
+  background-position: center;
+  background-image: url(eab174c9e2039d9adae3.webp);
+}
+
+.M_ArticleImage--wildplants {
+  background-position: center;
+  background-image: url(5d9c3ba3b00f88a53536.webp);
+}
+
+.M_ArticleImage--snack {
+  background-position: center;
+  background-image: url(5de07a3184ae0ed73632.webp);
+}
+
+.M_ArticleImage--water {
+  background-position: center;
+  background-image: url(42285072012f0bc61ff5.webp);
+}
+
+.M_ArticleImage--diet {
+  background-position: center;
+  background-image: url(114218e18bb4338dbb84.webp);
+}
+
+.M_ArticleImage--winter {
+  background-position: center;
+  background-image: url(7c0d3ef90e93709b99cb.webp);
+}
+
+.M_ArticleImage--frost {
+  background-position: center;
+  background-image: url(dfdfa9d2cb25725633bc.webp);
+}
+
+.M_ArticleImage--warm {
+  background-position: center;
+  background-image: url(f6f4f5da3d4b295a34ac.webp);
+}
+
+.M_ArticleImage--traces {
+  background-position: center;
+  background-image: url(fd88f4abb6243b78f2dc.webp);
+}
+
+.M_ArticleImage--morels {
+  background-position: center;
+  background-image: url(7b3aea3396b44d402fa1.webp);
+}
+
+.M_ArticleImage--danger {
+  background-position: center;
+  background-image: url(e071927868d6fc601e6c.webp);
+}
+
+.M_ArticleImage--spring {
+  background-position: center;
+  background-image: url(a1e611d937f43eb768c3.webp);
+}
+
+.M_ArticleImage--fires {
+  background-position: center;
+  background-image: url(f2b15093495e3e9fdb2f.webp);
+}
+
+.M_ArticleImage--summer {
+  background-position: center;
+  background-image: url(ce5624979ba66f202c12.webp);
+}
+
+.M_ArticleImage--walk {
+  background-position: center;
+  background-image: url(8a8fd27a09d894e11b03.webp);
+}
+
+.M_ArticleImage--august {
+  background-position: center;
+  background-image: url(6c6025d8523b607be0d8.webp);
+}
+
+.M_ArticleImage--autumn {
+  background-position: center;
+  background-image: url(92200984daff031adf81.webp);
+}
+
+.M_ArticleImage--september {
+  background-position: center;
+  background-image: url(a1248085c01139c24e28.webp);
+}
+
+.M_ArticleImage--twilight {
+  background-position: center;
+  background-image: url(9d23528533bad9a4752f.webp);
+}
+
+.M_ArticleImage--coldsnap {
+  background-position: center;
+  background-image: url(6794aad844124305bfc1.webp);
+}
+
+.M_ArticleImage--off-season {
+  background-position: center;
+  background-image: url(db3c1158954b887e41b5.webp);
+}
+
+.M_ArticleImage--snow {
+  background-position: center;
+  background-image: url(7b1014a0d3eac296899e.webp);
+}
+
+.M_ArticleImage--firstaidkit {
+  background-position: center;
+  background-image: url(d6d281e7f4ae1577d43c.webp);
 }
 
 /* Общие стили */
@@ -3407,238 +3088,26 @@ input[type="email"]::placeholder {
   align-items: center;
   padding: 0 40rem;
 }
+
 /* ___________________articles.html___________________ */
-.O_Header-articles {
-  gap: 200rem;
-  background-image: url(bd9ca0c9b8c8d94f4144.webp);
-  min-height: 695rem;
+.O_HeaderArticles {
+  gap: 180rem;
+  background-image: url(8d846bf8f993e5826f5d.webp);
+  min-height: 625rem;
 }
 
-.O_Section-Checklist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40rem;
-}
-
-.O_Section-Articles {
+.O_ArticlesFeed {
   display: flex;
   flex-direction: column;
   gap: 40rem;
-}
-
-.O_Header-Articles {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-}
-
-.O_Articles-Grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30rem;
-}
-
-.O_Articles-Card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 10rem;
-  gap: 10rem;
-  width: 434rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-/* ___________________main_test_mushroom.html___________________ */
-.O_Header-calendar {
-  gap: 200rem;
-  background-image: url(images/calendar-bg.png);
-  min-height: 695rem;
-}
-.O_ForestConditions {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-}
-.O_ForestConditions-Month {
-  display: grid;
-  grid-template-columns: 360rem 980rem;
-  grid-template-rows: repeat(2, 230rem);
-  gap: 20rem;
-}
-.O_ForestTrendChart {
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-  padding: 15rem 20rem;
-  border-radius: 15rem;
-  background-color: var(--color-card-accent);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(914e45f0e4f3f3e7745a.webp);
-}
-.O_ForestStatCards {
-  display: flex;
-  gap: 20rem;
-}
-.O_ForestStatOther {
-  display: grid;
-  grid-template-columns: repeat(2, 670rem);
-  grid-template-rows: repeat(2, 260rem);
-  gap: 20rem;
-}
-.O_ForestState-Calendar {
-  display: flex;
-  flex-direction: column;
-  padding: 15rem 20rem;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(e9acde0f3cec79c3ade3.webp);
-}
-.O_ForestSky-Calendar {
-  display: flex;
-  flex-direction: column;
-  padding: 15rem 20rem;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(9b84e5823ca35f27e6b3.webp);
-}
-.O_ForestActivity {
-  display: flex;
-  flex-direction: column;
-  padding: 15rem 20rem;
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(5458a4c4b1e97f04a1c7.webp);
-}
-.O_ForestRisks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding: 170rem 230rem;
-  gap: 40rem;
+  padding: 0 40rem;
   width: 100%;
-  min-height: 650rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(cab13333a4bcc0b22aef.webp);
 }
 
-.O_ForestProducts {
+.O_ArticleFilters {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 120rem 40rem;
-  gap: 40rem;
-}
-.O_ForestProducts-List {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  row-gap: 60rem;
-  column-gap: 30rem;
-}
-.O_Section-Checklist-Calendar {
-  padding-bottom: 120rem;
-}
-
-/* ___________________article_name.html___________________ */
-.O_Header_Article {
-  gap: 200rem;
-  min-height: 350rem;
-}
-
-.O_Header_Article-ticks {
-  background-image: url(398de2c9a69347b8766a.webp);
-}
-
-.O_Header_Article-storm {
-  background-image: url(ddac9061ecddcf9ed84d.webp);
-}
-
-.O_Header_Article-compass {
-  background-image: url(b3f0e131491c20bb8136.webp);
-}
-.O_Header_Article-trail {
-  background-image: url(d63412de464ab2cdedb6.webp);
-}
-.O_Header_Article-backback {
-  background-image: url(a69dcd7f66e203f34cfb.webp);
-}
-.O_Header_Article-clothing {
-  background-image: url(7604c557121affeee8d2.webp);
-}
-.O_Header_Article-fire {
-  background-image: url(d282ff1d46fb8a459477.webp);
-}
-.O_Header_Article-tea {
-  background-image: url(6cb74062e28674c657ba.webp);
-}
-.O_Header_Article-Seasons {
-  background-image: url(8cd54caf5e87bc80bcd4.webp);
-}
-.O_Header_Article-biotopes {
-  background-image: url(186fa2d8f5aa827a716e.webp);
-}
-.O_Header_Article-borovik {
-  background-image: url(43f1e3533f633abdd178.webp);
-}
-.O_Header_Article-fox {
-  background-image: url(a8d2c773e84a8621c733.webp);
-}
-
-.O_Main_Article {
-  display: flex;
-  flex-direction: column;
-  gap: 80rem;
-  padding: 80rem 270rem 120rem;
-}
-
-.O_Article-Content {
-  display: flex;
-  flex-direction: column;
-  gap: 80rem;
-}
-
-.O_Article-Stats-Block {
-  display: flex;
-  padding: 15rem 35rem;
-  border-radius: 15rem;
-  min-height: 264rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(61683219aa1763e0484f.webp);
-}
-.O_Article-Stats-BlockVar {
-  display: flex;
-  padding: 15rem 35rem;
-  border-radius: 15rem;
-  min-height: 264rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(f485fa1cf0d80df66a0d.webp);
+  gap: 20rem;
 }
 
 /* Общие стили */
@@ -3936,6 +3405,26 @@ input[type="email"]::placeholder {
   gap: 22rem;
 }
 
+/* ___________________articles.html___________________ */
+.W_FeedHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  align-items: start;
+}
+
+.W_FilterTags {
+  display: flex;
+  gap: 10rem;
+  align-items: start;
+}
+
+.W_GuidesFlex {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+}
+
 /* ___________________interactive.html___________________ */
 .T_MainInteractive {
   display: flex;
@@ -3952,6 +3441,8 @@ input[type="email"]::placeholder {
   gap: 120rem;
 }
 
+/* ___________________articles.html___________________ */
+
 @media screen and (max-width: 440px) {
   html {
     font-size: calc(1vw / 4.4);
@@ -3961,530 +3452,6 @@ input[type="email"]::placeholder {
   body {
     max-width: 100%;
     overflow-x: hidden;
-  }
-  .A_Heading-H1 {
-    font-size: 40rem;
-    line-height: 1.35;
-  }
-  .A_Heading-H2 {
-    font-size: 32rem;
-    line-height: 1.35;
-  }
-  .A_Heading-H4 {
-    font-size: 22rem;
-    line-height: 1.35;
-  }
-  .A_Tag-Text {
-    font-size: 16rem;
-  }
-  .O_Header {
-    padding: 30rem;
-  }
-  .O_Header-main {
-    gap: 154rem;
-    min-height: 874rem;
-    background-image: url(d75bf21babd4f482c091.webp);
-  }
-  .M_Logo {
-    width: 55rem;
-    height: 55rem;
-  }
-  .A_InnerCircle {
-    width: 45rem;
-    height: 45rem;
-  }
-  .A_LogoImage {
-    width: 23.6rem;
-  }
-  .M_NavigationMenu {
-    display: none;
-  }
-  .M_Search {
-    display: none;
-  }
-
-  .M_burger-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 55rem;
-    height: 55rem;
-    padding: 2.5rem;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--color-surface);
-    cursor: pointer;
-  }
-  .A_burger-icon {
-    display: block;
-    width: 27rem;
-    height: auto;
-  }
-  .M_HeroContent {
-    text-align: center;
-    gap: 45rem;
-  }
-  .A_Paragraph-HeroContent {
-    display: none;
-  }
-
-  .M_TagGroup {
-    padding-top: 0;
-    flex-wrap: wrap;
-    row-gap: 10rem;
-    justify-content: center;
-  }
-  .M_TagIcon-none {
-    display: none;
-  }
-
-  .O_Main {
-    padding: 90rem 30rem;
-    gap: 90rem;
-  }
-  .O_CalendarState {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20rem;
-  }
-  .A_State_img {
-    width: 53rem;
-  }
-  .O_Daylight {
-    flex-direction: column;
-    gap: 20rem;
-    padding: 20rem;
-    width: 380rem;
-    height: 190rem;
-    background-image: url(a630d2dbeb8fd07e8e6c.webp);
-  }
-  .O_ForestState {
-    gap: 20rem;
-    padding: 20rem;
-    width: 380rem;
-    height: 278rem;
-    background-image: url(2f8cd4b4bb98ca52e315.webp);
-  }
-  .O_ForestSky {
-    gap: 7rem;
-    padding: 20rem;
-    width: 380rem;
-    height: 264rem;
-    background-image: url(c533fac18313e3ce2a49.webp);
-  }
-  .M_State_Sunrise {
-    position: relative;
-    left: -120rem;
-  }
-  .M_State-Sunset {
-    position: relative;
-    padding-left: 0;
-    top: -114rem;
-    left: 125rem;
-  }
-  .M_Passability-Index {
-    gap: 5rem;
-  }
-  .M_State-Permafrost {
-    padding-left: 0rem;
-    padding-top: 35rem;
-  }
-  .M_State-Dampness {
-    padding-top: 75rem;
-  }
-  .M_State-Slush {
-    padding-left: 27rem;
-    padding-top: 15rem;
-  }
-  .M_State-Dirt {
-    padding-left: 42rem;
-    padding-top: 0;
-  }
-  .M_StateSky {
-    gap: 28rem;
-    padding-left: 14rem;
-    padding-top: 2rem;
-  }
-  .M_StateCloudy {
-    padding-top: 13rem;
-    padding-left: 80rem;
-  }
-  .M_StateAutumn {
-    padding-left: 200rem;
-    padding-top: 15rem;
-  }
-  .O_ForestState-Other {
-    width: 380rem;
-    height: 198rem;
-  }
-  .A_Button-ForestState {
-    width: 380rem;
-    padding-left: 110rem;
-  }
-  .A_Tag-Text-Dampness {
-    padding-left: 50rem;
-  }
-  .A_Tag-Text-Fire {
-    padding-left: 30rem;
-  }
-  .A_Tag-Text-Insect {
-    padding-left: 88rem;
-  }
-  .A_Tag-Text-Mite {
-    padding-left: 133rem;
-  }
-  .O_Section-Checklist-Cards {
-    display: grid;
-    grid-template-columns: repeat(2, 157rem);
-    grid-template-rows: repeat(2, 1fr);
-    flex-wrap: wrap;
-    gap: 40rem;
-  }
-  .O_Section-Checklist {
-    gap: 30rem;
-  }
-  .A_Link-CheckList-biotopes {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  .M_Card-CheckList-biotopes {
-    text-align: center;
-    width: 157rem;
-    min-height: 222rem;
-    background-image: url(5ed2c8f4747fc2d6cb12.webp);
-  }
-  .M_Card-CheckList-biotopes:hover {
-    background-image: url(5ed2c8f4747fc2d6cb12.webp);
-  }
-  .A_Link-CheckList-seasons {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-  .M_Card-CheckList-seasons {
-    text-align: center;
-    width: 157rem;
-    min-height: 222rem;
-    background-image: url(f57d4a13bc05ec5b1b72.webp);
-  }
-  .M_Card-CheckList-seasons:hover {
-    background-image: url(f57d4a13bc05ec5b1b72.webp);
-  }
-  .A_Link-CheckList-trail {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
-  .M_Card-CheckList-trail {
-    padding-top: 160rem;
-    padding-left: 0;
-    gap: 30rem;
-    text-align: center;
-    width: 157rem;
-    min-height: 222rem;
-    background-image: url(6ba186bb106d7ae5cc3a.webp);
-  }
-  .M_Card-CheckList-trail:hover {
-    background-image: url(6ba186bb106d7ae5cc3a.webp);
-  }
-  .A_Link-CheckList-compass {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-  .M_Card-CheckList-compass {
-    padding-top: 160rem;
-    padding-left: 0;
-    gap: 30rem;
-    text-align: center;
-    width: 157rem;
-    min-height: 222rem;
-    background-image: url(79cad15f07863238c82e.webp);
-  }
-  .M_Card-CheckList-compass:hover {
-    background-image: url(79cad15f07863238c82e.webp);
-  }
-  .A_Link-CheckList-ticks {
-    display: none;
-  }
-  .A_TestCard_ContentButton {
-    display: none;
-  }
-  .O_Section-MainArticle {
-    align-items: start;
-    justify-content: start;
-    gap: 30rem;
-    width: 380rem;
-    min-height: 250rem;
-    background-image: url(7e5f13dada7718dd15dc.webp);
-  }
-  .M_TagItem-MainArticle {
-    align-self: center;
-  }
-  .A_Heading-H2-MainArticle {
-    text-align: start;
-  }
-  .A_Paragraph-MainArticle {
-    display: none;
-  }
-  .A_Button-MainArticle {
-    position: relative;
-    top: 100rem;
-    width: 380rem;
-    padding-left: 120rem;
-  }
-  .O_Section-ArticlesList {
-    padding-top: 80rem;
-    align-items: start;
-    gap: 20rem;
-  }
-  .O_ArticlesList {
-    flex-direction: column;
-    gap: 20rem;
-  }
-  .O_Articles-CardList {
-    display: grid;
-    grid-template-columns: 99rem 1fr 10rem;
-    grid-template-rows: 1fr 1fr;
-    flex-direction: row;
-    width: 380rem;
-  }
-  .M_TagItem-CardList {
-    display: none;
-  }
-  .M_Articles-CardList {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    width: 99rem;
-    min-height: 139rem;
-  }
-  .M_Articles-CardContent {
-    grid-column: 2 / 3;
-    grid-row: 1 /2;
-  }
-  .M_Articles-CardFooter {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    align-self: end;
-  }
-  .A_Articles-CardList-Arrow {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-    display: block;
-    height: auto;
-    width: 10rem;
-    align-self: center;
-  }
-  .M_Button-more {
-    width: 380rem;
-  }
-  .O_Section-TestsList {
-    align-items: start;
-    gap: 20rem;
-  }
-  .O_Section-TestsList_Cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20rem;
-  }
-  .O_Test_Var {
-    display: grid;
-    grid-template-columns: 130rem 1fr 10rem;
-    grid-template-rows: 1fr 1fr;
-    width: 380rem;
-    gap: 20rem;
-  }
-  .A_TestCardList_image {
-    display: none;
-  }
-  .A_TestCard_image {
-    display: none;
-  }
-  .A_TestCardList_image-iphone {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    display: block;
-  }
-  .A_TestCard_image-iphone {
-    display: block;
-  }
-  .M_TagItem-Article-iphone {
-    display: none;
-  }
-  .M_TagItem-iphone {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    align-self: end;
-    padding-bottom: 10rem;
-  }
-  .O_TestCardList_Content {
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    padding: 10rem 0;
-  }
-  .O_Section_Dzen {
-    min-height: 700rem;
-    gap: 60rem;
-    background-image: url(c2dd7fd40213787ebe73.webp);
-  }
-  .M_Section_Dzen-Content {
-    flex-direction: column;
-    gap: 20rem;
-  }
-  .A_Button-Dzen {
-    width: 55rem;
-    height: 55rem;
-  }
-  .O_InWork {
-    align-items: start;
-    padding: 90rem 30rem;
-  }
-  .O_LearnMore-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 157rem);
-    gap: 40rem;
-    align-self: center;
-  }
-  .M_LearnCard_InWork-iphone {
-    display: none;
-  }
-  .M_Articles-CardMedia {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    width: 157rem;
-    min-height: 144rem;
-  }
-  .A_Heading-H3-iphone {
-    font-size: 22rem;
-    line-height: 1.35;
-    font-weight: var(--font-weight-regular);
-    text-align: center;
-  }
-  .M_LearnCard_InWork {
-    background-color: transparent;
-  }
-  .O_Footer {
-    min-height: 446rem;
-    padding: 40rem 30rem;
-    flex-direction: column;
-    gap: 70rem;
-  }
-  .M_Social-Network {
-    display: none;
-  }
-  .M_Footer-text-wrapper {
-    gap: 30rem;
-  }
-  input[type="email"] {
-    width: 292rem;
-  }
-  #my-form {
-    gap: 0;
-  }
-  .M_Footer-Section {
-    gap: 62rem;
-  }
-  .O_Calendar {
-    gap: 30rem;
-  }
-  .M_Header-FilterGroup-Tegs {
-    flex-wrap: wrap;
-  }
-  .O_Articles-Grid {
-    display: flex;
-    flex-direction: column;
-  }
-  .O_Articles-Card {
-    display: grid;
-    grid-template-columns: 99rem 1fr 10rem;
-    width: 380rem;
-    gap: 10rem;
-  }
-  .M_Articles-ticks.visible {
-    background-image: url(b7ed93323218a5502a74.webp);
-  }
-  .M_Articles-storm.visible {
-    background-image: url(12907ab5472296df3497.webp);
-  }
-  .M_Articles-compass.visible {
-    background-image: url(fd18fcd63c11c5e1a0ca.webp);
-  }
-  .M_Articles-trail.visible {
-    background-image: url(fb43d36840763c8fa8ab.webp);
-  }
-  .M_Articles-backpack.visible {
-    background-image: url(4a5f83683ea06fbc53e6.webp);
-  }
-  .M_Articles-clothing.visible {
-    background-image: url(d5ea9dd9b6c573ad3c59.webp);
-  }
-  .M_Articles-bonfire.visible {
-    background-image: url(9b2b76c1906ccf115c72.webp);
-  }
-  .M_Articles-tea.visible {
-    background-image: url(907f351f640007f50c41.webp);
-  }
-  .M_Articles-seasons.visible {
-    background-image: url(0e941224b7114f236126.webp);
-  }
-  .M_Articles-biotopes.visible {
-    background-image: url(de3eecba23e2d58f5466.webp);
-  }
-  .M_Articles-boletus.visible {
-    background-image: url(86b97d4a8fe235d32a5e.webp);
-  }
-  .M_Articles-fox.visible {
-    background-image: url(466b1c2c3423fcf8245a.webp);
-  }
-  .M_Articles-CardMedia-iphone {
-    width: 99rem;
-    height: 139rem;
-  }
-  .O_Section-Tests {
-    align-self: center;
-    flex-direction: column;
-    gap: 20rem;
-    padding: 0rem;
-  }
-  .O_TestCard {
-    padding: 10rem;
-    width: 380rem;
-    min-height: 140rem;
-  }
-  .O_TestCard_Content {
-    padding: 10rem 0;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-  }
-  .O_HeroTest {
-    padding: 10rem;
-    min-height: 253rem;
-    gap: 30rem;
-    background-image: url(c0b9486bcd0c6052c5da.webp);
-  }
-  .O_Main-Interactive {
-    padding: 90rem 0;
-  }
-  .M_HeroTest_Content {
-    text-align: start;
-  }
-  .A_Button-Arrow {
-    position: relative;
-    top: 130rem;
-    width: 380rem;
-    padding-left: 120rem;
-  }
-  .O_LearnMore {
-    padding-top: 90rem;
-    align-items: start;
-    gap: 30rem;
-  }
-  .M_LearnCard {
-    background-color: transparent;
-  }
-  .M_LearnCard:hover {
-    background-color: transparent;
-  }
-  .A_Heading-H2-padding {
-    padding-left: 30rem;
   }
 }
 

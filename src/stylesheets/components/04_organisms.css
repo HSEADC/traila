@@ -474,236 +474,24 @@
   align-items: center;
   padding: 0 40rem;
 }
+
 /* ___________________articles.html___________________ */
-.O_Header-articles {
-  gap: 200rem;
-  background-image: url("/src/images/articles-bg.webp");
-  min-height: 695rem;
+.O_HeaderArticles {
+  gap: 180rem;
+  background-image: url("../../images/Q_ArticlesBG.webp");
+  min-height: 625rem;
 }
 
-.O_Section-Checklist {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40rem;
-}
-
-.O_Section-Articles {
+.O_ArticlesFeed {
   display: flex;
   flex-direction: column;
   gap: 40rem;
-}
-
-.O_Header-Articles {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-}
-
-.O_Articles-Grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30rem;
-}
-
-.O_Articles-Card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 10rem;
-  gap: 10rem;
-  width: 434rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-/* ___________________main_test_mushroom.html___________________ */
-.O_Header-calendar {
-  gap: 200rem;
-  background-image: url("/src/images/calendar-bg.png");
-  min-height: 695rem;
-}
-.O_ForestConditions {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-}
-.O_ForestConditions-Month {
-  display: grid;
-  grid-template-columns: 360rem 980rem;
-  grid-template-rows: repeat(2, 230rem);
-  gap: 20rem;
-}
-.O_ForestTrendChart {
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-  padding: 15rem 20rem;
-  border-radius: 15rem;
-  background-color: var(--color-card-accent);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_ForestTrendChart-img.webp");
-}
-.O_ForestStatCards {
-  display: flex;
-  gap: 20rem;
-}
-.O_ForestStatOther {
-  display: grid;
-  grid-template-columns: repeat(2, 670rem);
-  grid-template-rows: repeat(2, 260rem);
-  gap: 20rem;
-}
-.O_ForestState-Calendar {
-  display: flex;
-  flex-direction: column;
-  padding: 15rem 20rem;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_ForestState-Calendar.webp");
-}
-.O_ForestSky-Calendar {
-  display: flex;
-  flex-direction: column;
-  padding: 15rem 20rem;
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_ForestSky-Calendar.webp");
-}
-.O_ForestActivity {
-  display: flex;
-  flex-direction: column;
-  padding: 15rem 20rem;
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-  border-radius: 15rem;
-  background-color: var(--color-surface);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_ForestActivity.webp");
-}
-.O_ForestRisks {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding: 170rem 230rem;
-  gap: 40rem;
+  padding: 0 40rem;
   width: 100%;
-  min-height: 650rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/Q_ForestRisks-img.webp");
 }
 
-.O_ForestProducts {
+.O_ArticleFilters {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 120rem 40rem;
-  gap: 40rem;
-}
-.O_ForestProducts-List {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: end;
-  row-gap: 60rem;
-  column-gap: 30rem;
-}
-.O_Section-Checklist-Calendar {
-  padding-bottom: 120rem;
-}
-
-/* ___________________article_name.html___________________ */
-.O_Header_Article {
-  gap: 200rem;
-  min-height: 350rem;
-}
-
-.O_Header_Article-ticks {
-  background-image: url("/src/images/articles/Q-article_ticks-bg.webp");
-}
-
-.O_Header_Article-storm {
-  background-image: url("/src/images/articles/Q-article_storm-bg.webp");
-}
-
-.O_Header_Article-compass {
-  background-image: url("/src/images/articles/Q-article_compass-bg.webp");
-}
-.O_Header_Article-trail {
-  background-image: url("/src/images/articles/Q-article_trail-bg.webp");
-}
-.O_Header_Article-backback {
-  background-image: url("/src/images/articles/Q-article_backpack-bg.webp");
-}
-.O_Header_Article-clothing {
-  background-image: url("/src/images/articles/Q-article_clothing-bg.webp");
-}
-.O_Header_Article-fire {
-  background-image: url("/src/images/articles/Q-article_fire-bg.webp");
-}
-.O_Header_Article-tea {
-  background-image: url("/src/images/articles/Q-article_tea-bg.webp");
-}
-.O_Header_Article-Seasons {
-  background-image: url("/src/images/articles/Q-article_seasons-bg.webp");
-}
-.O_Header_Article-biotopes {
-  background-image: url("/src/images/articles/Q-article_biotopes-bg.webp");
-}
-.O_Header_Article-borovik {
-  background-image: url("/src/images/articles/Q-article_borovik-bg.webp");
-}
-.O_Header_Article-fox {
-  background-image: url("/src/images/articles/Q-article_fox-bg.webp");
-}
-
-.O_Main_Article {
-  display: flex;
-  flex-direction: column;
-  gap: 80rem;
-  padding: 80rem 270rem 120rem;
-}
-
-.O_Article-Content {
-  display: flex;
-  flex-direction: column;
-  gap: 80rem;
-}
-
-.O_Article-Stats-Block {
-  display: flex;
-  padding: 15rem 35rem;
-  border-radius: 15rem;
-  min-height: 264rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/articles/Q_Article-Stats-Block.webp");
-}
-.O_Article-Stats-BlockVar {
-  display: flex;
-  padding: 15rem 35rem;
-  border-radius: 15rem;
-  min-height: 264rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/articles/Q_Article-Stats-BlockVar.webp");
+  gap: 20rem;
 }

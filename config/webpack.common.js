@@ -31,7 +31,6 @@ module.exports = {
     map_reserveForest: "./src/javascripts/map_reserveForest.js",
     map_sparrowHills: "./src/javascripts/map_sparrowHills.js",
     map_troparevoForest: "./src/javascripts/map_troparevoForest.js",
-    // после не правила
     sectionArticles: "./src/javascripts/sectionArticles.js",
   },
   output: {

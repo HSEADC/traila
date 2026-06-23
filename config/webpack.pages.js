@@ -15,6 +15,12 @@ const htmlPages = [
     "widows",
     "searchVanilla",
   ]),
+  createPages("./src/404.html", "./404.html", [
+    "index",
+    "allStyles",
+    "widows",
+    "searchVanilla",
+  ]),
   createPages("./src/pages/interactive.html", "pages/interactive.html", [
     "index",
     "allStyles",
@@ -198,13 +204,6 @@ const htmlPages = [
     "widows",
     "searchVanilla",
   ]),
-  createPages("./src/404.html", "./404.html", ["index"]),
-  createPages("./src/pages/articles.html", "pages/articles.html", [
-    "index",
-    "allStyles",
-    "widows",
-    "searchVanilla",
-  ]),
   createPages("./src/pages/routes.html", "pages/routes.html", [
     "index",
     "allStyles",
@@ -236,68 +235,17 @@ const htmlPages = [
     "pages/routes/troparevoForest.html",
     ["index", "allStyles", "widows", "searchVanilla", "map_troparevoForest"],
   ),
-  // после не правила
-  // после не правила
-
+  createPages("./src/pages/articles.html", "pages/articles.html", [
+    "index",
+    "allStyles",
+    "widows",
+    "searchVanilla",
+    "sectionArticles",
+  ]),
   createPages(
-    "./src/pages/articles/article_ticks.html",
-    "pages/articles/article_ticks.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_storm.html",
-    "pages/articles/article_storm.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_compass.html",
-    "pages/articles/article_compass.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_trail.html",
-    "pages/articles/article_trail.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_backpack.html",
-    "pages/articles/article_backpack.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_clothing.html",
-    "pages/articles/article_clothing.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_fire.html",
-    "pages/articles/article_fire.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_tea.html",
-    "pages/articles/article_tea.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_seasons.html",
-    "pages/articles/article_seasons.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_biotopes.html",
-    "pages/articles/article_biotopes.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_borovik.html",
-    "pages/articles/article_borovik.html",
-    ["index", "allStyles"],
-  ),
-  createPages(
-    "./src/pages/articles/article_fox.html",
-    "pages/articles/article_fox.html",
-    ["index", "allStyles"],
+    "./src/pages/articles/interview.html",
+    "pages/articles/interview.html",
+    ["index", "allStyles", "widows", "searchVanilla"],
   ),
 ];
 

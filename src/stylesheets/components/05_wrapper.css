@@ -292,3 +292,23 @@
   flex-direction: column;
   gap: 22rem;
 }
+
+/* ___________________articles.html___________________ */
+.W_FeedHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 20rem;
+  align-items: start;
+}
+
+.W_FilterTags {
+  display: flex;
+  gap: 10rem;
+  align-items: start;
+}
+
+.W_GuidesFlex {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+}

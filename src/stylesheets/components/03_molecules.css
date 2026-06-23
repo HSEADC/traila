@@ -161,6 +161,20 @@
   visibility: visible;
 }
 
+.M_TagItem {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 0 15rem;
+  height: 30rem;
+  border-radius: 52rem;
+  user-select: none;
+}
+
+.M_TagItem--active {
+  background-color: var(--color-tag);
+}
+
 /* ___________________index.html___________________ */
 .M_HeroInfo {
   display: flex;
@@ -220,19 +234,19 @@
 }
 
 .M_PassabilityBar--frost {
-  top: 72rem;
+  top: 150rem;
 }
 
 .M_PassabilityBar--humidity {
-  top: 95rem;
+  top: 73rem;
 }
 
 .M_PassabilityBar--mud {
-  top: 35rem;
+  top: 25rem;
 }
 
 .M_PassabilityBar--slush {
-  top: -5rem;
+  top: 150rem;
 }
 
 .M_CalendarSky {
@@ -257,15 +271,15 @@
 }
 
 .M_SkyCondition--clear {
-  left: 72rem;
+  left: 370rem;
 }
 
 .M_SkyCondition--cloudy {
-  left: 165rem;
+  left: 138rem;
 }
 
 .M_SkyCondition--rain {
-  left: 370rem;
+  left: 310rem;
 }
 
 .M_CalendarConditions {
@@ -378,26 +392,6 @@
   position: relative;
   top: 10rem;
   align-self: flex-start;
-}
-
-.M_ArticleImage--landmarks {
-  background-position: start;
-  background-image: url("/src/images/articles/Q__ArticleImage--landmarks.webp");
-}
-
-.M_ArticleImage--ticks {
-  background-position: center;
-  background-image: url("/src/images/articles/Q_ArticleImage--ticksVar.webp");
-}
-
-.M_ArticleImage--mushroomer {
-  background-position: center;
-  background-image: url("/src/images/articles/Q_ArticleImage--mushroomer.webp");
-}
-
-.M_ArticleImage--backpack {
-  background-position: center;
-  background-image: url("/src/images/articles/Q_ArticleImage--backpack.webp");
 }
 
 .M_ExpertContent {
@@ -1182,468 +1176,238 @@
   border-radius: 25rem;
   background-color: var(--color-card-accent);
 }
+
 /* ___________________articles.html___________________ */
-.M_HeroContent-articles {
-  gap: 20rem;
-}
-
-.M_Header-Toolbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.M_Header-FilterButton {
+.M_FilterHeader {
   display: flex;
   align-items: center;
   gap: 10rem;
-  background-color: transparent;
-  border: none;
   cursor: pointer;
 }
 
-.M_Header-Filter-Icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
-  min-height: 40rem;
-  border-radius: 50%;
-  background-color: var(--color-button);
-}
-
-.M_Header-FilterGroup {
+.M_FilterGroup {
   display: none;
   flex-direction: column;
   gap: 15rem;
 }
 
-.M_Header-FilterGroup.open {
+.M_FilterGroup.is-open {
   display: flex;
 }
 
-.M_Header-FilterGroup-Tegs {
-  display: flex;
-  gap: 10rem;
-}
-
-.M_TagItem {
-  display: flex;
-  align-items: center;
-  gap: 8rem;
-  padding: 0 15rem;
-  height: 30rem;
-  border-radius: 52rem;
-  user-select: none;
-}
-
-.M_TagItem-filter {
-  background-color: rgba(45, 78, 30, 0.3);
+.M_FilterTag {
+  background-color: var(--color-surface);
+  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
-.M_TagItem-filter:hover {
-  background-color: rgba(45, 78, 30, 0.6);
-  cursor: pointer;
-}
-
-.M_TagItem-filter.active {
-  background-color: var(--color-tag);
-}
-
-.M_Articles-ticks.visible {
-  background-image: url("/src/images/articles/article_ticks.webp");
-}
-.M_Articles-storm.visible {
-  background-image: url("/src/images/articles/article_storm.webp");
-}
-.M_Articles-compass.visible {
-  background-image: url("/src/images/articles/article_compass.webp");
-}
-.M_Articles-trail.visible {
-  background-image: url("/src/images/articles/article_trail.webp");
-}
-.M_Articles-backpack.visible {
-  background-image: url("/src/images/articles/article_backpack.webp");
-}
-.M_Articles-clothing.visible {
-  background-image: url("/src/images/articles/article_clothing.webp");
-}
-.M_Articles-bonfire.visible {
-  background-image: url("/src/images/articles/article_bonfire.webp");
-}
-.M_Articles-tea.visible {
-  background-image: url("/src/images/articles/article_tea.webp");
-}
-.M_Articles-seasons.visible {
-  background-image: url("/src/images/articles/article_seasons.webp");
-}
-.M_Articles-biotopes.visible {
-  background-image: url("/src/images/articles/article_biotopes.webp");
-}
-.M_Articles-boletus.visible {
-  background-image: url("/src/images/articles/article_boletus.webp");
-}
-.M_Articles-fox.visible {
-  background-image: url("/src/images/articles/article_fox.webp");
-}
-
-.M_TagItem--active {
-  background-color: var(--color-tag);
-}
-
-.M_Articles-CardContent {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-
-.M_Articles-CardFooter {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10rem;
-}
-
-.M_Download-Button {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  border: none;
-  gap: 10rem;
-  background-color: var(--color-button);
-  text-decoration: none;
-}
-
-.M_Button-more {
-  align-self: center;
-  width: 267rem;
-  min-height: 50rem;
-  border: none;
-  border-radius: 71rem;
-}
-
-/* ___________________article_name.html___________________ */
-
-.M_Main_Article-Header {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 35rem;
-}
-
-.M_Main_Article-Header-tegs {
-  display: flex;
-  gap: 10rem;
-}
-
-.M_Article-Info {
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
-}
-
-.M_State-Body {
-  position: relative;
-  left: -5rem;
-  padding-top: 125rem;
-}
-.M_State-Winter {
-  position: relative;
-  left: 10rem;
-  padding-top: 100rem;
-}
-.M_State-BodyVarImg {
-  padding-left: 55rem;
-  padding-top: 45rem;
-}
-.M_State-FlowerSheets {
-  position: relative;
-  left: 5rem;
-  padding-top: 110rem;
-}
-.M_State-Grass {
-  position: relative;
-  left: -50rem;
-  padding-top: 85rem;
-}
-
-.M_State-Ear {
-  padding-top: 95rem;
-  padding-left: 40rem;
-}
-.M_State-Autumn {
-  padding-top: 70rem;
-  padding-left: 95rem;
-}
-.M_State-Iphone {
-  padding-top: 80rem;
-  padding-left: 80rem;
-}
-.M_State-Bear {
-  padding-top: 80rem;
-  padding-left: 45rem;
-}
-.M_State-TreeVar {
-  padding-top: 55rem;
-  padding-right: 30rem;
-}
-.M_State-Hand {
-  padding-top: 58rem;
-  padding-left: 40rem;
-}
-.M_State-Spring {
-  padding-top: 40rem;
-  padding-left: 80rem;
-}
-.M_State-Flower {
-  padding-top: 43rem;
-  padding-right: 10rem;
-}
-.M_State-Sun {
-  padding-top: 10rem;
-  padding-right: 45rem;
-}
-.M_State-Leg {
-  padding-top: 20rem;
-  padding-left: 40rem;
-}
-.M_State-SunVar {
-  position: relative;
-  padding-top: 0rem;
-  left: 85rem;
-}
-.M_State-Mite {
-  padding-top: 20rem;
-  padding-left: 55rem;
-}
-
-.M_State-BodyVar {
-  padding-top: 17rem;
-  padding-right: 52rem;
-}
-
-.M_State-Forest {
-  position: relative;
-  top: -5rem;
-  padding-right: 7rem;
-}
-
-.M_State-Knee {
-  padding-top: 10rem;
-  padding-left: 40rem;
-}
-.M_State-FirstAidKit {
-  padding-top: 10rem;
-  padding-left: 30rem;
-}
-.M_State-DirectionVar {
-  padding-top: 10rem;
-  padding-right: 15rem;
-}
-
-.M_Article-Info-img {
-  display: flex;
-  gap: 30rem;
-}
-
-.M_Article-Info-img-Small {
-  display: block;
-  width: 280rem;
-  min-height: auto;
-}
-.M_Article-Info-img-Small-bg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300rem;
-  min-height: 250rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 15rem;
-}
-
-.M_Article-Info-img-Small-bg-trail {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-trail.webp");
-}
-
-.M_Article-Info-img-Small-bg-sun {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-sun.webp");
-}
-
-.M_Article-Info-img-Small-bg-relief {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-relief.webp");
-}
-.M_Article-Info-img-Small-bg-wind {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-wind.webp");
-}
-.M_Article-Info-img-Small-bg-firewood {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-firewood.webp");
-}
-.M_Article-Info-img-Small-bg-heat {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-heat.webp");
-}
-.M_Article-Info-img-Small-bg-Mush {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-Mush.webp");
-}
-.M_Article-Info-img-Small-bg-cap {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-cap.webp");
-}
-.M_Article-Info-img-Small-bg-MushVar {
-  background-image: url("../../images/articles/M_Article-Info-img-Small-bg-MushVar.webp");
-}
-.M_Article-Info-img-Large {
-  display: block;
-  width: 570rem;
-  min-height: auto;
-}
-
-.M_Article-Info-Steps {
-  display: flex;
-  flex-direction: column;
-  gap: 40rem;
-}
-
-.M_Article-Info-Step {
-  display: flex;
-  flex-direction: column;
-  padding: 20rem 17rem 20rem 20rem;
-  gap: 30rem;
-  width: 284rem;
-  min-height: auto;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-.M_Article-Info-Content {
-  display: flex;
-  gap: 30rem;
-}
-
-.M_Article-Info-Steps-Title {
-  display: flex;
-  align-items: center;
-  gap: 12rem;
-}
-
-.M_List {
-  display: flex;
-  flex-direction: column;
-  gap: 30rem;
-  padding: 30rem 20rem;
-  width: 900rem;
-  min-height: 426rem;
-  border-radius: 15rem;
-  background-color: var(--color-card);
-}
-
-.M_List_Content {
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-}
-
-.M_List_Content-Title {
-  display: flex;
-  gap: 15rem;
-}
-
-.M_Article-Important {
-  display: flex;
-  gap: 30rem;
-  padding: 30rem 40rem;
-  width: 900rem;
-  min-height: auto;
-  border-radius: 15rem;
+.M_FilterTag:hover {
   background-color: var(--color-card-accent);
 }
 
-.M_Article-storm-tegs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15rem;
-  width: 900rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/articles/M_Article-storm-tegs.webp");
+.M_FilterTag--active {
+  background-color: var(--color-card-accent);
 }
 
-.M_Article-biotopes-tegs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15rem;
-  width: 900rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/articles/M_Article-biotopes-tegs.webp");
-}
-
-.M_Article-clothing-tegs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15rem;
-  width: 900rem;
-  min-height: 500rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("/src/images/articles/M_Article-clothing-tegs.webp");
-}
-
-.M_Article-Info-Stat-Card {
+.M_GuideFlex {
   display: flex;
   flex-direction: column;
-  padding-top: 70rem;
-  width: 202rem;
-  min-height: 281rem;
-  border-radius: 15rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding: 10rem;
+  gap: 10rem;
+  text-decoration: none;
+  border-radius: 25rem;
+  width: 440rem;
+  min-height: 315rem;
+  background-color: var(--color-card);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
-.M_Article-Info-Stat-Card-Forest {
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-Forest.webp");
+.M_GuideFlex:hover {
+  background-color: rgba(19, 53, 36, 0.7);
 }
 
-.M_Article-Info-Stat-Card-Ravine {
-  padding-top: 80rem;
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-Ravine.webp");
-}
-
-.M_Article-Info-Stat-Card-Mountain {
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-Mountain.webp");
-}
-
-.M_Article-Info-Stat-Card-Grass {
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-Gras.webp");
-}
-
-.M_Article-Info-Stat-Card-Dampness {
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-Dampness.webp");
-}
-
-.M_Article-Info-Stat-Card-RavineVar {
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-RavineVar.webp");
-}
-
-.M_Article-Info-Stat-Card-ForestVar {
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-ForestVar.webp");
-}
-
-.M_Article-Info-Stat-Card-GrassVar {
-  background-image: url("/src/images/articles/M_Article-Info-Stat-Card-GrassVar.webp");
-}
-
-.M_Article-Info-Stat-Cards {
+.M_CardFooter {
   display: flex;
-  flex-direction: column;
-  gap: 40rem;
+  justify-content: space-between;
+}
+
+.M_ArticleImage--ticks {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--ticks.webp");
+}
+
+.M_ArticleImage--storm {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--storm.webp");
+}
+
+.M_ArticleImage--lost {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--lost.webp");
+}
+
+.M_ArticleImage--route {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--route.webp");
+}
+
+.M_ArticleImage--landmarks {
+  background-position: start;
+  background-image: url("/src/images/articles/Q_ArticleImage--landmarks.webp");
+}
+
+.M_ArticleImage--compass {
+  background-position: start;
+  background-image: url("/src/images/articles/Q_ArticleImage--compass.webp");
+}
+
+.M_ArticleImage--backpack {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--backpack.webp");
+}
+
+.M_ArticleImage--clothes {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--clothes.webp");
+}
+
+.M_ArticleImage--preparation {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--preparation.webp");
+}
+
+.M_ArticleImage--chanterelles {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--chanterelles.webp");
+}
+
+.M_ArticleImage--doppelgangers {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--doppelgangers.webp");
+}
+
+.M_ArticleImage--mushroomer {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--mushroomer.webp");
+}
+
+.M_ArticleImage--nettles {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--nettles.webp");
+}
+
+.M_ArticleImage--wildgarlic {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--wildgarlic.webp");
+}
+
+.M_ArticleImage--wildplants {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--wildplants.webp");
+}
+
+.M_ArticleImage--snack {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--snack.webp");
+}
+
+.M_ArticleImage--water {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--water.webp");
+}
+
+.M_ArticleImage--diet {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--diet.webp");
+}
+
+.M_ArticleImage--winter {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--winter.webp");
+}
+
+.M_ArticleImage--frost {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--frost.webp");
+}
+
+.M_ArticleImage--warm {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--warm.webp");
+}
+
+.M_ArticleImage--traces {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--traces.webp");
+}
+
+.M_ArticleImage--morels {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--morels.webp");
+}
+
+.M_ArticleImage--danger {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--danger.webp");
+}
+
+.M_ArticleImage--spring {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--spring.webp");
+}
+
+.M_ArticleImage--fires {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--fires.webp");
+}
+
+.M_ArticleImage--summer {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--summer.webp");
+}
+
+.M_ArticleImage--walk {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--walk.webp");
+}
+
+.M_ArticleImage--august {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--august.webp");
+}
+
+.M_ArticleImage--autumn {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--autumn.webp");
+}
+
+.M_ArticleImage--september {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--september.webp");
+}
+
+.M_ArticleImage--twilight {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--twilight.webp");
+}
+
+.M_ArticleImage--coldsnap {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--coldsnap.webp");
+}
+
+.M_ArticleImage--off-season {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--off-season.webp");
+}
+
+.M_ArticleImage--snow {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--snow.webp");
+}
+
+.M_ArticleImage--firstaidkit {
+  background-position: center;
+  background-image: url("/src/images/articles/Q_ArticleImage--firstaidkit.webp");
 }

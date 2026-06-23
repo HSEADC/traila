@@ -1,125 +1,112 @@
-console.clear();
-
 document.addEventListener("DOMContentLoaded", () => {
-  initFilter();
-  initFilterToggle();
-  initLoadMore();
-  updateCards();
-});
+  const filterHeader = document.querySelector(".M_FilterHeader");
+  const filterGroups = document.querySelectorAll(".M_FilterGroup");
+  const articles = Array.from(document.querySelectorAll(".M_GuideFlex"));
+  const showMoreButton = document.querySelector(".A_ShowMoreButton");
 
-const CARDS_PER_STEP = 9;
-let visibleCardsCount = CARDS_PER_STEP;
+  const ITEMS_PER_PAGE = 9;
 
-function initFilter() {
-  const tags = document.querySelectorAll(".M_TagItem-filter");
-  const allTag = document.querySelector(".M_TagItem-filter.all");
+  let visibleCount = ITEMS_PER_PAGE;
+  let activeCategory = "all";
+  let activeTime = null;
 
-  if (!tags.length || !allTag) return;
+  const categoryMap = {
+    все: "all",
+    безопасность: "safety",
+    навигация: "navigation",
+    экипировка: "equipment",
+    питание: "food",
+    экспертиза: "expertise",
+    микология: "mycology",
+  };
 
-  tags.forEach((tag) => {
-    tag.addEventListener("click", () => {
-      if (tag !== allTag) {
-        allTag.classList.remove("active");
-        tag.classList.toggle("active");
-      }
-
-      const activeTags = document.querySelectorAll(".M_TagItem-filter.active");
-
-      if (
-        (tag === allTag && !tag.classList.contains("active")) ||
-        activeTags.length === 0 ||
-        activeTags.length === tags.length - 1
-      ) {
-        tags.forEach((item) => item.classList.remove("active"));
-        allTag.classList.add("active");
-      }
-
-      visibleCardsCount = CARDS_PER_STEP;
-      updateCards();
+  filterHeader.addEventListener("click", () => {
+    filterGroups.forEach((group) => {
+      group.classList.toggle("is-open");
     });
   });
-}
 
-function initFilterToggle() {
-  const filterButton = document.querySelector(".M_Header-FilterButton");
-  const filterGroup = document.querySelector(".M_Header-FilterGroup");
+  const categoryTags = filterGroups[0].querySelectorAll(".M_FilterTag");
+  const timeTags = filterGroups[1].querySelectorAll(".M_FilterTag");
 
-  if (!filterButton || !filterGroup) return;
+  categoryTags.forEach((tag) => {
+    const text = tag.textContent.trim().toLowerCase();
 
-  filterButton.addEventListener("click", () => {
-    filterGroup.classList.toggle("open");
-  });
-}
-
-function initLoadMore() {
-  const moreButton = document.querySelector(".M_Button-more");
-
-  if (!moreButton) return;
-
-  moreButton.addEventListener("click", () => {
-    visibleCardsCount += CARDS_PER_STEP;
-    updateCards();
-  });
-}
-
-function getActiveFilterClasses() {
-  const activeTags = document.querySelectorAll(".M_TagItem-filter.active");
-  const allTag = document.querySelector(".M_TagItem-filter.all");
-
-  if (allTag && allTag.classList.contains("active")) {
-    return [];
-  }
-
-  let filterClasses = [];
-
-  activeTags.forEach((tag) => {
-    const currentClasses = [...tag.classList].filter(
-      (className) =>
-        className !== "M_TagItem" &&
-        className !== "M_TagItem-filter" &&
-        className !== "active" &&
-        className !== "all",
-    );
-
-    filterClasses.push(...currentClasses);
-  });
-
-  return filterClasses;
-}
-
-function getMatchedCards() {
-  const cards = document.querySelectorAll(".O_Articles-Card");
-  const filterClasses = getActiveFilterClasses();
-
-  if (filterClasses.length === 0) {
-    return [...cards];
-  }
-
-  return [...cards].filter((card) =>
-    filterClasses.some((filterClass) => card.classList.contains(filterClass)),
-  );
-}
-
-function updateCards() {
-  const cards = document.querySelectorAll(".O_Articles-Card");
-  const matchedCards = getMatchedCards();
-  const moreButton = document.querySelector(".M_Button-more");
-
-  cards.forEach((card) => {
-    card.style.display = "none";
-  });
-
-  matchedCards.forEach((card, index) => {
-    if (index < visibleCardsCount) {
-      card.style.display = "";
+    if (text === "все") {
+      tag.classList.add("M_FilterTag--active");
     }
   });
 
-  if (!moreButton) return;
+  function getFilteredArticles() {
+    return articles.filter((article) => {
+      const categoryMatch =
+        activeCategory === "all" || article.dataset.category === activeCategory;
 
-  if (matchedCards.length > visibleCardsCount) {
-    moreButton.style.display = "";
-  } else {
-    moreButton.style.display = "none";
+      const timeMatch =
+        activeTime === null || article.dataset.time === activeTime;
+
+      return categoryMatch && timeMatch;
+    });
   }
-}
+
+  function renderArticles() {
+    const filteredArticles = getFilteredArticles();
+
+    articles.forEach((article) => {
+      article.style.display = "none";
+    });
+
+    filteredArticles.slice(0, visibleCount).forEach((article) => {
+      article.style.display = "flex";
+    });
+
+    if (filteredArticles.length > visibleCount) {
+      showMoreButton.style.display = "flex";
+    } else {
+      showMoreButton.style.display = "none";
+    }
+  }
+
+  categoryTags.forEach((tag) => {
+    tag.addEventListener("click", () => {
+      categoryTags.forEach((item) => {
+        item.classList.remove("M_FilterTag--active");
+      });
+
+      tag.classList.add("M_FilterTag--active");
+
+      const text = tag.textContent.trim().toLowerCase();
+      activeCategory = categoryMap[text] || "all";
+
+      visibleCount = ITEMS_PER_PAGE;
+      renderArticles();
+    });
+  });
+
+  timeTags.forEach((tag) => {
+    tag.addEventListener("click", () => {
+      const isActive = tag.classList.contains("M_FilterTag--active");
+
+      timeTags.forEach((item) => {
+        item.classList.remove("M_FilterTag--active");
+      });
+
+      if (isActive) {
+        activeTime = null;
+      } else {
+        tag.classList.add("M_FilterTag--active");
+        activeTime = tag.textContent.trim().replace(" мин", "");
+      }
+
+      visibleCount = ITEMS_PER_PAGE;
+      renderArticles();
+    });
+  });
+
+  showMoreButton.addEventListener("click", () => {
+    visibleCount += ITEMS_PER_PAGE;
+    renderArticles();
+  });
+
+  renderArticles();
+});
