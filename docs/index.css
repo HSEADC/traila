@@ -406,7 +406,7 @@ input[type="email"]::placeholder {
 .Q_RouteMap {
   display: block;
   width: 147rem;
-  min-height: auto;
+  height: auto;
 }
 
 .Q_ExpertImageMobile {
