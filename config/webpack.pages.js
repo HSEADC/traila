@@ -247,6 +247,36 @@ const htmlPages = [
     "pages/articles/interview.html",
     ["index", "allStyles", "widows", "searchVanilla"],
   ),
+  createPages(
+    "./src/pages/articles/article_ticks.html",
+    "pages/articles/article_ticks.html",
+    ["index", "allStyles", "widows", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/articles/article_storm.html",
+    "pages/articles/article_storm.html",
+    ["index", "allStyles", "widows", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/articles/article_lost.html",
+    "pages/articles/article_lost.html",
+    ["index", "allStyles", "widows", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/articles/article_route.html",
+    "pages/articles/article_route.html",
+    ["index", "allStyles", "widows", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/articles/article_landmarks.html",
+    "pages/articles/article_landmarks.html",
+    ["index", "allStyles", "widows", "searchVanilla"],
+  ),
+  createPages(
+    "./src/pages/articles/article_compass.html",
+    "pages/articles/article_compass.html",
+    ["index", "allStyles", "widows", "searchVanilla"],
+  ),
 ];
 
 module.exports = htmlPages;

@@ -14,7 +14,8 @@
 .A_Tag-Text,
 .A_ResultTitle,
 .A_ErrorCode,
-.A_NumberedTitle {
+.A_NumberedTitle,
+.A_MobileNavLink {
   font-family: var(--font-family);
   color: var(--color-text);
 }
@@ -46,7 +47,8 @@
 .A_QuestionText,
 .A_NavigationText,
 .A_ButtonText,
-.A_Tag-Text {
+.A_Tag-Text,
+.A_MobileNavLink {
   font-weight: var(--font-weight-regular);
 }
 
@@ -143,6 +145,10 @@
 }
 
 .A_Search.is-hidden {
+  display: none;
+}
+
+.A_MenuButton {
   display: none;
 }
 
@@ -298,6 +304,10 @@
   border-radius: 71rem;
   height: 50rem;
   width: 270rem;
+}
+
+.A_ArticleCardButton {
+  display: none;
 }
 
 /* ___________________aboutus.html___________________ */

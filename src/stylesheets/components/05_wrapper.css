@@ -122,7 +122,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/src/images/stub.png");
+  object-fit: cover;
 }
 
 /* ___________________test_Exams.html___________________ */
@@ -346,8 +346,13 @@
   gap: 20rem;
 }
 
+.W_FeatureGrid--3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20rem;
+}
+
 .W_ArticleMediaGrid {
-  margin-block: 20rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-height: 250rem;

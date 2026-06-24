@@ -17,6 +17,20 @@
   background-color: var(--color-surface);
 }
 
+.O_MobileMenu {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-surface);
+}
+
+.O_MobileMenu--hidden {
+  display: none;
+}
+
 /* ___________________index.html___________________ */
 .O_HeaderHome {
   gap: 190rem;
@@ -528,4 +542,10 @@
   display: flex;
   flex-direction: column;
   gap: 23rem;
+}
+
+.O_HeaderArticleImage {
+  min-height: 350rem;
+  border-bottom-left-radius: 25rem;
+  border-bottom-right-radius: 25rem;
 }

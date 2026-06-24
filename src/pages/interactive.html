@@ -53,19 +53,19 @@
         </a>
         <ul class="M_NavigationMenu">
           <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">о нас</a>
+            <a href="./aboutus.html" class="A_NavigationText">о нас</a>
           </li>
           <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">статьи</a>
+            <a href="./articles.html" class="A_NavigationText">статьи</a>
           </li>
           <li class="M_NavigationItem M_NavigationItem--active">
-            <a href="#" class="A_NavigationText">интерактивы</a>
+            <a href="./interactive.html" class="A_NavigationText">интерактивы</a>
           </li>
           <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">маршруты</a>
+            <a href="./routes.html" class="A_NavigationText">маршруты</a>
           </li>
           <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">календарь</a>
+            <a href="./calendar.html" class="A_NavigationText">календарь</a>
           </li>
         </ul>
         <button class="A_Search" aria-label="Поиск">
@@ -100,7 +100,30 @@
           </div>
           <div class="M_SearchDropdown"></div>
         </div>
+       <button class="A_MenuButton">
+          <img
+            class="Q_MenuIcon"
+            src="../images/Q_Icon_Menu.svg"
+            alt="Открыть меню"
+          />
+        </button>
       </nav>
+      <div class="O_MobileMenu O_MobileMenu--hidden">
+        <button class="A_MenuCloseButton" aria-label="Закрыть меню">
+          <img
+            class="Q_MenuCloseIcon"
+            src="../images/Q_IconNavClose.svg"
+            alt="Закрыть меню"
+          />
+        </button>
+        <nav class="W_MobileNavigation">
+          <a href="./aboutus.html" class="A_MobileNavLink">о нас</a>
+          <a href="./articles.html" class="A_MobileNavLink">статьи</a>
+          <a href="./interactive.html" class="A_MobileNavLink">интерактивы</a>
+          <a href="./routes.html" class="A_MobileNavLink">маршруты</a>
+          <a href="./calendar.html" class="A_MobileNavLink">календарь</a>
+        </nav>
+      </div>
       <div class="M_HeroContent">
         <h1 class="A_Heading-H1">интерактивы</h1>
         <div class="M_TagGroup">
@@ -152,7 +175,7 @@
             </div>
             <div class="M_TestCardDescription">
               <h4 class="A_Heading-H4">Лесной экзамен</h4>
-              <p class="A_ParagraphVar">
+              <p class="A_ParagraphVar u-Hide-Mobile">
                 Проверь, насколько уверенно </br>
 ты чувствуешь себя в лесу
               </p>
@@ -186,7 +209,7 @@
             </div>
             <div class="M_TestCardDescription">
               <h4 class="A_Heading-H4">Помощь на тропе</h4>
-              <p class="A_ParagraphVar">
+              <p class="A_ParagraphVar u-Hide-Mobile ">
                 Тест о спокойных действиях, внимании </br>к самочувствию и простых
                 решениях
               </p>
@@ -242,7 +265,7 @@
             </div>
             <div class="M_TestCardDescription">
               <h4 class="A_Heading-H4">Спокойное движение</h4>
-              <p class="A_ParagraphVar">
+              <p class="A_ParagraphVar u-Hide-Mobile">
                 Тест о внимательности, маршрутах </br>
 и спокойном движении по лесу
               </p>
@@ -276,7 +299,7 @@
             </div>
             <div class="M_TestCardDescription">
               <h4 class="A_Heading-H4">Наблюдение за грибами</h4>
-              <p class="A_ParagraphVar">
+              <p class="A_ParagraphVar u-Hide-Mobile">
                 Небольшой тест о грибах, </br>
 влажности и лесной среде
               </p>
@@ -310,7 +333,7 @@
             </div>
             <div class="M_TestCardDescription">
               <h4 class="A_Heading-H4">Что взять в лес</h4>
-              <p class="A_ParagraphVar">
+              <p class="A_ParagraphVar u-Hide-Mobile">
                 О простых вещах, которые делают </br>прогулку по лесу спокойнее и удобнее
               </p>
             </div>
@@ -343,7 +366,7 @@
             </div>
             <div class="M_TestCardDescription">
               <h4 class="A_Heading-H4">Чтение маршрута</h4>
-              <p class="A_ParagraphVar">
+              <p class="A_ParagraphVar u-Hide-Mobile">
                  Ориентиры, тропы и внимание </br>
 к деталям лесной среды
               </p>
@@ -361,12 +384,12 @@
                 />
               </button>
       </a>
-      <section class="O_LearnMore">
+      <section class="O_LearnMore u-Hide-Mobile">
         <h2 class="A_Heading-H2">Узнать больше</h2>
         <div class="W_LearnMoreCards">
-          <a href="#" class="M_LearnMoreCard">
-          <div class="W_ArticleImage">
-            <span class="M_TagItem M_TagItem--active">
+          <a href="./articles/article_lost.html" class="M_LearnMoreCard">
+            <div class="W_ArticleImage M_ArticleImage--lost">
+              <span class="M_TagItem M_TagItem--active">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Fire.svg"
@@ -374,37 +397,38 @@
                 />
                 <span class="A_Tag-Text">безопасность</span>
               </span>
-        </div>
+            </div>
 
-        <h4 class="A_Heading-H4">Название статьи</h4>
-      </a>
-      <a href="#" class="M_LearnMoreCard">
-          <div class="W_ArticleImage">
-            <span class="M_TagItem M_TagItem--active">
+            <h4 class="A_Heading-H4">Потерялся</h4>
+          </a>
+          <a href="./articles/article_landmarks.html" class="M_LearnMoreCard">
+            <div class="W_ArticleImage M_ArticleImage--landmarks">
+              <span class="M_TagItem M_TagItem--active">
                 <img
                   class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Fire.svg"
-                  alt="Иконка огня"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка напрвления"
                 />
-                <span class="A_Tag-Text">безопасность</span>
+                <span class="A_Tag-Text">навигация</span>
               </span>
-        </div>
-        <h4 class="A_Heading-H4">Название статьи</h4>
-      </a>
-      <a href="#" class="M_LearnMoreCard">
-          <div class="W_ArticleImage">
-            <span class="M_TagItem M_TagItem--active">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Fire.svg"
-                  alt="Иконка огня"
-                />
-                <span class="A_Tag-Text">безопасность</span>
-              </span>
-        </div>
+            </div>
 
-        <h4 class="A_Heading-H4">Название статьи</h4>
-      </a>
+            <h4 class="A_Heading-H4">Ориентиры</h4>
+          </a>
+          <a href="./articles/article_storm.html" class="M_LearnMoreCard">
+            <div class="W_ArticleImage M_ArticleImage--storm">
+              <span class="M_TagItem M_TagItem--active">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
+              </span>
+            </div>
+
+            <h4 class="A_Heading-H4">Гроза</h4>
+          </a>
         </div>
       </section>
     </main>
@@ -442,19 +466,19 @@
 
           <ul class="M_Footer-List">
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">о нас</a>
+              <a href="./aboutus.html" class="A_Paragraph">о нас</a>
             </li>
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">статьи</a>
+              <a href="./articles.html" class="A_Paragraph">статьи</a>
             </li>
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">интерактивы</a>
+              <a href="./interactive.html" class="A_Paragraph">интерактивы</a>
             </li>
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">маршруты</a>
+              <a href="./routes.html" class="A_Paragraph">маршруты</a>
             </li>
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">календарь</a>
+              <a href="./calendar.html" class="A_Paragraph">календарь</a>
             </li>
           </ul>
         </div>

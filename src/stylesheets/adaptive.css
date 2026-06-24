@@ -1,11 +1,692 @@
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 402px) {
   html {
-    font-size: calc(1vw / 4.4);
+    font-size: calc(100vw / 402);
     scroll-behavior: smooth;
   }
+
   html,
   body {
     max-width: 100%;
     overflow-x: hidden;
+  }
+
+  .u-Hide-Mobile {
+    display: none !important;
+  }
+
+  /* Размеры */
+  .A_Heading-H1 {
+    font-size: 40rem;
+  }
+  .A_Heading-H2,
+  .A_Heading-H2-medium {
+    font-size: 30rem;
+  }
+
+  .A_Heading-H3 {
+    font-size: 24rem;
+  }
+
+  .A_Heading-H4,
+  .A_NumberedTitle {
+    font-size: 20rem;
+  }
+  .A_Heading-H5,
+  .A_ResultTitle {
+    font-size: 18rem;
+  }
+
+  .A_Paragraph {
+    font-size: 16rem;
+  }
+
+  .A_ParagraphVar,
+  .A_QuestionText,
+  .A_AnswerDescription {
+    font-size: 18rem;
+  }
+
+  .A_NavigationText,
+  .A_ButtonText {
+    font-size: 18rem;
+  }
+
+  .A_ErrorCode {
+    font-size: 150rem;
+  }
+
+  .M_NavigationMenu,
+  .A_Search,
+  .W_Search {
+    display: none;
+  }
+
+  .A_Logo {
+    position: absolute;
+    top: 30rem;
+    left: 25rem;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    background-color: var(--color-surface);
+    transition: background-color 0.2s ease;
+  }
+
+  .Q_LogoImage {
+    width: 22rem;
+  }
+
+  .A_MenuButton,
+  .A_MenuCloseButton {
+    position: absolute;
+    top: 30rem;
+    right: 25rem;
+    z-index: 1001;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
+    height: 50rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .A_MenuButton {
+    display: flex;
+    background-color: var(--color-surface);
+  }
+
+  .A_MenuCloseButton {
+    display: none;
+    background-color: var(--color-card);
+  }
+
+  .Q_MenuIcon {
+    display: block;
+    width: 23rem;
+    height: auto;
+  }
+
+  .Q_MenuCloseIcon {
+    display: block;
+    width: 17rem;
+    height: auto;
+  }
+
+  .W_MobileNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40rem;
+  }
+
+  .A_MobileNavLink {
+    font-size: 26rem;
+    text-decoration: none;
+  }
+
+  body.menu-open .A_Logo {
+    background-color: var(--color-card);
+  }
+
+  body.menu-open .A_MenuButton {
+    display: none;
+  }
+
+  body.menu-open .A_MenuCloseButton {
+    display: flex;
+    background-color: var(--color-card);
+  }
+
+  .O_Header {
+    padding: 10rem;
+  }
+
+  .O_HeaderHome {
+    gap: 300rem;
+    min-height: 874rem;
+  }
+
+  .M_HomeHeroContent {
+    justify-content: center;
+    gap: 50rem;
+  }
+
+  .M_HeroInfo .A_Paragraph {
+    width: 348rem;
+  }
+
+  .O_MainHome {
+    padding: 80rem 25rem;
+    text-align: center;
+  }
+
+  .O_CalendarOverview {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+    width: 352rem;
+  }
+
+  .O_MonthlyCalendar {
+    gap: 30rem;
+    width: 100%;
+  }
+
+  .M_CalendarDaylight {
+    min-height: 150rem;
+    width: 100%;
+    padding: 20rem;
+    text-align: start;
+    background-image: url("../images/home-calendar/Q_DaylightGraph--iphone.svg");
+  }
+
+  .W_DaylightInfo {
+    gap: 190rem;
+    left: 0rem;
+    top: 2rem;
+  }
+
+  .M_CalendarPassability {
+    height: 187rem;
+    width: 100%;
+    padding: 20rem;
+    text-align: start;
+    background-image: url("../images/home-calendar/Q_PassabilityChart--iphone.svg");
+  }
+
+  .W_PassabilityBars {
+    gap: 40rem;
+  }
+
+  .M_PassabilityBar--frost {
+    top: 55rem;
+    left: 5rem;
+  }
+
+  .M_PassabilityBar--humidity {
+    top: 13rem;
+    left: -10rem;
+  }
+
+  .M_PassabilityBar--mud {
+    top: 13rem;
+    left: -10rem;
+  }
+
+  .M_PassabilityBar--slush {
+    top: 55rem;
+    left: -5rem;
+  }
+
+  .M_CalendarSky {
+    height: 177rem;
+    width: 100%;
+    padding: 20rem;
+    text-align: start;
+    background-image: url("../images/home-calendar/Q_SkyChart--iphone.svg");
+  }
+
+  .W_SkyConditions {
+    padding-top: 8rem;
+    gap: 12rem;
+  }
+
+  .M_ConditionResult--iphone {
+    flex-direction: row-reverse;
+  }
+
+  .M_SkyCondition--clear {
+    left: 0rem;
+    gap: 10rem;
+  }
+
+  .M_SkyCondition--cloudy {
+    left: 0rem;
+    gap: 10rem;
+  }
+
+  .M_SkyCondition--rain {
+    left: 0rem;
+    gap: 10rem;
+  }
+
+  .M_SkyCondition--clear .A_Heading-H4 {
+    position: relative;
+    left: 200rem;
+  }
+
+  .M_SkyCondition--cloudy .A_Heading-H4 {
+    position: relative;
+    left: 175rem;
+  }
+
+  .M_SkyCondition--rain .A_Heading-H4 {
+    position: relative;
+    left: 182rem;
+  }
+
+  .O_MonthlyChecklist {
+    gap: 30rem;
+    width: 100%;
+  }
+
+  .W_ChecklistCards {
+    flex-wrap: wrap;
+  }
+
+  .M_ChecklistCard {
+    width: 166rem;
+    min-height: 195rem;
+    height: 195rem;
+    padding: 23rem 10rem 15rem 10rem;
+    gap: 8rem;
+  }
+
+  .Q_ChecklistImage--mushrooms {
+    width: 97rem;
+    height: 66rem;
+    top: 2rem;
+    left: 5rem;
+  }
+
+  .M_ChecklistTitle {
+    padding: 10rem 10rem;
+  }
+
+  .M_ChecklistTitle--mushrooms {
+    top: 8rem;
+  }
+
+  .M_CalendarConditions {
+    gap: 25rem;
+  }
+
+  .M_ChecklistCard--mushrooms {
+    background-image: url("../images/home-calendar/M_ChecklistCard--1--iphone.svg");
+  }
+
+  .M_ChecklistCard--ticks {
+    background-image: url("../images/home-calendar/M_ChecklistCard--2--iphone.svg");
+  }
+
+  .M_ChecklistCard--route {
+    background-image: url("../images/home-calendar/M_ChecklistCard--3--iphone.svg");
+  }
+
+  .M_ChecklistCard--preparation {
+    background-image: url("../images/home-calendar/M_ChecklistCard--4--iphone.svg");
+  }
+
+  .Q_ChecklistImage--preparation {
+    width: 132rem;
+    height: 57rem;
+    position: relative;
+    top: 5rem;
+  }
+
+  .Q_ChecklistImage--route {
+    width: 136rem;
+    height: 77rem;
+    top: 10rem;
+  }
+
+  .M_ChecklistCard--preparation .M_ChecklistTitle {
+    position: relative;
+    top: 10rem;
+  }
+
+  .M_ChecklistCard--route .A_Heading-H4 {
+    position: relative;
+    top: 10rem;
+  }
+
+  .Q_ChecklistImage--ticks {
+    width: 120rem;
+    height: 69rem;
+  }
+
+  .W_ArticleCards {
+    flex-wrap: wrap;
+  }
+
+  .O_UsefulMaterials {
+    gap: 30rem;
+    width: 100%;
+  }
+
+  .M_ArticleCard {
+    width: 100%;
+    min-height: 100rem;
+    flex-direction: row;
+  }
+
+  .W_ArticleCardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    gap: 5rem;
+  }
+
+  .M_ArticleImage {
+    width: 80rem;
+    min-height: 80rem;
+  }
+
+  .A_ShowMoreButton {
+    width: 352rem;
+  }
+
+  .M_ArticleCard {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+  }
+
+  .W_ArticleCardContent {
+    flex: 1;
+  }
+
+  .A_ArticleCardButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30rem;
+    height: 30rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-button);
+    cursor: pointer;
+  }
+
+  .O_ExpertInterview {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 638rem;
+    background-color: var(--color-surface);
+    border-top-left-radius: 176rem;
+    border-top-right-radius: 176rem;
+    border-bottom-left-radius: 25rem;
+    border-bottom-right-radius: 25rem;
+    padding: 10rem;
+  }
+
+  .Q_ExpertImage {
+    display: none;
+  }
+
+  .Q_ExpertImageMobile {
+    display: block;
+    width: 332rem;
+    min-height: auto;
+  }
+
+  .M_ContentHeader {
+    width: 342rem;
+    gap: 10rem;
+  }
+
+  .M_ExpertContent {
+    gap: 30rem;
+    align-items: center;
+  }
+
+  .W_SkillsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .M_SkillCard--Help {
+    flex-direction: row;
+  }
+
+  .Q_SkillCard--Help,
+  .Q_SkillCard--Things,
+  .Q_SkillCard--ForestExam {
+    width: 110rem;
+    height: 118rem;
+    object-fit: cover;
+  }
+  .M_SkillTegs {
+    gap: 39rem;
+  }
+  .M_SkillCard--Help .W_ArticleCardContent {
+    justify-content: start;
+    padding-top: 10rem;
+  }
+  .M_SkillTegs--compact {
+    gap: 39rem;
+  }
+
+  .M_SkillContent--compact {
+    align-items: start;
+  }
+
+  .W_RoutesCards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .M_RouteCard {
+    flex-direction: column-reverse;
+    align-items: start;
+    text-align: start;
+    padding: 10rem;
+    width: 352rem;
+  }
+
+  .Q_RouteMap {
+    width: 332rem;
+    height: 160rem;
+    object-fit: cover;
+    border-radius: 25rem;
+  }
+
+  .M_RouteContent {
+    padding-top: 10rem;
+    padding-left: 10rem;
+    gap: 10rem;
+  }
+
+  .O_RoutesSection,
+  .O_SkillsSection {
+    gap: 30rem;
+  }
+
+  .O_MainHome .O_DzenSection {
+    width: calc(100% + 50rem);
+    margin-inline: -25rem;
+    padding-inline: 0;
+  }
+
+  .O_DzenSection {
+    min-height: 700rem;
+  }
+
+  .M_DzenHeader {
+    gap: 30rem;
+  }
+
+  .O_Footer {
+    flex-direction: column;
+    padding: 40rem 25rem;
+    gap: 40rem;
+  }
+
+  .M_Footer-Subscribe {
+    gap: 20rem;
+  }
+
+  input[type="email"] {
+    width: 292rem;
+  }
+
+  .A_Social-Network {
+    display: none;
+  }
+
+  .M_Footer-Section {
+    gap: 86rem;
+  }
+
+  .M_Footer-List {
+    gap: 10rem;
+  }
+
+  .O_HeaderAboutus {
+    min-height: 704rem;
+    gap: 260rem;
+  }
+
+  .O_HeaderArticles {
+    min-height: 704rem;
+    gap: 260rem;
+  }
+
+  .O_HeaderInteractive {
+    min-height: 704rem;
+    gap: 260rem;
+  }
+
+  .M_HeroContent {
+    gap: 30rem;
+  }
+
+  .O_MainAboutUs {
+    padding: 80rem 0;
+    gap: 80rem;
+  }
+
+  .O_AboutProject {
+    min-height: 435rem;
+    padding: 40rem 50rem;
+    background-image: url("../images/Q_AboutProjectBG--iphone.svg");
+  }
+
+  .A_AboutProjectTitle {
+    width: 303rem;
+  }
+
+  .O_ProjectValues {
+    gap: 30rem;
+    text-align: center;
+  }
+
+  .W_ProjectValuesCards {
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: start;
+  }
+
+  .O_ForestDiscovery {
+    min-height: 874rem;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0;
+    background-image: url("../images/Q_ForestDiscoveryBG--iphone.svg");
+  }
+
+  .A_DiscoveryParagraph {
+    width: 352rem;
+  }
+
+  .A_ForestDiscoveryButton {
+    width: 352rem;
+    padding-left: 120rem;
+    gap: 80rem;
+  }
+
+  .O_ArticlesFeed {
+    padding: 0rem;
+  }
+
+  .W_FilterTags {
+    flex-wrap: wrap;
+  }
+  .M_FilterGroup {
+    text-align: start;
+  }
+
+  .M_GuideFlex {
+    position: relative;
+    flex-direction: row;
+    min-height: 139rem;
+  }
+
+  .M_CardFooter .M_TagItem {
+    position: absolute;
+    left: 100rem;
+    top: 10rem;
+  }
+
+  .M_GuideFlex .W_ArticleCardContent {
+    padding-top: 30rem;
+  }
+
+  .M_GuideFlex .A_ArticleCardButton {
+    position: absolute;
+    align-items: center;
+    right: 10rem;
+    top: 50rem;
+  }
+
+  .M_ArticleCard .A_ArticleCardButton {
+    position: absolute;
+    align-items: center;
+    right: 10rem;
+    top: 10rem;
+  }
+
+  .M_SkillContent {
+    padding: 0;
+  }
+
+  .O_MainInteractive {
+    padding: 80rem 0;
+  }
+
+  .O_TestCard {
+    width: 352rem;
+    min-height: 118rem;
+  }
+
+  .Q_TestCardImg {
+    width: 110rem;
+    height: 118rem;
+    object-fit: cover;
+  }
+
+  .W_TestCardContent {
+    gap: 20rem;
+  }
+
+  .O_TestBanner {
+    min-height: 290rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 40rem;
+    gap: 20rem;
+  }
+
+  .O_TestMushrooms {
+    background-image: url("/src/images/Q_TestMushrooms--iphone.svg");
+  }
+  .O_TestWhatToTake {
+    background-image: url("/src/images/Q_TestWhatToTake--iphone.svg");
+  }
+
+  .O_TestWhereToGo {
+    background-image: url("/src/images/Q_TestWhereToGo--iphone.svg");
   }
 }

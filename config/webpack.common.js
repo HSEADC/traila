@@ -85,8 +85,8 @@ module.exports = {
           noErrorOnMissing: true,
         },
         {
-          from: path.resolve(__dirname, "../src/articles_download"),
-          to: "articles_download",
+          from: path.resolve(__dirname, "../src/pdf_download"),
+          to: "pdf_download",
           noErrorOnMissing: true,
         },
       ],

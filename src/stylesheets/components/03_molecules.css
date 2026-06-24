@@ -108,6 +108,10 @@
   flex: 0 0 50rem;
 }
 
+.M_HeroInfo .A_Paragraph {
+  width: 473rem;
+}
+
 .M_Button {
   background-color: var(--color-button);
   transition: background-color 0.2s ease;
@@ -188,6 +192,7 @@
 }
 
 .M_CalendarDaylight {
+  overflow: hidden;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   display: flex;
@@ -1543,4 +1548,13 @@
   display: flex;
   align-items: center;
   gap: 15rem;
+}
+
+.M_NoticeCard {
+  display: flex;
+  align-items: center;
+  gap: 20rem;
+  padding: 30rem;
+  border-radius: 25rem;
+  background-color: var(--color-card-accent);
 }

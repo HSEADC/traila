@@ -53,21 +53,21 @@
         </a>
         <ul class="M_NavigationMenu">
           <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">о нас</a>
+            <a href="./aboutus.html" class="A_NavigationText">о нас</a>
           </li>
           <li class="M_NavigationItem M_NavigationItem--active">
-            <a href="#" class="A_NavigationText "
-              >статьи</a
+            <a href="./articles.html" class="A_NavigationText">статьи</a>
+          </li>
+          <li class="M_NavigationItem">
+            <a href="./interactive.html" class="A_NavigationText"
+              >интерактивы</a
             >
           </li>
           <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">интерактивы</a>
+            <a href="./routes.html" class="A_NavigationText">маршруты</a>
           </li>
           <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">маршруты</a>
-          </li>
-          <li class="M_NavigationItem">
-            <a href="#" class="A_NavigationText">календарь</a>
+            <a href="./calendar.html" class="A_NavigationText">календарь</a>
           </li>
         </ul>
         <button class="A_Search" aria-label="Поиск">
@@ -102,11 +102,34 @@
           </div>
           <div class="M_SearchDropdown"></div>
         </div>
+        <button class="A_MenuButton">
+          <img
+            class="Q_MenuIcon"
+            src="../images/Q_Icon_Menu.svg"
+            alt="Открыть меню"
+          />
+        </button>
       </nav>
+      <div class="O_MobileMenu O_MobileMenu--hidden">
+        <button class="A_MenuCloseButton" aria-label="Закрыть меню">
+          <img
+            class="Q_MenuCloseIcon"
+            src="../images/Q_IconNavClose.svg"
+            alt="Закрыть меню"
+          />
+        </button>
+        <nav class="W_MobileNavigation">
+          <a href="./aboutus.html" class="A_MobileNavLink">о нас</a>
+          <a href="./articles.html" class="A_MobileNavLink">статьи</a>
+          <a href="./interactive.html" class="A_MobileNavLink">интерактивы</a>
+          <a href="./routes.html" class="A_MobileNavLink">маршруты</a>
+          <a href="./calendar.html" class="A_MobileNavLink">календарь</a>
+        </nav>
+      </div>
       <div class="M_HeroContent">
         <h1 class="A_Heading-H1">Статьи</h1>
         <div class="M_TagGroup">
-          <div class="M_TagIcon">
+          <div class="M_TagIcon u-Hide-Mobile">
             <img
               class="Q_TagIconImg"
               src="/src/images/icons/Q_Icon_FireVar.svg"
@@ -122,8 +145,8 @@
               alt="Иконка листьев травы"
             />
           </div>
-          <span class="A_Tag A_NavigationText"> Гайды </span>
-          <div class="M_TagIcon">
+          <span class="A_Tag A_NavigationText u-Hide-Mobile"> Гайды </span>
+          <div class="M_TagIcon u-Hide-Mobile">
             <img
               class="Q_TagIconImg"
               src="/src/images/icons/Q_Icon_Direction.svg"
@@ -173,7 +196,10 @@
               />
             </button>
           </a>
-          <a href="#" class="M_ChecklistCard M_ChecklistCard--route">
+          <a
+            href="./articles/article_ticks.html"
+            class="M_ChecklistCard M_ChecklistCard--route"
+          >
             <img
               class="Q_ChecklistImage--route"
               src="../images/home-calendar/Q_ChecklistCard--ticks.webp"
@@ -189,7 +215,10 @@
               />
             </button>
           </a>
-          <a href="#" class="M_ChecklistCard M_ChecklistCard--water">
+          <a
+            href="#"
+            class="M_ChecklistCard M_ChecklistCard--water u-Hide-Mobile"
+          >
             <h4 class="A_Heading-H4 A_Heading-H4--card">Перекус</h4>
             <img
               class="Q_ChecklistImage--water"
@@ -232,8 +261,14 @@
           alt="Опытный лесник рядом с трактором рассказывает о лесных маршрутах и природе"
           loading="lazy"
         />
+        <img
+          class="Q_ExpertImageMobile"
+          src="/src/images/Q_ExpertImage-Mobile.webp"
+          alt="Опытный лесник рядом с трактором рассказывает о лесных маршрутах и природе"
+          loading="lazy"
+        />
         <div class="M_ExpertContent">
-          <div class="M_ContentTegs">
+          <div class="M_ContentTegs u-Hide-Mobile">
             <span class="M_TagItem M_TagItem--active">
               <img
                 class="Q_TagItemImg"
@@ -384,9 +419,14 @@
           </div>
         </div>
         <div class="W_GuidesFlex">
-          <a href="#" class="M_GuideFlex" data-category="safety" data-time="3">
+          <a
+            href="./articles/article_ticks.html"
+            class="M_GuideFlex"
+            data-category="safety"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--ticks">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -395,19 +435,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Клещи</h4>
-            <p class="A_ParagraphVar">Как снизить риск укуса</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Клещи</h4>
+              <p class="A_ParagraphVar">Как снизить риск укуса</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Fire.svg"
-                    alt="Иконка огня"
-                  />
-                  <span class="A_Tag-Text">безопасность</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_ticks.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -416,10 +460,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-           <a href="#" class="M_GuideFlex" data-category="safety" data-time="5">
+          <a
+            href="./articles/article_storm.html"
+            class="M_GuideFlex"
+            data-category="safety"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--storm">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -428,19 +484,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Гроза</h4>
-            <p class="A_ParagraphVar">Если гроза застала в лесу</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Гроза</h4>
+              <p class="A_ParagraphVar">Если гроза застала в лесу</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Fire.svg"
-                    alt="Иконка огня"
-                  />
-                  <span class="A_Tag-Text">безопасность</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_storm.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -449,10 +509,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-           <a href="#" class="M_GuideFlex" data-category="safety" data-time="10">
+          <a
+            href="./articles/article_lost.html"
+            class="M_GuideFlex"
+            data-category="safety"
+            data-time="10"
+          >
             <div class="M_ArticleImage M_ArticleImage--lost">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -461,19 +533,23 @@
                 <span class="A_Tag-Text">10 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Потерялся</h4>
-            <p class="A_ParagraphVar">Алгоритм действий</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Потерялся</h4>
+              <p class="A_ParagraphVar">Алгоритм действий</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Fire.svg"
-                    alt="Иконка огня"
-                  />
-                  <span class="A_Tag-Text">безопасность</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_lost.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -482,10 +558,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="navigation" data-time="3">
+          <a
+            href="./articles/article_route.html"
+            class="M_GuideFlex"
+            data-category="navigation"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--route">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -494,19 +582,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Маршрут</h4>
-            <p class="A_ParagraphVar">Безопасная прогулка</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Маршрут</h4>
+              <p class="A_ParagraphVar">Безопасная прогулка</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Direction.svg"
-                    alt="Иконка навигации"
-                  />
-                  <span class="A_Tag-Text">навигация</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка навигации"
+                />
+                <span class="A_Tag-Text">навигация</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_route.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -515,10 +607,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="navigation" data-time="5">
+          <a
+            href="./articles/article_landmarks.html"
+            class="M_GuideFlex"
+            data-category="navigation"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--landmarks">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -527,19 +631,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Ориентиры</h4>
-            <p class="A_ParagraphVar">Как использовать тропы </p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Ориентиры</h4>
+              <p class="A_ParagraphVar">Как использовать тропы</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Direction.svg"
-                    alt="Иконка навигации"
-                  />
-                  <span class="A_Tag-Text">навигация</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка навигации"
+                />
+                <span class="A_Tag-Text">навигация</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_landmarks.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -548,10 +656,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="navigation" data-time="10">
+          <a
+            href="./articles/article_compass.html"
+            class="M_GuideFlex"
+            data-category="navigation"
+            data-time="10"
+          >
             <div class="M_ArticleImage M_ArticleImage--compass">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -560,19 +680,23 @@
                 <span class="A_Tag-Text">10 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Компас</h4>
-            <p class="A_ParagraphVar">Основы навигации</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Компас</h4>
+              <p class="A_ParagraphVar">Основы навигации</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Direction.svg"
-                    alt="Иконка навигации"
-                  />
-                  <span class="A_Tag-Text">навигация</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка навигации"
+                />
+                <span class="A_Tag-Text">навигация</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_compass.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -581,10 +705,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-           <a href="#" class="M_GuideFlex" data-category="equipment" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--backpack">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -593,19 +729,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Рюкзак</h4>
-            <p class="A_ParagraphVar">Базовый набор лесника</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Рюкзак</h4>
+              <p class="A_ParagraphVar">Базовый набор лесника</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_backpack.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -614,10 +754,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="equipment" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--clothes">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -626,19 +778,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Одежда</h4>
-            <p class="A_ParagraphVar">Экипировка по погоде</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Одежда</h4>
+              <p class="A_ParagraphVar">Экипировка по погоде</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_clothes.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -647,10 +803,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="equipment" data-time="10">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="10"
+          >
             <div class="M_ArticleImage M_ArticleImage--preparation">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -659,19 +827,23 @@
                 <span class="A_Tag-Text">10 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Подготовка</h4>
-            <p class="A_ParagraphVar">Чек-лист перед выходом</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Подготовка</h4>
+              <p class="A_ParagraphVar">Чек-лист перед выходом</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_preparation.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -680,10 +852,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="mycology" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="mycology"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--chanterelles">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -692,19 +876,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Лисички</h4>
-            <p class="A_ParagraphVar">Признаки настоящей лисички</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Лисички</h4>
+              <p class="A_ParagraphVar">Признаки лисички</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Flower.svg"
-                    alt="Иконка цветка"
-                  />
-                  <span class="A_Tag-Text">микология</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Flower.svg"
+                  alt="Иконка цветка"
+                />
+                <span class="A_Tag-Text">микология</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_chanterelles.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -713,10 +901,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="mycology" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="mycology"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--doppelgangers">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -725,19 +925,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Двойники</h4>
-            <p class="A_ParagraphVar">Опасные ошибки при сборе</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Двойники</h4>
+              <p class="A_ParagraphVar">Опасные ошибки</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Flower.svg"
-                    alt="Иконка цветка"
-                  />
-                  <span class="A_Tag-Text">микология</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Flower.svg"
+                  alt="Иконка цветка"
+                />
+                <span class="A_Tag-Text">микология</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_doppelgangers.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -746,10 +950,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="mycology" data-time="10">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="mycology"
+            data-time="10"
+          >
             <div class="M_ArticleImage M_ArticleImage--mushroomer">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -758,19 +974,23 @@
                 <span class="A_Tag-Text">10 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Грибник</h4>
-            <p class="A_ParagraphVar">Гид по сбору грибов</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Грибник</h4>
+              <p class="A_ParagraphVar">Гид по сбору грибов</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Flower.svg"
-                    alt="Иконка цветка"
-                  />
-                  <span class="A_Tag-Text">микология</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Flower.svg"
+                  alt="Иконка цветка"
+                />
+                <span class="A_Tag-Text">микология</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_mushroomer.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -779,10 +999,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="expertise" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="expertise"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--nettles">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -791,19 +1023,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Крапива</h4>
-            <p class="A_ParagraphVar">Весеннее растение леса</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Крапива</h4>
+              <p class="A_ParagraphVar">Весеннее растение леса</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Sheets.svg"
-                    alt="Иконка листьев"
-                  />
-                  <span class="A_Tag-Text">экспертиза</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Sheets.svg"
+                  alt="Иконка листьев"
+                />
+                <span class="A_Tag-Text">экспертиза</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_nettles.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -812,10 +1048,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="expertise" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="expertise"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--wildgarlic">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -824,19 +1072,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Черемша</h4>
-            <p class="A_ParagraphVar">Не спутать с двойниками</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Черемша</h4>
+              <p class="A_ParagraphVar">Не спутать с двойниками</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Sheets.svg"
-                    alt="Иконка листьев"
-                  />
-                  <span class="A_Tag-Text">экспертиза</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Sheets.svg"
+                  alt="Иконка листьев"
+                />
+                <span class="A_Tag-Text">экспертиза</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_wildgarlic.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -845,10 +1097,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="expertise" data-time="10">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="expertise"
+            data-time="10"
+          >
             <div class="M_ArticleImage M_ArticleImage--wildplants">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -857,19 +1121,23 @@
                 <span class="A_Tag-Text">10 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Дикоросы</h4>
-            <p class="A_ParagraphVar">Съедобные растения леса</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Дикоросы</h4>
+              <p class="A_ParagraphVar">Съедобные растения</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Sheets.svg"
-                    alt="Иконка листьев"
-                  />
-                  <span class="A_Tag-Text">экспертиза</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Sheets.svg"
+                  alt="Иконка листьев"
+                />
+                <span class="A_Tag-Text">экспертиза</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_wildplants.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -878,10 +1146,17 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
           <a href="#" class="M_GuideFlex" data-category="food" data-time="3">
             <div class="M_ArticleImage M_ArticleImage--snack">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -890,19 +1165,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Перекус</h4>
-            <p class="A_ParagraphVar">Питание на прогулке</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Перекус</h4>
+              <p class="A_ParagraphVar">Питание на прогулке</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Mushroom.svg"
-                    alt="Иконка гриба"
-                  />
-                  <span class="A_Tag-Text">питание</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Mushroom.svg"
+                  alt="Иконка гриба"
+                />
+                <span class="A_Tag-Text">питание</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_snack.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -911,10 +1190,17 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
           <a href="#" class="M_GuideFlex" data-category="food" data-time="5">
             <div class="M_ArticleImage M_ArticleImage--water">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -923,19 +1209,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Вода</h4>
-            <p class="A_ParagraphVar">Запас воды в лес</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Вода</h4>
+              <p class="A_ParagraphVar">Запас воды в лес</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Mushroom.svg"
-                    alt="Иконка гриба"
-                  />
-                  <span class="A_Tag-Text">питание</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Mushroom.svg"
+                  alt="Иконка гриба"
+                />
+                <span class="A_Tag-Text">питание</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_water.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -944,10 +1234,17 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
           <a href="#" class="M_GuideFlex" data-category="food" data-time="10">
             <div class="M_ArticleImage M_ArticleImage--diet">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -956,19 +1253,23 @@
                 <span class="A_Tag-Text">10 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Рацион</h4>
-            <p class="A_ParagraphVar">Энергия для маршрута</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Рацион</h4>
+              <p class="A_ParagraphVar">Энергия для маршрута</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Mushroom.svg"
-                    alt="Иконка гриба"
-                  />
-                  <span class="A_Tag-Text">питание</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Mushroom.svg"
+                  alt="Иконка гриба"
+                />
+                <span class="A_Tag-Text">питание</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_diet.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -977,10 +1278,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="navigation" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="navigation"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--winter">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -989,19 +1302,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Зима</h4>
-            <p class="A_ParagraphVar">Ориентирование в снегу</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Зима</h4>
+              <p class="A_ParagraphVar">Ориентирование в снегу</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Direction.svg"
-                    alt="Иконка навигации"
-                  />
-                  <span class="A_Tag-Text">навигация</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка навигации"
+                />
+                <span class="A_Tag-Text">навигация</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_winter.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1010,10 +1327,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="equipment" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--frost">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1022,19 +1351,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Мороз</h4>
-            <p class="A_ParagraphVar">Одежда для холода</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Мороз</h4>
+              <p class="A_ParagraphVar">Одежда для холода</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_frost.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1043,10 +1376,17 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
           <a href="#" class="M_GuideFlex" data-category="food" data-time="3">
             <div class="M_ArticleImage M_ArticleImage--warm">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1055,19 +1395,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Тепло</h4>
-            <p class="A_ParagraphVar">Как согреться зимой</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Тепло</h4>
+              <p class="A_ParagraphVar">Как согреться зимой</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Mushroom.svg"
-                    alt="Иконка гриба"
-                  />
-                  <span class="A_Tag-Text">питание</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Mushroom.svg"
+                  alt="Иконка гриба"
+                />
+                <span class="A_Tag-Text">питание</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_warm.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1076,10 +1420,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="expertise" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="expertise"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--traces">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1088,19 +1444,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Следы</h4>
-            <p class="A_ParagraphVar">Распознаём обитателей леса</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Следы</h4>
+              <p class="A_ParagraphVar">Распознаём обитателей</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Sheets.svg"
-                    alt="Иконка листьев"
-                  />
-                  <span class="A_Tag-Text">экспертиза</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Sheets.svg"
+                  alt="Иконка листьев"
+                />
+                <span class="A_Tag-Text">экспертиза</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_traces.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1109,10 +1469,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-           <a href="#" class="M_GuideFlex" data-category="mycology" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="mycology"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--morels">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1121,19 +1493,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Сморчки</h4>
-            <p class="A_ParagraphVar">Первые грибы сезона</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Сморчки</h4>
+              <p class="A_ParagraphVar">Первые грибы сезона</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Flower.svg"
-                    alt="Иконка цветка"
-                  />
-                  <span class="A_Tag-Text">микология</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Flower.svg"
+                  alt="Иконка цветка"
+                />
+                <span class="A_Tag-Text">микология</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_morels.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1142,10 +1518,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="expertise" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="expertise"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--danger">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1154,19 +1542,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Опасность</h4>
-            <p class="A_ParagraphVar">Что лучше не трогать</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Опасность</h4>
+              <p class="A_ParagraphVar">Что лучше не трогать</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Sheets.svg"
-                    alt="Иконка листьев"
-                  />
-                  <span class="A_Tag-Text">экспертиза</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Sheets.svg"
+                  alt="Иконка листьев"
+                />
+                <span class="A_Tag-Text">экспертиза</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_danger.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1175,10 +1567,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="navigation" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="navigation"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--spring">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1187,19 +1591,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Весна</h4>
-            <p class="A_ParagraphVar">Признаки пробуждения леса</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Весна</h4>
+              <p class="A_ParagraphVar">Признаки пробуждения</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Direction.svg"
-                    alt="Иконка навигации"
-                  />
-                  <span class="A_Tag-Text">навигация</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка навигации"
+                />
+                <span class="A_Tag-Text">навигация</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_spring.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1208,10 +1616,17 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
           <a href="#" class="M_GuideFlex" data-category="safety" data-time="3">
             <div class="M_ArticleImage M_ArticleImage--fires">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1220,19 +1635,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Пожары</h4>
-            <p class="A_ParagraphVar">Правила безопасного отдыха</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Пожары</h4>
+              <p class="A_ParagraphVar">Безопасный отдых</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Fire.svg"
-                    alt="Иконка огня"
-                  />
-                  <span class="A_Tag-Text">безопасность</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_fires.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1241,10 +1660,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="equipment" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--summer">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1253,19 +1684,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Лето</h4>
-            <p class="A_ParagraphVar">Что взять в лес летом</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Лето</h4>
+              <p class="A_ParagraphVar">Что взять в лес летом</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_summer.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1274,10 +1709,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="equipment" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--walk">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1286,19 +1733,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Прогулка</h4>
-            <p class="A_ParagraphVar">Планируем поход заранее</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Прогулка</h4>
+              <p class="A_ParagraphVar">Планируем поход заранее</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_walk.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1307,10 +1758,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="mycology" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="mycology"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--august">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1319,19 +1782,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Август</h4>
-            <p class="A_ParagraphVar">Грибы конца лета</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Август</h4>
+              <p class="A_ParagraphVar">Грибы конца лета</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Flower.svg"
-                    alt="Иконка цветка"
-                  />
-                  <span class="A_Tag-Text">микология</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Flower.svg"
+                  alt="Иконка цветка"
+                />
+                <span class="A_Tag-Text">микология</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_august.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1340,10 +1807,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="navigation" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="navigation"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--autumn">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1352,19 +1831,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Осень</h4>
-            <p class="A_ParagraphVar">Ориентиры осеннего леса</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Осень</h4>
+              <p class="A_ParagraphVar">Осенний лес</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Direction.svg"
-                    alt="Иконка навигации"
-                  />
-                  <span class="A_Tag-Text">навигация</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка навигации"
+                />
+                <span class="A_Tag-Text">навигация</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_autumn.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1373,10 +1856,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="mycology" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="mycology"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--september">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1385,19 +1880,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Сентябрь</h4>
-            <p class="A_ParagraphVar">Главные грибы месяца</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Сентябрь</h4>
+              <p class="A_ParagraphVar">Главные грибы месяца</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Flower.svg"
-                    alt="Иконка цветка"
-                  />
-                  <span class="A_Tag-Text">микология</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Flower.svg"
+                  alt="Иконка цветка"
+                />
+                <span class="A_Tag-Text">микология</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_september.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1406,10 +1905,17 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-           <a href="#" class="M_GuideFlex" data-category="safety" data-time="3">
+          <a href="#" class="M_GuideFlex" data-category="safety" data-time="3">
             <div class="M_ArticleImage M_ArticleImage--twilight">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1418,19 +1924,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Сумерки</h4>
-            <p class="A_ParagraphVar">Безопасность вечером</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Сумерки</h4>
+              <p class="A_ParagraphVar">Безопасность вечером</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Fire.svg"
-                    alt="Иконка огня"
-                  />
-                  <span class="A_Tag-Text">безопасность</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Fire.svg"
+                  alt="Иконка огня"
+                />
+                <span class="A_Tag-Text">безопасность</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_twilight.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1439,10 +1949,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-           <a href="#" class="M_GuideFlex" data-category="equipment" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--coldsnap">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1451,19 +1973,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Похолодание</h4>
-            <p class="A_ParagraphVar">Быстро согреться в лесу</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Похолодание</h4>
+              <p class="A_ParagraphVar">Быстро согреться в лесу</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_coldsnap.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1472,10 +1998,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-           <a href="#" class="M_GuideFlex" data-category="equipment" data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--off-season">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1484,19 +2022,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Межсезонье</h4>
-            <p class="A_ParagraphVar">Одежда для переменчивости</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Межсезонье</h4>
+              <p class="A_ParagraphVar">Одежда</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_off-season.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1505,10 +2047,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="navigation" data-time="3">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="navigation"
+            data-time="3"
+          >
             <div class="M_ArticleImage M_ArticleImage--snow">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1517,19 +2071,23 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Снег</h4>
-            <p class="A_ParagraphVar">Зимние изменения маршрутов</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Снег</h4>
+              <p class="A_ParagraphVar">Изменения маршрутов</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Direction.svg"
-                    alt="Иконка навигации"
-                  />
-                  <span class="A_Tag-Text">навигация</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Direction.svg"
+                  alt="Иконка навигации"
+                />
+                <span class="A_Tag-Text">навигация</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_snow.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1538,10 +2096,22 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_GuideFlex" data-category="equipment"  data-time="5">
+          <a
+            href="#"
+            class="M_GuideFlex"
+            data-category="equipment"
+            data-time="5"
+          >
             <div class="M_ArticleImage M_ArticleImage--firstaidkit">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -1550,19 +2120,23 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Аптечка</h4>
-            <p class="A_ParagraphVar">Что добавить в зимний набор</p>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Аптечка</h4>
+              <p class="A_ParagraphVar">Зимний набор</p>
+            </div>
             <div class="M_CardFooter">
-             <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                  <img
-                    class="Q_TagItemImg"
-                    src="/src/images/icons/Q_Icon_Compass.svg"
-                    alt="Иконка компаса"
-                  />
-                  <span class="A_Tag-Text">экипировка</span>
-                </span>
+              <span class="M_TagItem M_TagItem--active M_TagItemCard">
+                <img
+                  class="Q_TagItemImg"
+                  src="/src/images/icons/Q_Icon_Compass.svg"
+                  alt="Иконка компаса"
+                />
+                <span class="A_Tag-Text">экипировка</span>
               </span>
-              <button class="A_Button A_CardDownloadButton M_TagItemCard">
+              <button
+                class="A_Button A_CardDownloadButton M_TagItemCard u-Hide-Mobile"
+                data-download="../pdf_download/article_firstaidkit.pdf"
+              >
                 <span class="A_Tag-Text">Скачать</span>
                 <img
                   class="Q_TagItemImg"
@@ -1571,11 +2145,18 @@
                 />
               </button>
             </div>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="/src/images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
         </div>
         <button class="A_Button A_ShowMoreButton">
-            <p class="A_ButtonText">Смотреть еще</p></button
-        >
+          <p class="A_ButtonText">Смотреть еще</p>
+        </button>
       </section>
     </main>
     <footer class="O_Footer">

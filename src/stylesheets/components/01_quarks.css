@@ -129,7 +129,12 @@
 .Q_RouteMap {
   display: block;
   width: 147rem;
+  height: 118rem;
   min-height: auto;
+}
+
+.Q_ExpertImageMobile {
+  display: none;
 }
 
 /* ___________________aboutus.html___________________ */
@@ -310,6 +315,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: inherit;
+  border-radius: 25rem;
+  overflow: hidden;
 }
 
 .Q_FeatureIcon {
@@ -322,4 +329,10 @@
   display: block;
   width: 33rem;
   height: 33rem;
+}
+
+.Q_NoticeIcon {
+  display: block;
+  width: 54rem;
+  height: 54rem;
 }

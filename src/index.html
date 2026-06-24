@@ -104,13 +104,38 @@
           </div>
           <div class="M_SearchDropdown"></div>
         </div>
+        <button class="A_MenuButton">
+          <img
+            class="Q_MenuIcon"
+            src="./images/Q_Icon_Menu.svg"
+            alt="Открыть меню"
+          />
+        </button>
       </nav>
+      <div class="O_MobileMenu O_MobileMenu--hidden">
+        <button class="A_MenuCloseButton" aria-label="Закрыть меню">
+          <img
+            class="Q_MenuCloseIcon"
+            src="./images/Q_IconNavClose.svg"
+            alt="Закрыть меню"
+          />
+        </button>
+        <nav class="W_MobileNavigation">
+          <a href="./pages/aboutus.html" class="A_MobileNavLink">о нас</a>
+          <a href="./pages/articles.html" class="A_MobileNavLink">статьи</a>
+          <a href="./pages/interactive.html" class="A_MobileNavLink"
+            >интерактивы</a
+          >
+          <a href="./pages/routes.html" class="A_MobileNavLink">маршруты</a>
+          <a href="./pages/calendar.html" class="A_MobileNavLink">календарь</a>
+        </nav>
+      </div>
       <div class="M_HeroContent M_HomeHeroContent">
         <div class="M_HeroInfo">
           <h1 class="A_Heading-H1">Ваш проводник в лес</h1>
           <p class="A_Paragraph">
-            Помогаем чувствовать себя уверенно в лесу: </br>
-знания и инструменты для безопасных прогулок
+            Помогаем чувствовать себя уверенно в лесу: знания и инструменты для
+            безопасных прогулок
           </p>
         </div>
         <div class="M_TagGroup">
@@ -122,8 +147,8 @@
               alt="Иконка гриба"
             />
           </div>
-          <span class="A_Tag A_NavigationText"> Микология </span>
-          <span class="A_Tag A_NavigationText"> Экипировка </span>
+          <span class="A_Tag A_NavigationText u-Hide-Mobile"> Микология </span>
+          <span class="A_Tag A_NavigationText u-Hide-Mobile"> Экипировка </span>
           <div class="M_TagIcon">
             <img
               class="Q_TagIconImg"
@@ -131,7 +156,9 @@
               alt="Иконка травы"
             />
           </div>
-          <span class="A_Tag A_NavigationText"> Лесной лайфстайл </span>
+          <span class="A_Tag A_NavigationText u-Hide-Mobile">
+            Лесной лайфстайл
+          </span>
         </div>
       </div>
     </header>
@@ -207,14 +234,14 @@
           </div>
           <div class="M_CalendarSky">
             <h4 class="A_Heading-H4">Состояние неба</h4>
-             <div class="W_SkyConditions">
+            <div class="W_SkyConditions">
               <div class="M_SkyCondition M_SkyCondition--clear">
                 <img
                   class="Q_ConditionIcon"
                   src="./images/icons/Q_Icon_Sun.svg"
                   alt="Иконка слякоти"
                 />
-                <div class="M_ConditionResult">
+                <div class="M_ConditionResult M_ConditionResult--iphone">
                   <h4 class="A_Heading-H4">45%</h4>
                   <p class="A_Tag-Text">Ясно</p>
                 </div>
@@ -225,7 +252,7 @@
                   src="./images/icons/Q_Icon_Cloudy.svg"
                   alt="Иконка облачно"
                 />
-                <div class="M_ConditionResult">
+                <div class="M_ConditionResult M_ConditionResult--iphone">
                   <h4 class="A_Heading-H4">25%</h4>
                   <p class="A_Tag-Text">Облачно</p>
                 </div>
@@ -236,7 +263,7 @@
                   src="./images/icons/Q_Icon_Autumn.svg"
                   alt="Иконка тучи с дождем"
                 />
-                <div class="M_ConditionResult">
+                <div class="M_ConditionResult M_ConditionResult--iphone">
                   <h4 class="A_Heading-H4">40%</h4>
                   <p class="A_Tag-Text">Осадки</p>
                 </div>
@@ -286,82 +313,122 @@
             </div>
           </div>
           <a href="./pages/calendar.html" class="A_Link A_LinkCalendar"
-          ><button class="A_Button A_ButtonCalendar">
-            <p class="A_ButtonText">Узнать больше</p>
-            <img
-              class="Q_ButtonIcon"
-              src="./images/icons/Q_Icon_ArrowVar.svg"
-              alt="Иконка стрелки"
-            /></button
-        ></a>
+            ><button class="A_Button A_ButtonCalendar">
+              <p class="A_ButtonText">Узнать больше</p>
+              <img
+                class="Q_ButtonIcon"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              /></button
+          ></a>
         </div>
       </section>
       <section class="O_MonthlyChecklist">
         <h2 class="A_Heading-H2">Лесной чек-лист на Июнь</h2>
         <div class="W_ChecklistCards">
           <a href="#" class="M_ChecklistCard M_ChecklistCard--mushrooms">
-            <img class="Q_ChecklistImage--mushrooms" src="./images/home-calendar/Q_ChecklistCard--summer.webp" alt="Изображение летнего снаряжения в лесу" loading="lazy">
-            <div class="M_ChecklistTitle M_ChecklistTitle--mushrooms"><h4 class="A_Heading-H4">Лето</h4></div>
+            <img
+              class="Q_ChecklistImage--mushrooms"
+              src="./images/home-calendar/Q_ChecklistCard--summer.webp"
+              alt="Изображение летнего снаряжения в лесу"
+              loading="lazy"
+            />
+            <div class="M_ChecklistTitle M_ChecklistTitle--mushrooms">
+              <h4 class="A_Heading-H4">Лето</h4>
+            </div>
             <button class="A_Button A_ButtonCard">
-                    <img
-                      class="Q_CollectLink"
-                      src="./images/icons/Q_Icon_ArrowVar.svg"
-                      alt="Иконка стрелки"
-                    />
-                  </button>
+              <img
+                class="Q_CollectLink"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              />
+            </button>
           </a>
           <a href="#" class="M_ChecklistCard M_ChecklistCard--ticks">
-            <div class="M_ChecklistTitle M_ChecklistTitle--ticks"><h4 class="A_Heading-H4">Вода</h4></div>
-             <img class="Q_ChecklistImage--ticks" src="./images/home-calendar/Q_ChecklistCard--water.webp" alt="Человек держит бутылку воды в лесу" loading="lazy">
+            <div class="M_ChecklistTitle M_ChecklistTitle--ticks">
+              <h4 class="A_Heading-H4">Вода</h4>
+            </div>
+            <img
+              class="Q_ChecklistImage--ticks"
+              src="./images/home-calendar/Q_ChecklistCard--water.webp"
+              alt="Человек держит бутылку воды в лесу"
+              loading="lazy"
+            />
             <button class="A_Button A_ButtonCard">
-                    <img
-                      class="Q_CollectLink"
-                      src="./images/icons/Q_Icon_ArrowVar.svg"
-                      alt="Иконка стрелки"
-                    />
+              <img
+                class="Q_CollectLink"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              />
             </button>
           </a>
-          <a href="#" class="M_ChecklistCard M_ChecklistCard--route">
-             <img class="Q_ChecklistImage--route" src="./images/home-calendar/Q_ChecklistCard--ticks.webp" alt="Изображение клеща на листе в лесу" loading="lazy">
-             <h4 class="A_Heading-H4">Клещи</h4>
+          <a
+            href="./pages/articles/article_ticks.html"
+            class="M_ChecklistCard M_ChecklistCard--route"
+          >
+            <img
+              class="Q_ChecklistImage--route"
+              src="./images/home-calendar/Q_ChecklistCard--ticks.webp"
+              alt="Изображение клеща на листе в лесу"
+              loading="lazy"
+            />
+            <h4 class="A_Heading-H4">Клещи</h4>
             <button class="A_Button A_ButtonCard">
-                    <img
-                      class="Q_CollectLink"
-                      src="./images/icons/Q_Icon_ArrowVar.svg"
-                      alt="Иконка стрелки"
-                    />
+              <img
+                class="Q_CollectLink"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              />
             </button>
           </a>
-          <a href="#" class="M_ChecklistCard M_ChecklistCard--water">
+          <a
+            href="#"
+            class="M_ChecklistCard M_ChecklistCard--water u-Hide-Mobile"
+          >
             <h4 class="A_Heading-H4 A_Heading-H4--card">Перекус</h4>
-             <img class="Q_ChecklistImage--water" src="./images/home-calendar/Q_ChecklistCard--snack.webp" alt="Изображение легкого перекуса в лесу" loading="lazy">
+            <img
+              class="Q_ChecklistImage--water"
+              src="./images/home-calendar/Q_ChecklistCard--snack.webp"
+              alt="Изображение легкого перекуса в лесу"
+              loading="lazy"
+            />
             <button class="A_Button A_ButtonCard">
-                    <img
-                      class="Q_CollectLink"
-                      src="./images/icons/Q_Icon_ArrowVar.svg"
-                      alt="Иконка стрелки"
-                    />
+              <img
+                class="Q_CollectLink"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              />
             </button>
           </a>
-           <a href="#" class="M_ChecklistCard M_ChecklistCard--preparation">
-            <img class="Q_ChecklistImage--preparation" src="./images/home-calendar/Q_ChecklistCard--backpack.webp" alt="Изображение человека, который что-то ищет в рюкзаке в лесу" loading="lazy">
-            <div class="M_ChecklistTitle"><h4 class="A_Heading-H4">Рюкзак</h4></div>
+          <a href="#" class="M_ChecklistCard M_ChecklistCard--preparation">
+            <img
+              class="Q_ChecklistImage--preparation"
+              src="./images/home-calendar/Q_ChecklistCard--backpack.webp"
+              alt="Изображение человека, который что-то ищет в рюкзаке в лесу"
+              loading="lazy"
+            />
+            <div class="M_ChecklistTitle">
+              <h4 class="A_Heading-H4">Рюкзак</h4>
+            </div>
             <button class="A_Button A_ButtonCard">
-                    <img
-                      class="Q_CollectLink"
-                      src="./images/icons/Q_Icon_ArrowVar.svg"
-                      alt="Иконка стрелки"
-                    />
+              <img
+                class="Q_CollectLink"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              />
             </button>
           </a>
         </div>
       </section>
       <section class="O_UsefulMaterials">
-         <h2 class="A_Heading-H2">Полезно знать</h2>
-         <div class="W_ArticleCards">
-          <a href="#" class="M_ArticleCard" >
+        <h2 class="A_Heading-H2">Полезно знать</h2>
+        <div class="W_ArticleCards">
+          <a
+            href="./pages/articles/article_landmarks.html"
+            class="M_ArticleCard"
+          >
             <div class="M_ArticleImage M_ArticleImage--landmarks">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -370,20 +437,32 @@
                 <span class="A_Tag-Text">5 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Ориентиры</h4>
-            <p class="A_ParagraphVar">Как использовать тропы </p>
-            <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Direction.svg"
-                  alt="Иконка направления"
-                />
-                <span class="A_Tag-Text">навигация</span>
-              </span>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Ориентиры</h4>
+              <p class="A_ParagraphVar">Как использовать тропы</p>
+            </div>
+
+            <span
+              class="M_TagItem M_TagItem--active M_TagItemCard u-Hide-Mobile"
+            >
+              <img
+                class="Q_TagItemImg"
+                src="/src/images/icons/Q_Icon_Direction.svg"
+                alt="Иконка направления"
+              />
+              <span class="A_Tag-Text">навигация</span>
+            </span>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="./images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_ArticleCard" >
+          <a href="./pages/articles/article_ticks.html" class="M_ArticleCard">
             <div class="M_ArticleImage M_ArticleImage--ticks">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -392,20 +471,31 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Клещи</h4>
-            <p class="A_ParagraphVar">Как снизить риск укуса</p>
-            <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Fire.svg"
-                  alt="Иконка огня"
-                />
-                <span class="A_Tag-Text">безопасность</span>
-              </span>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Клещи</h4>
+              <p class="A_ParagraphVar">Как снизить риск укуса</p>
+            </div>
+            <span
+              class="M_TagItem M_TagItem--active M_TagItemCard u-Hide-Mobile"
+            >
+              <img
+                class="Q_TagItemImg"
+                src="/src/images/icons/Q_Icon_Fire.svg"
+                alt="Иконка огня"
+              />
+              <span class="A_Tag-Text">безопасность</span>
+            </span>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="./images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_ArticleCard" >
+          <a href="#" class="M_ArticleCard">
             <div class="M_ArticleImage M_ArticleImage--mushroomer">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -414,20 +504,31 @@
                 <span class="A_Tag-Text">10 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Грибник</h4>
-            <p class="A_ParagraphVar">Гид по сбору грибов</p>
-            <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Flower.svg"
-                  alt="Иконка цветка"
-                />
-                <span class="A_Tag-Text">микология</span>
-              </span>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Грибник</h4>
+              <p class="A_ParagraphVar">Гид по сбору грибов</p>
+            </div>
+            <span
+              class="M_TagItem M_TagItem--active M_TagItemCard u-Hide-Mobile"
+            >
+              <img
+                class="Q_TagItemImg"
+                src="/src/images/icons/Q_Icon_Flower.svg"
+                alt="Иконка цветка"
+              />
+              <span class="A_Tag-Text">микология</span>
+            </span>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="./images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-          <a href="#" class="M_ArticleCard" >
+          <a href="#" class="M_ArticleCard">
             <div class="M_ArticleImage M_ArticleImage--backpack">
-              <span class="M_TagItem M_TagItem--active">
+              <span class="M_TagItem M_TagItem--active u-Hide-Mobile">
                 <img
                   class="Q_TagItemImg"
                   src="/src/images/icons/Q_Icon_Time.svg"
@@ -436,148 +537,210 @@
                 <span class="A_Tag-Text">3 мин</span>
               </span>
             </div>
-            <h4 class="A_Heading-H4">Рюкзак</h4>
-            <p class="A_ParagraphVar">Базовый набор лесника</p>
-            <span class="M_TagItem M_TagItem--active M_TagItemCard">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Compass.svg"
-                  alt="Иконка компаса"
-                />
-                <span class="A_Tag-Text">экипировка</span>
-              </span>
+            <div class="W_ArticleCardContent">
+              <h4 class="A_Heading-H4">Рюкзак</h4>
+              <p class="A_ParagraphVar">Базовый набор лесника</p>
+            </div>
+            <span
+              class="M_TagItem M_TagItem--active M_TagItemCard u-Hide-Mobile"
+            >
+              <img
+                class="Q_TagItemImg"
+                src="/src/images/icons/Q_Icon_Compass.svg"
+                alt="Иконка компаса"
+              />
+              <span class="A_Tag-Text">экипировка</span>
+            </span>
+            <button class="A_Button A_ArticleCardButton">
+              <img
+                class="Q_ArrowIcon"
+                src="./images/icons/Q_Icon_Arrow.svg"
+                alt="Изображение стрелки"
+              />
+            </button>
           </a>
-         </div>
-          <a href="#" class="A_Link"
+        </div>
+        <a href="#" class="A_Link"
           ><button class="A_Button A_ShowMoreButton">
-            <p class="A_ButtonText">Смотреть еще</p></button
-        ></a>
+            <p class="A_ButtonText">Смотреть еще</p>
+          </button></a
+        >
       </section>
       <section class="O_ExpertInterview">
-        <img class="Q_ExpertImage" src="./images/Q_ExpertImage.svg" alt="Опытный лесник рядом с трактором рассказывает о лесных маршрутах и природе" loading="lazy">
+        <img
+          class="Q_ExpertImage"
+          src="./images/Q_ExpertImage.svg"
+          alt="Опытный лесник рядом с трактором рассказывает о лесных маршрутах и природе"
+          loading="lazy"
+        />
+        <img
+          class="Q_ExpertImageMobile"
+          src="./images/Q_ExpertImage-Mobile.webp"
+          alt="Опытный лесник рядом с трактором рассказывает о лесных маршрутах и природе"
+          loading="lazy"
+        />
         <div class="M_ExpertContent">
-          <div class="M_ContentTegs">
+          <div class="M_ContentTegs u-Hide-Mobile">
             <span class="M_TagItem M_TagItem--active">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Fire.svg"
-                  alt="Иконка огня"
-                />
-                <span class="A_Tag-Text">безопасность</span>
-              </span>
-              <span class="M_TagItem M_TagItem--active">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Direction.svg"
-                  alt="Иконка направления"
-                />
-                <span class="A_Tag-Text">навигация</span>
-              </span>
-              <span class="M_TagItem M_TagItem--active">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Sheets.svg"
-                  alt="Иконка листьев"
-                />
-                <span class="A_Tag-Text">экспертиза</span>
-              </span>
+              <img
+                class="Q_TagItemImg"
+                src="/src/images/icons/Q_Icon_Fire.svg"
+                alt="Иконка огня"
+              />
+
+              <span class="A_Tag-Text">безопасность</span>
+            </span>
+            <span class="M_TagItem M_TagItem--active">
+              <img
+                class="Q_TagItemImg"
+                src="/src/images/icons/Q_Icon_Direction.svg"
+                alt="Иконка направления"
+              />
+              <span class="A_Tag-Text">навигация</span>
+            </span>
+            <span class="M_TagItem M_TagItem--active">
+              <img
+                class="Q_TagItemImg"
+                src="/src/images/icons/Q_Icon_Sheets.svg"
+                alt="Иконка листьев"
+              />
+              <span class="A_Tag-Text">экспертиза</span>
+            </span>
           </div>
           <div class="M_ContentHeader">
             <h2 class="A_Heading-H2">Лес не любит спешки</h2>
-            <p class="A_Paragraph">Виктор Викторович рассказывает, как читать лес, замечать приметы и избегать типичных ошибок новичков</p>
+            <p class="A_Paragraph">
+              Виктор Викторович рассказывает, как читать лес, замечать приметы и
+              избегать типичных ошибок новичков
+            </p>
           </div>
           <a href="./pages/articles/interview.html" class="A_Link">
-          <button class="A_Button A_ButtonInterview">
-          <p class="A_NavigationText A_ButtonText">Читать интервью</p>
-          <img
-            class="Q_CollectLink"
-            src="./images/icons/Q_Icon_ArrowVar.svg"
-            alt="Иконка стрелки"
-          />
-        </button></a>
+            <button class="A_Button A_ButtonInterview">
+              <p class="A_NavigationText A_ButtonText">Читать интервью</p>
+              <img
+                class="Q_CollectLink"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              /></button
+          ></a>
         </div>
       </section>
       <section class="O_SkillsSection">
         <h2 class="A_Heading-H2">Прокачиваем навыки</h2>
         <div class="W_SkillsCards">
-          <a href="./pages/interactive/main_Help.html" class="M_SkillCard M_SkillCard--Help">
-            <img class="Q_SkillCard--Help" src="./images/Q_TestRouteVar.webp" alt="Изображение тропы в лесы" loading="lazy">
+          <a
+            href="./pages/interactive/main_Help.html"
+            class="M_SkillCard M_SkillCard--Help"
+          >
+            <img
+              class="Q_SkillCard--Help"
+              src="./images/Q_TestRouteVar.webp"
+              alt="Изображение тропы в лесы"
+              loading="lazy"
+            />
             <div class="M_SkillContent">
               <div class="M_SkillTegs">
                 <span class="M_TagItem M_TagItem--active">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Sheets.svg"
-                  alt="Иконка листьев"
-                />
-                <span class="A_Tag-Text">экспертиза</span>
-              </span>
-              <button class="A_Button A_TestCardButton">
-                <img
-                  class="Q_ArrowIcon"
-                  src="./images/icons/Q_Icon_Arrow.svg"
-                  alt="Иконка стрелки"
-                />
-              </button>
+                  <img
+                    class="Q_TagItemImg"
+                    src="/src/images/icons/Q_Icon_Sheets.svg"
+                    alt="Иконка листьев"
+                  />
+                  <span class="A_Tag-Text">экспертиза</span>
+                </span>
+                <button class="A_Button A_TestCardButton">
+                  <img
+                    class="Q_ArrowIcon"
+                    src="./images/icons/Q_Icon_Arrow.svg"
+                    alt="Иконка стрелки"
+                  />
+                </button>
               </div>
-              <h4 class="A_Heading-H4">Помощь на тропе</h4>
-              <p class="A_ParagraphVar">Тест о внимательности, спокойной ориентации в лесу и простых решениях в природной среде во время прогулок и маршрутов </p>
+              <div class="W_ArticleCardContent">
+                <h4 class="A_Heading-H4">Помощь на тропе</h4>
+                <p class="A_ParagraphVar u-Hide-Mobile">
+                  Тест о внимательности, спокойной ориентации в лесу и простых
+                  решениях в природной среде во время прогулок и маршрутов
+                </p>
+              </div>
             </div>
           </a>
-           <a href="./pages/interactive/main_WhatToTake.html" class="M_SkillCard M_SkillCard--Things">
-            <img class="Q_SkillCard--Things" src="./images/Q_TestThings.webp" alt="Изображение мужчины, который ищет что-то в рюкзаке, в лесу" loading="lazy">
+          <a
+            href="./pages/interactive/main_WhatToTake.html"
+            class="M_SkillCard M_SkillCard--Things"
+          >
+            <img
+              class="Q_SkillCard--Things"
+              src="./images/Q_TestThings.webp"
+              alt="Изображение мужчины, который ищет что-то в рюкзаке, в лесу"
+              loading="lazy"
+            />
             <div class="M_SkillContent--compact">
               <div class="M_SkillTegs--compact">
                 <span class="M_TagItem M_TagItem--active">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Sheets.svg"
-                  alt="Иконка листьев"
-                />
-                <span class="A_Tag-Text">экспертиза</span>
-              </span>
-              <button class="A_Button A_TestCardButton">
-                <img
-                  class="Q_ArrowIcon"
-                  src="./images/icons/Q_Icon_Arrow.svg"
-                  alt="Иконка стрелки"
-                />
-              </button>
+                  <img
+                    class="Q_TagItemImg"
+                    src="/src/images/icons/Q_Icon_Sheets.svg"
+                    alt="Иконка листьев"
+                  />
+                  <span class="A_Tag-Text">экспертиза</span>
+                </span>
+                <button class="A_Button A_TestCardButton">
+                  <img
+                    class="Q_ArrowIcon"
+                    src="./images/icons/Q_Icon_Arrow.svg"
+                    alt="Иконка стрелки"
+                  />
+                </button>
               </div>
               <h4 class="A_Heading-H4">Что взять в лес</h4>
-              <p class="A_ParagraphVar">О простых вещах, которые делают прогулку по лесу спокойнее и удобнее</p>
+              <p class="A_ParagraphVar u-Hide-Mobile">
+                О простых вещах, которые делают прогулку по лесу спокойнее и
+                удобнее
+              </p>
             </div>
           </a>
-          <a href="./pages/interactive/main_ForestExam.html" class="M_SkillCard M_SkillCard--ForestExam">
-            <img class="Q_SkillCard--ForestExam" src="./images/Q_ForestExam.webp" alt="Изображение мужчины, который ищет что-то в рюкзаке, в лесу" loading="lazy">
+          <a
+            href="./pages/interactive/main_ForestExam.html"
+            class="M_SkillCard M_SkillCard--ForestExam"
+          >
+            <img
+              class="Q_SkillCard--ForestExam"
+              src="./images/Q_ForestExam.webp"
+              alt="Изображение мужчины, который ищет что-то в рюкзаке, в лесу"
+              loading="lazy"
+            />
             <div class="M_SkillContent--compact">
               <div class="M_SkillTegs--compact">
                 <span class="M_TagItem M_TagItem--active">
-                <img
-                  class="Q_TagItemImg"
-                  src="/src/images/icons/Q_Icon_Fire.svg"
-                  alt="Иконка огня"
-                />
-                <span class="A_Tag-Text">безопасность</span>
-              </span>
-              <button class="A_Button A_TestCardButton">
-                <img
-                  class="Q_ArrowIcon"
-                  src="./images/icons/Q_Icon_Arrow.svg"
-                  alt="Иконка стрелки"
-                />
-              </button>
+                  <img
+                    class="Q_TagItemImg"
+                    src="/src/images/icons/Q_Icon_Fire.svg"
+                    alt="Иконка огня"
+                  />
+                  <span class="A_Tag-Text">безопасность</span>
+                </span>
+                <button class="A_Button A_TestCardButton">
+                  <img
+                    class="Q_ArrowIcon"
+                    src="./images/icons/Q_Icon_Arrow.svg"
+                    alt="Иконка стрелки"
+                  />
+                </button>
               </div>
               <h4 class="A_Heading-H4">Лесной экзамен</h4>
-              <p class="A_ParagraphVar">Проверь, не превратишься ли ты в «потеряшку» при виде первой сосны</p>
+              <p class="A_ParagraphVar u-Hide-Mobile">
+                Проверь, не превратишься ли ты в «потеряшку» при виде первой
+                сосны
+              </p>
             </div>
           </a>
-          
         </div>
         <a href="./pages/interactive.html" class="A_Link"
           ><button class="A_Button A_ShowMoreButton">
-            <p class="A_ButtonText">Смотреть еще</p></button
-        ></a>
+            <p class="A_ButtonText">Смотреть еще</p>
+          </button></a
+        >
       </section>
       <section class="O_RoutesSection">
         <h2 class="A_Heading-H2">Маршруты для прогулки</h2>
@@ -587,14 +750,22 @@
               <h3 class="A_Heading-H3">Заповедный лес</h3>
               <div class="W_RouteMetrics">
                 <div class="M_RouteMetric">
-                  <img class="Q_RouteIcon" src="./images/icons/Q_Icon_Route.svg" alt="Иконка пути">
+                  <img
+                    class="Q_RouteIcon"
+                    src="./images/icons/Q_Icon_Route.svg"
+                    alt="Иконка пути"
+                  />
                   <div class="M_MetricValue">
                     <p class="A_ParagraphVar">2.3 км</p>
                     <p class="A_AnswerDescription">Дистанция</p>
                   </div>
                 </div>
                 <div class="M_RouteMetric">
-                  <img class="Q_RouteIcon" src="./images/icons/Q_Icon_Time.svg" alt="Иконка часов">
+                  <img
+                    class="Q_RouteIcon"
+                    src="./images/icons/Q_Icon_Time.svg"
+                    alt="Иконка часов"
+                  />
                   <div class="M_MetricValue">
                     <p class="A_ParagraphVar">1 ч</p>
                     <p class="A_AnswerDescription">В пути</p>
@@ -603,21 +774,35 @@
                 <div class="M_RouteMetric"></div>
               </div>
             </div>
-            <img class="Q_RouteMap" src="./images/Q_RouteMap--reserveForest.webp" alt="Изображение карты маршрута" class="Q_RouteMap" loading="lazy">
+            <img
+              class="Q_RouteMap"
+              src="./images/Q_RouteMap--reserveForest.webp"
+              alt="Изображение карты маршрута"
+              class="Q_RouteMap"
+              loading="lazy"
+            />
           </a>
           <a href="./pages/routes/troparevoForest.html" class="M_RouteCard">
             <div class="M_RouteContent">
               <h3 class="A_Heading-H3">Тропарёвский лес</h3>
               <div class="W_RouteMetrics">
                 <div class="M_RouteMetric">
-                  <img class="Q_RouteIcon" src="./images/icons/Q_Icon_Route.svg" alt="Иконка пути">
+                  <img
+                    class="Q_RouteIcon"
+                    src="./images/icons/Q_Icon_Route.svg"
+                    alt="Иконка пути"
+                  />
                   <div class="M_MetricValue">
                     <p class="A_ParagraphVar">1.8 км</p>
                     <p class="A_AnswerDescription">Дистанция</p>
                   </div>
                 </div>
                 <div class="M_RouteMetric">
-                  <img class="Q_RouteIcon" src="./images/icons/Q_Icon_Time.svg" alt="Иконка часов">
+                  <img
+                    class="Q_RouteIcon"
+                    src="./images/icons/Q_Icon_Time.svg"
+                    alt="Иконка часов"
+                  />
                   <div class="M_MetricValue">
                     <p class="A_ParagraphVar">1 ч</p>
                     <p class="A_AnswerDescription">В пути</p>
@@ -626,21 +811,35 @@
                 <div class="M_RouteMetric"></div>
               </div>
             </div>
-            <img class="Q_RouteMap" src="./images/Q_RouteMap--troparevoForest.webp" alt="Изображение карты маршрута" class="Q_RouteMap" loading="lazy">
+            <img
+              class="Q_RouteMap"
+              src="./images/Q_RouteMap--troparevoForest.webp"
+              alt="Изображение карты маршрута"
+              class="Q_RouteMap"
+              loading="lazy"
+            />
           </a>
           <a href="./pages/routes/sparrowHills.html" class="M_RouteCard">
             <div class="M_RouteContent">
               <h3 class="A_Heading-H3">Воробьёвы горы</h3>
               <div class="W_RouteMetrics">
                 <div class="M_RouteMetric">
-                  <img class="Q_RouteIcon" src="./images/icons/Q_Icon_Route.svg" alt="Иконка пути">
+                  <img
+                    class="Q_RouteIcon"
+                    src="./images/icons/Q_Icon_Route.svg"
+                    alt="Иконка пути"
+                  />
                   <div class="M_MetricValue">
                     <p class="A_ParagraphVar">530 м</p>
                     <p class="A_AnswerDescription">Дистанция</p>
                   </div>
                 </div>
                 <div class="M_RouteMetric">
-                  <img class="Q_RouteIcon" src="./images/icons/Q_Icon_Time.svg" alt="Иконка часов">
+                  <img
+                    class="Q_RouteIcon"
+                    src="./images/icons/Q_Icon_Time.svg"
+                    alt="Иконка часов"
+                  />
                   <div class="M_MetricValue">
                     <p class="A_ParagraphVar">30 мин</p>
                     <p class="A_AnswerDescription">В пути</p>
@@ -649,48 +848,55 @@
                 <div class="M_RouteMetric"></div>
               </div>
             </div>
-            <img class="Q_RouteMap" src="./images/Q_RouteMap--sparrowHills.webp" alt="Изображение карты маршрута" class="Q_RouteMap" loading="lazy">
+            <img
+              class="Q_RouteMap"
+              src="./images/Q_RouteMap--sparrowHills.webp"
+              alt="Изображение карты маршрута"
+              class="Q_RouteMap"
+              loading="lazy"
+            />
           </a>
         </div>
         <a href="./pages/routes.html" class="A_Link"
           ><button class="A_Button A_ShowMoreButton">
-            <p class="A_ButtonText">Смотреть еще</p></button
-        ></a>
+            <p class="A_ButtonText">Смотреть еще</p>
+          </button></a
+        >
       </section>
-      <a href="#" class="O_DzenSection">
-      <div class="M_HeroContent">
-        <div class="M_DzenHeader">
-          <h2 class="A_Heading-H2">Больше в дзене</h2>
-          <button class="A_Button A_TestButton">
-                <img
-                  class="Q_ArrowIconSecondary"
-                  src="./images/icons/Q_Icon_ArrowVar.svg"
-                  alt="Иконка стрелки"
-                />
-              </button>
-       </div>
-        <div class="M_TagGroup">
-          <span class="A_Tag A_NavigationText"> Советы </span>
-          <div class="M_TagIcon">
-            <img
-              class="Q_TagIconImg"
-              src="/src/images/icons/Q_Icon_BerryVar.svg"
-              alt="Иконка двух ягод"
-            />
+      <a href="https://dzen.ru/traila?share_to=link" class="O_DzenSection">
+        <div class="M_HeroContent">
+          <div class="M_DzenHeader">
+            <h2 class="A_Heading-H2">Больше в дзене</h2>
+            <button class="A_Button A_TestButton">
+              <img
+                class="Q_ArrowIconSecondary"
+                src="./images/icons/Q_Icon_ArrowVar.svg"
+                alt="Иконка стрелки"
+              />
+            </button>
           </div>
-          <span class="A_Tag A_NavigationText"> Тренажеры </span>
-          <div class="M_TagIcon">
-            <img
-              class="Q_TagIconImg"
-              src="/src/images/icons/Q_Icon_Hand.svg"
-              alt="Иконка ладони человека"
-            />
+          <div class="M_TagGroup u-Hide-Mobile">
+            <span class="A_Tag A_NavigationText"> Советы </span>
+            <div class="M_TagIcon">
+              <img
+                class="Q_TagIconImg"
+                src="/src/images/icons/Q_Icon_BerryVar.svg"
+                alt="Иконка двух ягод"
+              />
+            </div>
+            <span class="A_Tag A_NavigationText"> Тренажеры </span>
+            <div class="M_TagIcon">
+              <img
+                class="Q_TagIconImg"
+                src="/src/images/icons/Q_Icon_Hand.svg"
+                alt="Иконка ладони человека"
+              />
+            </div>
           </div>
         </div>
-      </div>
       </a>
     </main>
-      <footer class="O_Footer">
+    <footer class="O_Footer">
       <div class="M_Footer-Area">
         <div class="M_Footer-Subscribe">
           <p class="A_Heading-H3">Остались вопросы?</p>
@@ -724,16 +930,18 @@
 
           <ul class="M_Footer-List">
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">о нас</a>
+              <a href="./pages/aboutus.html" class="A_Paragraph">о нас</a>
             </li>
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">статьи</a>
+              <a href="./pages/articles.html" class="A_Paragraph">статьи</a>
             </li>
             <li class="M_Footer-Item">
-              <a href="./pages/interactive.html" class="A_Paragraph">интерактивы</a>
+              <a href="./pages/interactive.html" class="A_Paragraph"
+                >интерактивы</a
+              >
             </li>
             <li class="M_Footer-Item">
-              <a href="#" class="A_Paragraph">маршруты</a>
+              <a href="./pages/routes.html" class="A_Paragraph">маршруты</a>
             </li>
             <li class="M_Footer-Item">
               <a href="./pages/calendar.html" class="A_Paragraph">календарь</a>
